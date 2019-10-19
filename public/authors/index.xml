@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | </title>
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 19 Sep 2014 13:20:32 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
+    
+    <item>
+      <title>Nam Lethanh and Kiyoshi Kobayashi and Kiyoyuki Kaito</title>
+      <link>/authors/nam-lethanh-and-kiyoshi-kobayashi-and-kiyoyuki-kaito/</link>
+      <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
+      <guid>/authors/nam-lethanh-and-kiyoshi-kobayashi-and-kiyoyuki-kaito/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kiyoshi Kobayashi and Kiyoyuki Kaito and **Nam Lethanh**</title>
+      <link>/authors/kiyoshi-kobayashi-and-kiyoyuki-kaito-and-nam-lethanh/</link>
+      <pubDate>Sat, 19 May 2012 13:20:32 +0800</pubDate>
+      <guid>/authors/kiyoshi-kobayashi-and-kiyoyuki-kaito-and-nam-lethanh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;A marathon runner, diver, and part-time programmer, now lives and works in Manila, used to live in BKK, Kyoto, Osaka, Zurich, Geneva, and Hanoi.&lt;/p&gt;
+
+&lt;p&gt;Hometowns: &lt;a href=&#34;http://ecopark.com.vn/en/&#34; target=&#34;_blank&#34;&gt;Ecopark&lt;/a&gt; (VN), &lt;a href=&#34;https://en.wikipedia.org/wiki/Katsura,_Kyoto&#34; target=&#34;_blank&#34;&gt;Katsura&lt;/a&gt; (Kyoto), &lt;a href=&#34;https://en.wikipedia.org/wiki/Geneva&#34; target=&#34;_blank&#34;&gt;Geneva&lt;/a&gt; (CH), and &lt;a href=&#34;https://en.wikipedia.org/wiki/Z%C3%BCrich&#34; target=&#34;_blank&#34;&gt;Zurich&lt;/a&gt; (CH)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

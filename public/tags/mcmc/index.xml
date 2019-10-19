@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MCMC | </title>
+    <link>/tags/mcmc/</link>
+      <atom:link href="/tags/mcmc/index.xml" rel="self" type="application/rss+xml" />
+    <description>MCMC</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 19 Sep 2014 13:20:32 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>MCMC</title>
+      <link>/tags/mcmc/</link>
+    </image>
+    
+    <item>
+      <title>Infrastructure Deterioration Prediction with a Poisson Hidden Markov Model on Time Series Data  </title>
+      <link>/publication/lethanh2015b/</link>
+      <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
+      <guid>/publication/lethanh2015b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A statistical deterioration forecasting method using hidden Markov model for infrastructure management</title>
+      <link>/publication/kobayashi2012a/</link>
+      <pubDate>Sat, 19 May 2012 13:20:32 +0800</pubDate>
+      <guid>/publication/kobayashi2012a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Bayesian Estimation Method to Improve Deterioration Prediction for Infrastructure System with Markov Chain Model</title>
+      <link>/publication/kobayashi2012/</link>
+      <pubDate>Mon, 19 Mar 2012 13:20:32 +0800</pubDate>
+      <guid>/publication/kobayashi2012/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project Management | </title>
+    <link>/categories/project-management/</link>
+      <atom:link href="/categories/project-management/index.xml" rel="self" type="application/rss+xml" />
+    <description>Project Management</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 19 Oct 2019 11:08:22 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Project Management</title>
+      <link>/categories/project-management/</link>
+    </image>
+    
+    <item>
+      <title>Lamesa 2 - Maynilad</title>
+      <link>/project/2016-lamesa2/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/project/2016-lamesa2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plant Audit - Maynilad</title>
+      <link>/project/2018-plantaudit/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/project/2018-plantaudit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>900MW Power Station - KEPCO E&amp;C</title>
+      <link>/project/2016-kepco/</link>
+      <pubDate>Tue, 19 Apr 2016 11:08:22 +0800</pubDate>
+      <guid>/project/2016-kepco/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

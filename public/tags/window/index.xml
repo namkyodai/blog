@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Window | </title>
+    <link>/tags/window/</link>
+      <atom:link href="/tags/window/index.xml" rel="self" type="application/rss+xml" />
+    <description>Window</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 10 Oct 2019 23:30:45 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Window</title>
+      <link>/tags/window/</link>
+    </image>
+    
+    <item>
+      <title>Removing Space of files inside folders/subfolders in bulk</title>
+      <link>/post/2019-10-10-remove-space-in-bulk/</link>
+      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
+      <guid>/post/2019-10-10-remove-space-in-bulk/</guid>
+      <description>&lt;p&gt;In many cases, we need to remove space in the names of files saved inside a tree of folders/subfolders. We can use following CODE to do the job.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:renameNoSpace [/R]
+@echo off
+setlocal disableDelayedExpansion
+if /i &amp;quot;%~1&amp;quot;==&amp;quot;/R&amp;quot; (
+set &amp;quot;forOption=%~1 %2&amp;quot;
+set &amp;quot;inPath=&amp;quot;
+) else (
+set &amp;quot;forOption=&amp;quot;
+if &amp;quot;%~1&amp;quot; neq &amp;quot;&amp;quot; (set &amp;quot;inPath=%~1\&amp;quot;) else set &amp;quot;inPath=&amp;quot;
+)
+for %forOption% %%F in (&amp;quot;%inPath%* *&amp;quot;) do (
+if /i &amp;quot;%~f0&amp;quot; neq &amp;quot;%%~fF&amp;quot; (
+set &amp;quot;folder=%%~dpF&amp;quot;
+set &amp;quot;file=%%~nxF&amp;quot;
+setlocal enableDelayedExpansion
+echo ren &amp;quot;!folder!!file!&amp;quot; &amp;quot;!file: =!&amp;quot;
+ren &amp;quot;!folder!!file!&amp;quot; &amp;quot;!file: =!&amp;quot;
+endlocal
+)
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Assume the script is called renameNoSpace.bat&lt;/p&gt;
+
+&lt;p&gt;Options to change are&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;renameNoSpace : (no arguments) Renames files in the current directory
+
+renameNoSpace /R : Renames files in the folder tree rooted at the current directory
+
+renameNoSpace myFolder : Renames files in the “myFolder” directory found in the current directory.
+
+renameNoSpace &amp;quot;c:\my folder\&amp;quot; : Renames files in the specified path. Quotes are used because path contains a space.
+
+renameNoSpace /R c:\ : Renames all files on the C: drive.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We paste renameNoSpace.bat to targetted folder/subfolders and run the file in the console.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
