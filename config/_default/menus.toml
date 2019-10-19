@@ -6,22 +6,39 @@
 [[main]]
   name = "Home"
   url = "#about"
-  weight = 10
+  weight = 5
 
 [[main]]
   name = "Posts"
   url = "#posts"
-  weight = 20
+  weight = 10
 
 [[main]]
   name = "Projects"
   url = "#projects"
-  weight = 30
+  weight = 15
+
+[[main]]
+  name = "Services"
+#  url = "#contact"
+  weight = 20
+
+
+[[main]]
+  name = "Apps"
+  url = "https://4analyst.shinyapps.io/aWeiBullLcc/"
+  weight = 25
 
 [[main]]
   name = "Publications"
   url = "publication/"
-  weight = 40
+  weight = 30
+
+[[main]]
+  name = "Library"
+#  url = "publication/"
+  weight = 35
+
 
 [[main]]
   name = "Contact"
