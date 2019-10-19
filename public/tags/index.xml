@@ -125,6 +125,134 @@
     </item>
     
     <item>
+      <title>Journal</title>
+      <link>/tags/journal/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/tags/journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tunnel</title>
+      <link>/tags/tunnel/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/tags/tunnel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weibull</title>
+      <link>/tags/weibull/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/tags/weibull/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GIS</title>
+      <link>/tags/gis/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/tags/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimization</title>
+      <link>/tags/optimization/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/tags/optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Workzone</title>
+      <link>/tags/workzone/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/tags/workzone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BMS</title>
+      <link>/tags/bms/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/tags/bms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markov</title>
+      <link>/tags/markov/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/tags/markov/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression</title>
+      <link>/tags/regression/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Railway</title>
+      <link>/tags/railway/</link>
+      <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/railway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Real Option</title>
+      <link>/tags/real-option/</link>
+      <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/real-option/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Krigging</title>
+      <link>/tags/krigging/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/krigging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PMS</title>
+      <link>/tags/pms/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/pms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conference</title>
+      <link>/tags/conference/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Corrosion</title>
+      <link>/tags/corrosion/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/corrosion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crack</title>
+      <link>/tags/crack/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/crack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Feasibility Study</title>
       <link>/tags/feasibility-study/</link>
       <pubDate>Tue, 19 Apr 2016 11:08:22 +0800</pubDate>
@@ -157,14 +285,6 @@
     </item>
     
     <item>
-      <title>Journal</title>
-      <link>/tags/journal/</link>
-      <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
-      <guid>/tags/journal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Markov Models</title>
       <link>/tags/markov-models/</link>
       <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
@@ -181,26 +301,10 @@
     </item>
     
     <item>
-      <title>PMS</title>
-      <link>/tags/pms/</link>
-      <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
-      <guid>/tags/pms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Poisson Process</title>
       <link>/tags/poisson-process/</link>
       <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
       <guid>/tags/poisson-process/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BMS</title>
-      <link>/tags/bms/</link>
-      <pubDate>Sat, 19 May 2012 13:20:32 +0800</pubDate>
-      <guid>/tags/bms/</guid>
       <description></description>
     </item>
     
@@ -217,6 +321,14 @@
       <link>/tags/bridge-management/</link>
       <pubDate>Mon, 19 Mar 2012 13:20:32 +0800</pubDate>
       <guid>/tags/bridge-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Water Ultilities</title>
+      <link>/tags/water-ultilities/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/tags/water-ultilities/</guid>
       <description></description>
     </item>
     

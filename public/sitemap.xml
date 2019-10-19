@@ -43,12 +43,12 @@
   </url>
   
   <url>
-    <loc>/categories/project-management/</loc>
+    <loc>/tags/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/project-management/</loc>
+    <loc>/categories/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
   </url>
   
@@ -158,17 +158,182 @@
   </url>
   
   <url>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/hackl2018/</loc>
+    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/journal/</loc>
+    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/juergen-hackl-and-bryan-t-adey-and-nam-lethanh/</loc>
+    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tunnel/</loc>
+    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/weibull/</loc>
+    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lethanh2018/</loc>
+    <lastmod>2018-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gis/</loc>
+    <lastmod>2018-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nam-lethanh-and-bryan-t.-adey-and-marcel-burkhalter/</loc>
+    <lastmod>2018-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/optimization/</loc>
+    <lastmod>2018-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/workzone/</loc>
+    <lastmod>2018-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bms/</loc>
+    <lastmod>2017-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lethanh2017/</loc>
+    <lastmod>2017-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/markov/</loc>
+    <lastmod>2017-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nam-lethanh-and-juergen-hackl-and-bryan-t.-adey/</loc>
+    <lastmod>2017-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/regression/</loc>
+    <lastmod>2017-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lethanh2016g/</loc>
+    <lastmod>2016-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nam-lethanh-and-bryan-t.-adey/</loc>
+    <lastmod>2016-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/railway/</loc>
+    <lastmod>2016-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/real-option/</loc>
+    <lastmod>2016-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lethanh2016b/</loc>
+    <lastmod>2016-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/krigging/</loc>
+    <lastmod>2016-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nam-lethanh-and-craig-richmond-and-bryan-t.-adey/</loc>
+    <lastmod>2016-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pms/</loc>
+    <lastmod>2016-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/1/</loc>
+    <lastmod>2016-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/conference/</loc>
+    <lastmod>2016-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/corrosion/</loc>
+    <lastmod>2016-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/crack/</loc>
+    <lastmod>2016-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lethanh2016f/</loc>
+    <lastmod>2016-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nam-lethanh-and-jurgen-hackl-and-bryan-t.-adey/</loc>
+    <lastmod>2016-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/project/2016-kepco/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/feasibility-study/</loc>
+    <loc>/tags/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/feasibility-study/</loc>
+    <loc>/categories/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
   </url>
   
@@ -183,27 +348,12 @@
   </url>
   
   <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2014-09-19T13:20:32+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-    <lastmod>2014-09-19T13:20:32+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/bayesian/</loc>
     <lastmod>2014-09-19T13:20:32+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/lethanh2015b/</loc>
-    <lastmod>2014-09-19T13:20:32+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/journal/</loc>
+    <loc>/publication/lethanh2014d/</loc>
     <lastmod>2014-09-19T13:20:32+08:00</lastmod>
   </url>
   
@@ -223,32 +373,32 @@
   </url>
   
   <url>
-    <loc>/tags/pms/</loc>
-    <lastmod>2014-09-19T13:20:32+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/poisson-process/</loc>
     <lastmod>2014-09-19T13:20:32+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2014-09-19T13:20:32+08:00</lastmod>
+    <loc>/authors/nam-lethanh-and-bryan-t.-adey-and-dilum-n.-fernando/</loc>
+    <lastmod>2014-03-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/</loc>
-    <lastmod>2014-09-19T13:20:32+08:00</lastmod>
+    <loc>/publication/lethanh2014/</loc>
+    <lastmod>2014-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lethanh2013a/</loc>
+    <lastmod>2013-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lethanh2013b/</loc>
+    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/kobayashi2012a/</loc>
-    <lastmod>2012-05-19T13:20:32+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/bms/</loc>
     <lastmod>2012-05-19T13:20:32+08:00</lastmod>
   </url>
   
@@ -270,6 +420,51 @@
   <url>
     <loc>/tags/bridge-management/</loc>
     <lastmod>2012-03-19T13:20:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/kobayashi2010a/</loc>
+    <lastmod>2010-05-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/7/</loc>
+    <lastmod>2009-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lethanh2009/</loc>
+    <lastmod>2009-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nam-lethanh/</loc>
+    <lastmod>2009-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nam-lethanh-and-thao-nguyendinh-and-kiyoyukia-kaito-and-kiyoshi-kobayashi/</loc>
+    <lastmod>2009-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lethanh2009c/</loc>
+    <lastmod>2009-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/water-ultilities/</loc>
+    <lastmod>2009-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lethanh2008c/</loc>
+    <lastmod>2008-06-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nam-lethanh-and-kengo-obama-and-koyoshi-kobayashi/</loc>
+    <lastmod>2008-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>

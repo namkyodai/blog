@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GIS | </title>
+    <link>/tags/gis/</link>
+      <atom:link href="/tags/gis/index.xml" rel="self" type="application/rss+xml" />
+    <description>GIS</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 10 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>GIS</title>
+      <link>/tags/gis/</link>
+    </image>
+    
+    <item>
+      <title>Determining an Optimal Set of Work Zones on Large Infrastructure Networks in a GIS Framework</title>
+      <link>/publication/lethanh2018/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/lethanh2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,12 +5,60 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 19 Sep 2014 13:20:32 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 18 Jul 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
       <link>/authors/</link>
     </image>
+    
+    <item>
+      <title>Juergen Hackl and Bryan T Adey and **Nam Lethanh**</title>
+      <link>/authors/juergen-hackl-and-bryan-t-adey-and-nam-lethanh/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/juergen-hackl-and-bryan-t-adey-and-nam-lethanh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nam Lethanh and Bryan T. Adey and Marcel Burkhalter</title>
+      <link>/authors/nam-lethanh-and-bryan-t.-adey-and-marcel-burkhalter/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/nam-lethanh-and-bryan-t.-adey-and-marcel-burkhalter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nam Lethanh  and Juergen Hackl  and Bryan T. Adey</title>
+      <link>/authors/nam-lethanh-and-juergen-hackl-and-bryan-t.-adey/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/nam-lethanh-and-juergen-hackl-and-bryan-t.-adey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nam Lethanh and Bryan T. Adey</title>
+      <link>/authors/nam-lethanh-and-bryan-t.-adey/</link>
+      <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/nam-lethanh-and-bryan-t.-adey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nam Lethanh and Craig Richmond and Bryan T. Adey</title>
+      <link>/authors/nam-lethanh-and-craig-richmond-and-bryan-t.-adey/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/nam-lethanh-and-craig-richmond-and-bryan-t.-adey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nam Lethanh and Jurgen Hackl and Bryan T. Adey</title>
+      <link>/authors/nam-lethanh-and-jurgen-hackl-and-bryan-t.-adey/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/nam-lethanh-and-jurgen-hackl-and-bryan-t.-adey/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Nam Lethanh and Kiyoshi Kobayashi and Kiyoyuki Kaito</title>
@@ -21,10 +69,42 @@
     </item>
     
     <item>
+      <title>Nam Lethanh and Bryan T. Adey and Dilum N. Fernando</title>
+      <link>/authors/nam-lethanh-and-bryan-t.-adey-and-dilum-n.-fernando/</link>
+      <pubDate>Fri, 21 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/nam-lethanh-and-bryan-t.-adey-and-dilum-n.-fernando/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Kiyoshi Kobayashi and Kiyoyuki Kaito and **Nam Lethanh**</title>
       <link>/authors/kiyoshi-kobayashi-and-kiyoyuki-kaito-and-nam-lethanh/</link>
       <pubDate>Sat, 19 May 2012 13:20:32 +0800</pubDate>
       <guid>/authors/kiyoshi-kobayashi-and-kiyoyuki-kaito-and-nam-lethanh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nam Lethanh</title>
+      <link>/authors/nam-lethanh/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/nam-lethanh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nam Lethanh and Thao Nguyendinh and Kiyoyukia Kaito and Kiyoshi Kobayashi</title>
+      <link>/authors/nam-lethanh-and-thao-nguyendinh-and-kiyoyukia-kaito-and-kiyoshi-kobayashi/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/nam-lethanh-and-thao-nguyendinh-and-kiyoyukia-kaito-and-kiyoshi-kobayashi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nam Lethanh and Kengo Obama and Koyoshi Kobayashi</title>
+      <link>/authors/nam-lethanh-and-kengo-obama-and-koyoshi-kobayashi/</link>
+      <pubDate>Tue, 10 Jun 2008 00:00:00 +0000</pubDate>
+      <guid>/authors/nam-lethanh-and-kengo-obama-and-koyoshi-kobayashi/</guid>
       <description></description>
     </item>
     
