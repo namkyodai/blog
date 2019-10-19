@@ -4,7 +4,7 @@
 title: "A Bayesian Estimation Method to Improve Deterioration Prediction for Infrastructure System with Markov Chain Model"
 authors: [Kiyoshi Kobayashi and Kiyoyuki Kaito and **Nam Lethanh**]
 date: 2012-03-19T13:20:32+08:00
-doi: ""
+doi: "http://dx.doi.org/10.7492/IJAEC.2012.001"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2019-10-19T13:20:32+08:00
@@ -36,7 +36,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: https://pdfs.semanticscholar.org/5f51/45c33bae02aa6de99b5ff82f05b06dbeac22.pdf
+url_pdf: 
 url_code:
 url_dataset:
 url_poster:
