@@ -21,7 +21,7 @@
 
 [[main]]
   name = "Business"
-#  url = "#projects"
+  url = "business/"
   weight = 20
 
 [[main]]
@@ -31,12 +31,12 @@
 
 [[main]]
   name = "Library"
-#  url = "#contact"
+  url = "library/"
   weight = 30
 
 [[main]]
   name = "Apps"
-#  url = "#contact"
+  url = "apps/"
   weight = 40
 
 

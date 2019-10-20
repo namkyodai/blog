@@ -78,21 +78,6 @@
   </url>
   
   <url>
-    <loc>/categories/plant-audit/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/plant-audit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/plant-audit/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/plant-audit/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -104,6 +89,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tags/plant-audit/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/plant-audit/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/plant-audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/plant-audit/"
                 />
   </url>
   
@@ -123,21 +123,6 @@
   </url>
   
   <url>
-    <loc>/tags/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/project-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/categories/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -149,6 +134,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/categories/project-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/project-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/project-management/"
                 />
   </url>
   
@@ -1367,6 +1367,22 @@
   </url>
   
   <url>
+    <loc>/apps/</loc>
+  </url>
+  
+  <url>
+    <loc>/business/</loc>
+  </url>
+  
+  <url>
+    <loc>/library/</loc>
+  </url>
+  
+  <url>
+    <loc>/authors/nam-le/</loc>
+  </url>
+  
+  <url>
     <loc>/talk/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1378,6 +1394,10 @@
                 hreflang="en"
                 href="/talk/"
                 />
+  </url>
+  
+  <url>
+    <loc>/apps/weibulllcc/</loc>
   </url>
   
 </urlset>

@@ -2238,5 +2238,39 @@ dbDisconnect(dataproduction)
       <description></description>
     </item>
     
+    <item>
+      <title>Business and Services</title>
+      <link>/business/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/business/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Technical Due Dilligence (TDD)&lt;/li&gt;
+&lt;li&gt;Plant Audit and Asset Management&lt;/li&gt;
+&lt;li&gt;Reliability Study&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Library</title>
+      <link>/library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/library/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.r-graph-gallery.com/&#34; target=&#34;_blank&#34;&gt;R Graph Gallery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/home/archive/&#34; target=&#34;_blank&#34;&gt;Bookdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dplyr.tidyverse.org/&#34; target=&#34;_blank&#34;&gt;A Grammar of Data Munipulation (dplyr)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Weibull-Analysis-Pumps</title>
+      <link>/apps/weibulllcc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/apps/weibulllcc/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
