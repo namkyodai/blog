@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags | </title>
+    <link>/vi/tags/</link>
+      <atom:link href="/vi/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><lastBuildDate>Sat, 19 Oct 2019 11:08:22 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Tags</title>
+      <link>/vi/tags/</link>
+    </image>
+    
+    <item>
+      <title>Asset Management</title>
+      <link>/vi/tags/asset-management/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/vi/tags/asset-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plant Audit</title>
+      <link>/vi/tags/plant-audit/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/vi/tags/plant-audit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project Management</title>
+      <link>/vi/tags/project-management/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/vi/tags/project-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Water</title>
+      <link>/vi/tags/water/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/vi/tags/water/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plot</title>
+      <link>/vi/tags/plot/</link>
+      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
+      <guid>/vi/tags/plot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/vi/tags/r/</link>
+      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
+      <guid>/vi/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression Analysis</title>
+      <link>/vi/tags/regression-analysis/</link>
+      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
+      <guid>/vi/tags/regression-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Window</title>
+      <link>/vi/tags/window/</link>
+      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
+      <guid>/vi/tags/window/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EVM</title>
+      <link>/vi/tags/evm/</link>
+      <pubDate>Mon, 07 Oct 2019 23:30:45 +0800</pubDate>
+      <guid>/vi/tags/evm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Large Scale Construction Project</title>
+      <link>/vi/tags/large-scale-construction-project/</link>
+      <pubDate>Mon, 07 Oct 2019 23:30:45 +0800</pubDate>
+      <guid>/vi/tags/large-scale-construction-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pump efficiency</title>
+      <link>/vi/tags/pump-efficiency/</link>
+      <pubDate>Sun, 29 Sep 2019 23:30:45 +0800</pubDate>
+      <guid>/vi/tags/pump-efficiency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pump Replacement</title>
+      <link>/vi/tags/pump-replacement/</link>
+      <pubDate>Sun, 29 Sep 2019 23:30:45 +0800</pubDate>
+      <guid>/vi/tags/pump-replacement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>excel</title>
+      <link>/vi/tags/excel/</link>
+      <pubDate>Sun, 15 Sep 2019 23:30:45 +0800</pubDate>
+      <guid>/vi/tags/excel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mutiple worksheet</title>
+      <link>/vi/tags/mutiple-worksheet/</link>
+      <pubDate>Sun, 15 Sep 2019 23:30:45 +0800</pubDate>
+      <guid>/vi/tags/mutiple-worksheet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tunnel</title>
+      <link>/vi/tags/tunnel/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/tunnel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weibull</title>
+      <link>/vi/tags/weibull/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/weibull/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GIS</title>
+      <link>/vi/tags/gis/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimization</title>
+      <link>/vi/tags/optimization/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Workzone</title>
+      <link>/vi/tags/workzone/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/workzone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BMS</title>
+      <link>/vi/tags/bms/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/bms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markov</title>
+      <link>/vi/tags/markov/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/markov/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression</title>
+      <link>/vi/tags/regression/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Railway</title>
+      <link>/vi/tags/railway/</link>
+      <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/railway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Real Option</title>
+      <link>/vi/tags/real-option/</link>
+      <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/real-option/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Krigging</title>
+      <link>/vi/tags/krigging/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/krigging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PMS</title>
+      <link>/vi/tags/pms/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/pms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Corrosion</title>
+      <link>/vi/tags/corrosion/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/corrosion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crack</title>
+      <link>/vi/tags/crack/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/crack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Feasibility Study</title>
+      <link>/vi/tags/feasibility-study/</link>
+      <pubDate>Tue, 19 Apr 2016 11:08:22 +0800</pubDate>
+      <guid>/vi/tags/feasibility-study/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Financial Model</title>
+      <link>/vi/tags/financial-model/</link>
+      <pubDate>Tue, 19 Apr 2016 11:08:22 +0800</pubDate>
+      <guid>/vi/tags/financial-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Power Stations</title>
+      <link>/vi/tags/power-stations/</link>
+      <pubDate>Tue, 19 Apr 2016 11:08:22 +0800</pubDate>
+      <guid>/vi/tags/power-stations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian</title>
+      <link>/vi/tags/bayesian/</link>
+      <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
+      <guid>/vi/tags/bayesian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MCMC</title>
+      <link>/vi/tags/mcmc/</link>
+      <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
+      <guid>/vi/tags/mcmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Poisson Process</title>
+      <link>/vi/tags/poisson-process/</link>
+      <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
+      <guid>/vi/tags/poisson-process/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gibbs Sampling</title>
+      <link>/vi/tags/gibbs-sampling/</link>
+      <pubDate>Sat, 19 May 2012 13:20:32 +0800</pubDate>
+      <guid>/vi/tags/gibbs-sampling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Benchmarking</title>
+      <link>/vi/tags/benchmarking/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/benchmarking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Water Ultilities</title>
+      <link>/vi/tags/water-ultilities/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/water-ultilities/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

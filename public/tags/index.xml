@@ -125,14 +125,6 @@
     </item>
     
     <item>
-      <title>Journal</title>
-      <link>/tags/journal/</link>
-      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>/tags/journal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Tunnel</title>
       <link>/tags/tunnel/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
@@ -229,14 +221,6 @@
     </item>
     
     <item>
-      <title>Conference</title>
-      <link>/tags/conference/</link>
-      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/conference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Corrosion</title>
       <link>/tags/corrosion/</link>
       <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
@@ -285,14 +269,6 @@
     </item>
     
     <item>
-      <title>Markov Models</title>
-      <link>/tags/markov-models/</link>
-      <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
-      <guid>/tags/markov-models/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>MCMC</title>
       <link>/tags/mcmc/</link>
       <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
@@ -317,10 +293,10 @@
     </item>
     
     <item>
-      <title>Bridge Management</title>
-      <link>/tags/bridge-management/</link>
-      <pubDate>Mon, 19 Mar 2012 13:20:32 +0800</pubDate>
-      <guid>/tags/bridge-management/</guid>
+      <title>Benchmarking</title>
+      <link>/tags/benchmarking/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/tags/benchmarking/</guid>
       <description></description>
     </item>
     

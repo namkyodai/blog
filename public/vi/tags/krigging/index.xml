@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Krigging | </title>
+    <link>/vi/tags/krigging/</link>
+      <atom:link href="/vi/tags/krigging/index.xml" rel="self" type="application/rss+xml" />
+    <description>Krigging</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><lastBuildDate>Sat, 10 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Krigging</title>
+      <link>/vi/tags/krigging/</link>
+    </image>
+    
+    <item>
+      <title>Investigation of the Ability to Estimate Values of Road Section Condition Indicators Based on Their Spatial Correlation</title>
+      <link>/vi/publication/lethanh2016b/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2016b/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

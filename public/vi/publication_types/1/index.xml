@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | </title>
+    <link>/vi/publication_types/1/</link>
+      <atom:link href="/vi/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><lastBuildDate>Sun, 26 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>1</title>
+      <link>/vi/publication_types/1/</link>
+    </image>
+    
+    <item>
+      <title>Estimating Markov Transition Probabilities for Reinforced Concrete Bridges based on Mechanistic-Empirical Corrosion Models</title>
+      <link>/vi/publication/lethanh2016f/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2016f/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Local mixtures hazard model: A semi-parametric approach to risk management in pavement system</title>
+      <link>/vi/publication/lethanh2008c/</link>
+      <pubDate>Tue, 10 Jun 2008 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2008c/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

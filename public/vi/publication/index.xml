@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | </title>
+    <link>/vi/publication/</link>
+      <atom:link href="/vi/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><lastBuildDate>Wed, 18 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Publications</title>
+      <link>/vi/publication/</link>
+    </image>
+    
+    <item>
+      <title>Determination of Near‐Optimal Restoration Programs for Transportation Networks Following Natural Hazard Events Using Simulated Annealing</title>
+      <link>/vi/publication/hackl2018/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/hackl2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Determining an Optimal Set of Work Zones on Large Infrastructure Networks in a GIS Framework</title>
+      <link>/vi/publication/lethanh2018/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Determination of Markov Transition Probabilities to be Used in Bridge Management from Mechanistic-Empirical Models</title>
+      <link>/vi/publication/lethanh2017/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A real option approach to determine optimal intervention windows for multi-national rail corridor</title>
+      <link>/vi/publication/lethanh2016g/</link>
+      <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2016g/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigation of the Ability to Estimate Values of Road Section Condition Indicators Based on Their Spatial Correlation</title>
+      <link>/vi/publication/lethanh2016b/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2016b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estimating Markov Transition Probabilities for Reinforced Concrete Bridges based on Mechanistic-Empirical Corrosion Models</title>
+      <link>/vi/publication/lethanh2016f/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2016f/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infrastructure Deterioration Prediction with a Poisson Hidden Markov Model on Time Series Data</title>
+      <link>/vi/publication/lethanh2014d/</link>
+      <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
+      <guid>/vi/publication/lethanh2014d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimal intervention strategies for multiple objects affected by manifest and latent deterioration processes</title>
+      <link>/vi/publication/lethanh2014/</link>
+      <pubDate>Fri, 21 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigation of the Use of a Weibull Model for the Deterioration of Optimal Road Link Intervention Strategies</title>
+      <link>/vi/publication/lethanh2013a/</link>
+      <pubDate>Tue, 22 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2013a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Use of Exponential Hidden Markov Models for Modeling Pavement Deterioration</title>
+      <link>/vi/publication/lethanh2013b/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2013b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A statistical deterioration forecasting method using hidden Markov model for infrastructure management</title>
+      <link>/vi/publication/kobayashi2012a/</link>
+      <pubDate>Sat, 19 May 2012 13:20:32 +0800</pubDate>
+      <guid>/vi/publication/kobayashi2012a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Bayesian Estimation Method to Improve Deterioration Prediction for Infrastructure System with Markov Chain Model</title>
+      <link>/vi/publication/kobayashi2012/</link>
+      <pubDate>Mon, 19 Mar 2012 13:20:32 +0800</pubDate>
+      <guid>/vi/publication/kobayashi2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deterioration Forecasting Model with Multistage Weibull Hazard Functions</title>
+      <link>/vi/publication/kobayashi2010a/</link>
+      <pubDate>Mon, 10 May 2010 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/kobayashi2010a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Benchmarking Approach to Pavement Management: Lessons from Vietnam</title>
+      <link>/vi/publication/lethanh2009/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Optimization Methods for Infrastructure Management with Incomplete Monitoring Data</title>
+      <link>/vi/publication/lethanh2009c/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2009c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Local mixtures hazard model: A semi-parametric approach to risk management in pavement system</title>
+      <link>/vi/publication/lethanh2008c/</link>
+      <pubDate>Tue, 10 Jun 2008 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2008c/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | </title>
+    <link>/vi/project/</link>
+      <atom:link href="/vi/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><lastBuildDate>Sat, 19 Oct 2019 11:08:22 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Projects</title>
+      <link>/vi/project/</link>
+    </image>
+    
+    <item>
+      <title>Lamesa 2 - Maynilad</title>
+      <link>/vi/project/2016-lamesa2/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/vi/project/2016-lamesa2/</guid>
+      <description>
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: &lt;a href=&#34;http://www.mayniladwater.com.ph/&#34; target=&#34;_blank&#34;&gt;Maynilad Water Services Inc.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt;: Rehabilitation, Retrofitting and Process Improvement of Lamesa 2 Water Treatment Plant&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: Asset Management, Process Improvement, Retrofitting, Rehabilitation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scale&lt;/strong&gt;: 900 MLD&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Timeline&lt;/strong&gt;: Engineering (Jun/2016-Dec/2016), Procurement and Bidding (Aug/2016-Sep/2017), Construction (Oct/2017 onward)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Upgrade the existing Pulsator WTP (900MLD) to cope with
+
+&lt;ul&gt;
+&lt;li&gt;High turbidity events in raining seasons (e.g. NTU up to 2000);&lt;/li&gt;
+&lt;li&gt;Slow performance of Sludge Extraction System under high turbidity events;&lt;/li&gt;
+&lt;li&gt;Rapidlly deterioration and corrosion of structures and assets;&lt;/li&gt;
+&lt;li&gt;7.2 magnitute of earthquake.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Provide better integration and connectivity with the Lamesa 1 Water Treatment Plant (1200 MLD) and the Sludge Treatment Facility (STF) being designed and constructed by JFE Contractor.&lt;/li&gt;
+&lt;li&gt;Provide fully Automation and integration (e.g. SCADA)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;roles-and-responsibilities&#34;&gt;Roles and Responsibilities&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Project Management&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;lesson-learned&#34;&gt;Lesson Learned&lt;/h2&gt;
+
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+
+&lt;p&gt;Back to &lt;a href=&#34;/project&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Plant Audit - Maynilad</title>
+      <link>/vi/project/2018-plantaudit/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/vi/project/2018-plantaudit/</guid>
+      <description>
+
+&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: &lt;a href=&#34;http://www.mayniladwater.com.ph/&#34; target=&#34;_blank&#34;&gt;Maynilad Water Services Inc.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt;: Plant Audit of Various Pump Stations and Reservoirs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: Asset Management&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;objectives&#34;&gt;Objectives&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Visual Inspection and Testing on mechanical assets (e.g. pump, piping, valves) and electrical assets (e.g. GENSETs, transformers, MCC, Motors) using developed set condition states and standards;&lt;/li&gt;
+&lt;li&gt;Energy Audit;&lt;/li&gt;
+&lt;li&gt;FDAS and WEM studies;&lt;/li&gt;
+&lt;li&gt;Determination of optimal 5 years intervention program;&lt;/li&gt;
+&lt;li&gt;Life cycle cost analysis and estimation of Return on Investment.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;responsibilities&#34;&gt;Responsibilities&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Record inspection and testing data in a centralized relational database system (MySQL);&lt;/li&gt;
+&lt;li&gt;Big data analysis and data solutions on 5-10 years operation data to detect trend and reliability of the system;&lt;/li&gt;
+&lt;li&gt;Investigation of current design and operational scheme using qualitative reliability analysis (e.g. FMEA);&lt;/li&gt;
+&lt;li&gt;Weibull Analysis and Faul Tree Analysis to estimate reliability;&lt;/li&gt;
+&lt;li&gt;Development of a Life Cycle Cost model using reliability concept to determine optimal intervention strategies and program;&lt;/li&gt;
+&lt;li&gt;Organizing a series of training and technical workshops on reliability study and modelling used in the project.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;lesson-learned&#34;&gt;Lesson Learned&lt;/h2&gt;
+
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nam led the team and trained the team to use LaTEX system to compile all reports&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Back to &lt;a href=&#34;/project&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>900MW Power Station - KEPCO E&amp;C</title>
+      <link>/vi/project/2016-kepco/</link>
+      <pubDate>Tue, 19 Apr 2016 11:08:22 +0800</pubDate>
+      <guid>/vi/project/2016-kepco/</guid>
+      <description>
+
+&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
+
+&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;
+
+&lt;h2 id=&#34;responsibilities&#34;&gt;Responsibilities&lt;/h2&gt;
+
+&lt;h2 id=&#34;lesson-learned&#34;&gt;Lesson Learned&lt;/h2&gt;
+
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

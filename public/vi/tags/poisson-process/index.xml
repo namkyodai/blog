@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Poisson Process | </title>
+    <link>/vi/tags/poisson-process/</link>
+      <atom:link href="/vi/tags/poisson-process/index.xml" rel="self" type="application/rss+xml" />
+    <description>Poisson Process</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><lastBuildDate>Fri, 19 Sep 2014 13:20:32 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Poisson Process</title>
+      <link>/vi/tags/poisson-process/</link>
+    </image>
+    
+    <item>
+      <title>Infrastructure Deterioration Prediction with a Poisson Hidden Markov Model on Time Series Data</title>
+      <link>/vi/publication/lethanh2014d/</link>
+      <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
+      <guid>/vi/publication/lethanh2014d/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

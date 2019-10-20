@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimization | </title>
+    <link>/vi/tags/optimization/</link>
+      <atom:link href="/vi/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Optimization</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><lastBuildDate>Sat, 10 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Optimization</title>
+      <link>/vi/tags/optimization/</link>
+    </image>
+    
+    <item>
+      <title>Determining an Optimal Set of Work Zones on Large Infrastructure Networks in a GIS Framework</title>
+      <link>/vi/publication/lethanh2018/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Determination of Markov Transition Probabilities to be Used in Bridge Management from Mechanistic-Empirical Models</title>
+      <link>/vi/publication/lethanh2017/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Optimization Methods for Infrastructure Management with Incomplete Monitoring Data</title>
+      <link>/vi/publication/lethanh2009c/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/vi/publication/lethanh2009c/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

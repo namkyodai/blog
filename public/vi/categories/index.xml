@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories | </title>
+    <link>/vi/categories/</link>
+      <atom:link href="/vi/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Categories</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><lastBuildDate>Sat, 19 Oct 2019 11:08:22 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Categories</title>
+      <link>/vi/categories/</link>
+    </image>
+    
+    <item>
+      <title>Asset Management</title>
+      <link>/vi/categories/asset-management/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/vi/categories/asset-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plant Audit</title>
+      <link>/vi/categories/plant-audit/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/vi/categories/plant-audit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project Management</title>
+      <link>/vi/categories/project-management/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/vi/categories/project-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Feasibility Study</title>
+      <link>/vi/categories/feasibility-study/</link>
+      <pubDate>Tue, 19 Apr 2016 11:08:22 +0800</pubDate>
+      <guid>/vi/categories/feasibility-study/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

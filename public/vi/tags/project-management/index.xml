@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project Management | </title>
+    <link>/vi/tags/project-management/</link>
+      <atom:link href="/vi/tags/project-management/index.xml" rel="self" type="application/rss+xml" />
+    <description>Project Management</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><lastBuildDate>Sat, 19 Oct 2019 11:08:22 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Project Management</title>
+      <link>/vi/tags/project-management/</link>
+    </image>
+    
+    <item>
+      <title>Lamesa 2 - Maynilad</title>
+      <link>/vi/project/2016-lamesa2/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/vi/project/2016-lamesa2/</guid>
+      <description>
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: &lt;a href=&#34;http://www.mayniladwater.com.ph/&#34; target=&#34;_blank&#34;&gt;Maynilad Water Services Inc.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt;: Rehabilitation, Retrofitting and Process Improvement of Lamesa 2 Water Treatment Plant&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: Asset Management, Process Improvement, Retrofitting, Rehabilitation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scale&lt;/strong&gt;: 900 MLD&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Timeline&lt;/strong&gt;: Engineering (Jun/2016-Dec/2016), Procurement and Bidding (Aug/2016-Sep/2017), Construction (Oct/2017 onward)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Upgrade the existing Pulsator WTP (900MLD) to cope with
+
+&lt;ul&gt;
+&lt;li&gt;High turbidity events in raining seasons (e.g. NTU up to 2000);&lt;/li&gt;
+&lt;li&gt;Slow performance of Sludge Extraction System under high turbidity events;&lt;/li&gt;
+&lt;li&gt;Rapidlly deterioration and corrosion of structures and assets;&lt;/li&gt;
+&lt;li&gt;7.2 magnitute of earthquake.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Provide better integration and connectivity with the Lamesa 1 Water Treatment Plant (1200 MLD) and the Sludge Treatment Facility (STF) being designed and constructed by JFE Contractor.&lt;/li&gt;
+&lt;li&gt;Provide fully Automation and integration (e.g. SCADA)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;roles-and-responsibilities&#34;&gt;Roles and Responsibilities&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Project Management&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;lesson-learned&#34;&gt;Lesson Learned&lt;/h2&gt;
+
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+
+&lt;p&gt;Back to &lt;a href=&#34;/project&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Plant Audit - Maynilad</title>
+      <link>/vi/project/2018-plantaudit/</link>
+      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
+      <guid>/vi/project/2018-plantaudit/</guid>
+      <description>
+
+&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: &lt;a href=&#34;http://www.mayniladwater.com.ph/&#34; target=&#34;_blank&#34;&gt;Maynilad Water Services Inc.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt;: Plant Audit of Various Pump Stations and Reservoirs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: Asset Management&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;objectives&#34;&gt;Objectives&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Visual Inspection and Testing on mechanical assets (e.g. pump, piping, valves) and electrical assets (e.g. GENSETs, transformers, MCC, Motors) using developed set condition states and standards;&lt;/li&gt;
+&lt;li&gt;Energy Audit;&lt;/li&gt;
+&lt;li&gt;FDAS and WEM studies;&lt;/li&gt;
+&lt;li&gt;Determination of optimal 5 years intervention program;&lt;/li&gt;
+&lt;li&gt;Life cycle cost analysis and estimation of Return on Investment.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;responsibilities&#34;&gt;Responsibilities&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Record inspection and testing data in a centralized relational database system (MySQL);&lt;/li&gt;
+&lt;li&gt;Big data analysis and data solutions on 5-10 years operation data to detect trend and reliability of the system;&lt;/li&gt;
+&lt;li&gt;Investigation of current design and operational scheme using qualitative reliability analysis (e.g. FMEA);&lt;/li&gt;
+&lt;li&gt;Weibull Analysis and Faul Tree Analysis to estimate reliability;&lt;/li&gt;
+&lt;li&gt;Development of a Life Cycle Cost model using reliability concept to determine optimal intervention strategies and program;&lt;/li&gt;
+&lt;li&gt;Organizing a series of training and technical workshops on reliability study and modelling used in the project.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;lesson-learned&#34;&gt;Lesson Learned&lt;/h2&gt;
+
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nam led the team and trained the team to use LaTEX system to compile all reports&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Back to &lt;a href=&#34;/project&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Earned Value Management</title>
+      <link>/vi/post/2019-10-07-evm/</link>
+      <pubDate>Mon, 07 Oct 2019 23:30:45 +0800</pubDate>
+      <guid>/vi/post/2019-10-07-evm/</guid>
+      <description>
+
+&lt;p&gt;Earned Value Management (EVM) is a widely used method, if not to say, a imperative method in project management. Without the EVM, the Project Managers and stakeholders (PM) cannot track and monitor the Progress and Schedule, cannot understand the causes of problems and delays.&lt;/p&gt;
+
+&lt;p&gt;In a large scale engineering project, Contractors shall have an excellent and FULL TIME experienced Planners who can confidently perform EVM analysis and report to the PM and the project team weekly and monthly. The analysis report shall includes&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Updated Project Schedule with actual progress;&lt;/li&gt;
+&lt;li&gt;Comparison between the Actual Progress vs Baselines;&lt;/li&gt;
+&lt;li&gt;Critical Path Analysis (CPA) and identification of factors contributing to especially delays;
+The EVM.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/2/20/EarnedValueChartNormalized.jpg&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It seems that creating the graph like the one shown above is EASY. ^_^ Nope, it is not easy at all, but if it is not difficult if Planners understand the statistics and a smart way to work with compiling data.&lt;/p&gt;
+
+&lt;p&gt;This article presents 2 different ways to generate the EVM graphs.&lt;/p&gt;
+
+&lt;h1 id=&#34;evm-for-consultancy-project-using-ms-project-and-r&#34;&gt;EVM for Consultancy Project using MS Project and R&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Coded by Nam Le (namlt@prontonmail.ch)
+library(scales)
+library(reshape2)
+library(ggplot2)
+
+#----------DATA-----------------
+data &amp;lt;- read.csv(file=&amp;quot;Scurve.csv&amp;quot;, header=TRUE, sep=&amp;quot;,&amp;quot;)
+k=data.frame(data)
+
+# -----------------------------This needs to be modified whenever you plot
+
+plot.new()
+par(mar=c(4, 4, 4, 4), bg=&amp;quot;ivory&amp;quot;)
+week= length(data[!is.na(data[,3]),3]) #the lastest week that EV value is available. Or you can simply put the number of week in instead of using length(data[!is.na(data[,3]),3]). Here 3 is the column.
+scalefactor=100
+trucy=100
+ticktime=35   #Set the Project Week at which you want to limit the X-axis
+varrange=c(-30,30)
+
+#Posion of texbox (PV, EV, and VAR in the graph)
+htextbox=c(week-5,week)
+vtextbox=20
+ # --------------------------------
+ # ----------------------------
+#Plot the baseline
+
+plot(data$BS01[1:ticktime],pch=4,axes=FALSE,ylim=c(0,trucy),ylab=&amp;quot;&amp;quot;, xlab=&amp;quot;&amp;quot;,col=&amp;quot;blue&amp;quot;,type=&amp;quot;o&amp;quot;,lwd=1,lty=1, main =paste(&amp;quot;S-curve of week&amp;quot;, week))
+axis(2, ylim=c(0,trucy),col=&amp;quot;darkblue&amp;quot;,las=1)
+mtext(expression(paste(&amp;quot;Cummulative percentage (%)&amp;quot;)),side=2,line=2.2, adj = 0.5 )
+axis(1,pretty(range(data$Week),30))
+mtext(expression(paste(&amp;quot;Project Week&amp;quot;)),side=1,col=&amp;quot;black&amp;quot;,line=2.2)
+box()
+
+#plot the EV curve
+par(new=TRUE)
+plot(data$EV[1:ticktime],pch=18,axes=FALSE,ylim=c(0,trucy),ylab=&amp;quot;&amp;quot;, xlab=&amp;quot;&amp;quot;,col=&amp;quot;red&amp;quot;,type=&amp;quot;o&amp;quot;,lwd=1,lty=2)
+
+#adding stick at the actual week
+abline(v=week, col=&amp;quot;darkviolet&amp;quot;,lty=3)
+
+par(new=TRUE)
+#library(gplots)
+library(astro) #this package is for astronomy but it has some fantastic function for plotting. Here I use the textbox function
+textbox(htextbox, vtextbox, textlist=c(paste(&amp;quot;PV  =&amp;quot;,format(round(data$BS01[week],2)),&amp;quot;EV  =&amp;quot;,format(round(data$EV[week],2)),&amp;quot;VAR=&amp;quot;,format(round(data$EV[week]-data$BS01[week],2)))), justify=&#39;f&#39;, cex=0.7,col=&amp;quot;purple&amp;quot;, font=2, border=&amp;quot;green&amp;quot;, margin=-0.025,adj=0,box=1,fill=&amp;quot;aliceblue&amp;quot;)
+#alternatively, we can also use legend function for the same purpose, but I believe textbox function gives better look.
+
+#legend(30, 50, c(paste(&amp;quot;PV:&amp;quot;),format(round(data$BS01[week],2)),paste(&amp;quot;EV:&amp;quot;),format(round(data$EV[week],2)), paste(&amp;quot;VAR:&amp;quot;),format(round(data$BS01[week]-data$EV[week],2))), col=c(&amp;quot;blue&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;green&amp;quot;),cex = 0.6)
+
+ #plot the VAR curve using
+par(new=TRUE)
+plot((data$EV[1:ticktime]-data$BS01[1:ticktime]),pch=1,axes=FALSE,ylim=varrange,ylab=&amp;quot;&amp;quot;, xlab=&amp;quot;&amp;quot;,col=&amp;quot;cadetblue4&amp;quot;,type=&amp;quot;o&amp;quot;,lwd=1,lty=3)
+axis(4, ylim=varrange,col=&amp;quot;darkblue&amp;quot;,las=1)
+mtext(expression(paste(&amp;quot;Variance (%)&amp;quot;)),side=4,line=2.2, adj = 0.5  )
+abline(h=0, col=&amp;quot;darkviolet&amp;quot;,lty=3)
+
+ #plot the AC curve: This curve is added only for internal monitoring purpose. Shall not give this to the other stakeholders.
+par(new=TRUE)
+plot(data$AC[1:ticktime],pch=2,axes=FALSE,ylim=c(0,trucy),ylab=&amp;quot;&amp;quot;, xlab=&amp;quot;&amp;quot;,col=&amp;quot;violetred3&amp;quot;,type=&amp;quot;o&amp;quot;,lwd=1,lty=1)
+#axis(4, ylim=varrange,col=&amp;quot;darkblue&amp;quot;,las=1)
+#mtext(expression(paste(&amp;quot;Variance (%)&amp;quot;)),side=4,line=2.2, adj = 0.5  )
+#abline(h=0, col=&amp;quot;darkviolet&amp;quot;,lty=3)
+
+#adding Planned Value, Earned Value, and Variance
+#adding legend
+legend(&amp;quot;topleft&amp;quot;, c(&amp;quot;PV&amp;quot;,&amp;quot;EV&amp;quot;, &amp;quot;VAR&amp;quot;, &amp;quot;AC&amp;quot;), text.col
+=&amp;quot;red&amp;quot;, border = &amp;quot;white&amp;quot;,box.lwd = 1,bg=&amp;quot;aliceblue&amp;quot;,lwd = 1,pch=c(4,18,1,2),lty =c(1,2,3,1),  col=c(&amp;quot;blue&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;cadetblue4&amp;quot;,&amp;quot;violetred3&amp;quot;),inset = .05,cex=0.8)
+
+#save png file
+dev.copy(png,&#39;evm.png&#39;,width = 800, height = 500)
+dev.off()
+#-----THE END------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/EVM/evm.png&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>900MW Power Station - KEPCO E&amp;C</title>
+      <link>/vi/project/2016-kepco/</link>
+      <pubDate>Tue, 19 Apr 2016 11:08:22 +0800</pubDate>
+      <guid>/vi/project/2016-kepco/</guid>
+      <description>
+
+&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
+
+&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;
+
+&lt;h2 id=&#34;responsibilities&#34;&gt;Responsibilities&lt;/h2&gt;
+
+&lt;h2 id=&#34;lesson-learned&#34;&gt;Lesson Learned&lt;/h2&gt;
+
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
