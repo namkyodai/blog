@@ -30,7 +30,7 @@ interests:
 
 education:
   courses:
-  - course: Tiến Sĩ trong lĩnh vự xây dựng và vận dung các mô hình toán tối ưu và xác xuất thống kê cao cấp trong quản lý hạ tầng, quản lý tài sản cho các hệ thống kĩ thuật nhà máy công nghiệp và các tòa nhà.
+  - course: Tiến Sĩ trong lĩnh vự xây dựng và vận dụng các mô hình toán tối ưu và xác xuất thống kê cao cấp trong quản lý hạ tầng, quản lý tài sản cho các hệ thống kĩ thuật nhà máy công nghiệp và các tòa nhà.
     institution: Đại Học Kyoto, Nhật Bản
     year: 2009
   - course: Thạc Sĩ trong lĩnh vực quản lý kĩ thuật xây dựng
@@ -74,6 +74,6 @@ user_groups:
 - Visitors
 ---
 
-Đam mê chạy bộ, lặn biển, và lập trình web và xác xuất thống kê. Hiện tại sống tại Manila, Philippines và đă từng sống tại Băng Cốc, Kyoto, Osaka, Zurich, Geneva, and Hà nội.
+Đam mê chạy bộ, lặn biển, và lập trình web và xác xuất thống kê. Hiện tại sống tại Manila, Philippines và đã từng sống tại Băng Cốc, Kyoto, Osaka, Zurich, Geneva, and Hà nội.
 
-Nơi coi là nhà: [Ecopark](http://ecopark.com.vn/en/) (VN), [Katsura](https://en.wikipedia.org/wiki/Katsura,_Kyoto) (Kyoto), [Geneva](https://en.wikipedia.org/wiki/Geneva) (CH), and [Zurich](https://en.wikipedia.org/wiki/Z%C3%BCrich) (CH)
+Nơi coi là nhà: [Ecopark](http://ecopark.com.vn/en/) (VN), [Katsura](https://en.wikipedia.org/wiki/Katsura,_Kyoto) (JP), [Geneva](https://en.wikipedia.org/wiki/Geneva) (CH), and [Zurich](https://en.wikipedia.org/wiki/Z%C3%BCrich) (CH)

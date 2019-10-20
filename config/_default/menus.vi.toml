@@ -6,28 +6,43 @@
 [[main]]
   name = "Giới Thiệu"
   url = "#about"
-  weight = 10
+  weight = 5
 
 [[main]]
   name = "Bài Đăng"
   url = "#posts"
-  weight = 20
+  weight = 10
+
+[[main]]
+  name = "Dự Án"
+  url = "#projects"
+  weight = 15
+
 
 [[main]]
   name = "Dịch vụ"
-  url = "#projects"
-  weight = 30
+#  url = "#projects"
+  weight = 20
 
 [[main]]
   name = "Xuất Bản"
   url = "publication/"
-  weight = 40
+  weight = 25
 
 [[main]]
   name = "Thư Viện"
 #  url = "#contact"
-  weight = 60
+  weight = 30
 
+[[main]]
+  name = "Apps"
+#  url = "#contact"
+  weight = 40
+
+[[main]]
+  name = "Liên Hệ"
+  url = "#contact"
+  weight = 60
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # [[main]]
