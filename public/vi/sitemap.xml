@@ -4,7 +4,7 @@
   
   <url>
     <loc>/vi/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -14,6 +14,66 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/post/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/post/thichnhathanh-hanhphuccamtay/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/phat-giao/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/thich-nhat-hanh/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/categories/asset-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/asset-management/"
                 />
   </url>
   
@@ -29,21 +89,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/asset-management/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/categories/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/asset-management/"
                 />
   </url>
   
@@ -78,21 +123,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/plant-audit/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/plant-audit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/plant-audit/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/plant-audit/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -104,6 +134,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/plant-audit/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/plant-audit/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/plant-audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/plant-audit/"
                 />
   </url>
   
@@ -168,21 +213,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/water/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -194,276 +224,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/water/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/post/2019-10-10-fuel-efficiency/</loc>
-    <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-10-10-fuel-efficiency/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-10-10-fuel-efficiency/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/plot/</loc>
-    <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/plot/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/plot/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/post/</loc>
-    <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/r/</loc>
-    <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/r/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/r/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/regression-analysis/</loc>
-    <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/regression-analysis/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/regression-analysis/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/post/2019-10-10-remove-space-in-bulk/</loc>
-    <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-10-10-remove-space-in-bulk/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-10-10-remove-space-in-bulk/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/window/</loc>
-    <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/window/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/window/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/post/2019-10-09-orange-juice/</loc>
-    <lastmod>2019-10-09T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-10-09-orange-juice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-10-09-orange-juice/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/post/2019-10-08-alumni-contribution/</loc>
-    <lastmod>2019-10-08T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-10-08-alumni-contribution/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-10-08-alumni-contribution/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/post/2019-10-07-evm/</loc>
-    <lastmod>2019-10-07T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-10-07-evm/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-10-07-evm/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/evm/</loc>
-    <lastmod>2019-10-07T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/evm/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/evm/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/large-scale-construction-project/</loc>
-    <lastmod>2019-10-07T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/large-scale-construction-project/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/large-scale-construction-project/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/pump-efficiency/</loc>
-    <lastmod>2019-09-29T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/pump-efficiency/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/pump-efficiency/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/pump-replacement/</loc>
-    <lastmod>2019-09-29T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/pump-replacement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/pump-replacement/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/post/2019-09-29-pump-efficiency/</loc>
-    <lastmod>2019-09-29T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-09-29-pump-efficiency/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-09-29-pump-efficiency/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/excel/</loc>
-    <lastmod>2019-09-15T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/excel/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/excel/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/post/2019-09-15-excel-combine/</loc>
-    <lastmod>2019-09-15T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-09-15-excel-combine/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-09-15-excel-combine/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/mutiple-worksheet/</loc>
-    <lastmod>2019-09-15T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/mutiple-worksheet/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/mutiple-worksheet/"
                 />
   </url>
   
@@ -929,6 +689,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/authors/nam-lethanh-and-jurgen-hackl-and-bryan-t.-adey/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/regression-analysis/</loc>
+    <lastmod>2016-06-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/regression-analysis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/regression-analysis/"
                 />
   </url>
   

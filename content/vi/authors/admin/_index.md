@@ -18,15 +18,15 @@ role: Chuyên gia đánh giá rủi do, quản lý dự án xây dựng, quản 
 #  url: "www.arcadis.com"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Operation Research and Applied Statistics for Asset Management of Buildings and Engineering Systems.
+bio: Nghiên cứu và ứng dụng vận trù học, toán tối ưu, xác xuất thống kế trong việc quản lý và vận hành các hệ thống tài sản kĩ thuật và công trình.
 
 interests:
-- Asset Management for Buildings and Engineering Systems
-- Operation Research
-- Reliability Engineering
-- Business Intelligence and Data Solutions
-- Construction Management
-- Project Management
+- Quản lý tài sản cho các tòa nhà và hệ thống kĩ thuật
+- Vận trù học và tối ưu
+- Tính toán độ tin cậy cho các hệ thống kĩ thuật
+- Xử lý dữ liệu và BI
+- Quản lý xây dựng
+- Quản lý dự án
 
 education:
   courses:

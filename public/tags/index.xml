@@ -5,12 +5,28 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Sat, 19 Oct 2019 11:08:22 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Fri, 25 Oct 2019 22:58:39 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
+    
+    <item>
+      <title>Polynomial</title>
+      <link>/tags/polynomial/</link>
+      <pubDate>Fri, 25 Oct 2019 22:58:39 +0800</pubDate>
+      <guid>/tags/polynomial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression Analysis</title>
+      <link>/tags/regression-analysis/</link>
+      <pubDate>Fri, 25 Oct 2019 22:58:39 +0800</pubDate>
+      <guid>/tags/regression-analysis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Asset Management</title>
@@ -45,9 +61,17 @@
     </item>
     
     <item>
+      <title>Window</title>
+      <link>/tags/window/</link>
+      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
+      <guid>/tags/window/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Plot</title>
       <link>/tags/plot/</link>
-      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
+      <pubDate>Wed, 09 Oct 2019 23:30:45 +0800</pubDate>
       <guid>/tags/plot/</guid>
       <description></description>
     </item>
@@ -55,24 +79,8 @@
     <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
+      <pubDate>Wed, 09 Oct 2019 23:30:45 +0800</pubDate>
       <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Regression Analysis</title>
-      <link>/tags/regression-analysis/</link>
-      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
-      <guid>/tags/regression-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Window</title>
-      <link>/tags/window/</link>
-      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
-      <guid>/tags/window/</guid>
       <description></description>
     </item>
     

@@ -2,6 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Business and Services"
+
 #summary: "Determination of Optimal Intervention Strategy for Pumps based on Weibull Analysis"
 #authors: [Nam Le]
 #tags: [Project Management, Feasibility Study, Financial Model, Power Stations]

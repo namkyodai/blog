@@ -4,7 +4,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -15,6 +15,66 @@
                 hreflang="en"
                 href="/"
                 />
+  </url>
+  
+  <url>
+    <loc>/tags/polynomial/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-10-25-ra-polynomial/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/regression-analysis/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/regression-analysis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/regression-analysis/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/post/2019-10-24-ra-price-2nd-toyota/</loc>
+    <lastmod>2019-10-24T23:30:45+08:00</lastmod>
   </url>
   
   <url>
@@ -78,21 +138,6 @@
   </url>
   
   <url>
-    <loc>/tags/plant-audit/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/plant-audit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/plant-audit/"
-                />
-  </url>
-  
-  <url>
     <loc>/categories/plant-audit/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -104,6 +149,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/categories/plant-audit/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/plant-audit/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/plant-audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/plant-audit/"
                 />
   </url>
   
@@ -168,21 +228,6 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/water/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -200,271 +245,81 @@
   <url>
     <loc>/post/2019-10-10-fuel-efficiency/</loc>
     <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-10-10-fuel-efficiency/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-10-10-fuel-efficiency/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tags/plot/</loc>
-    <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/plot/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/plot/"
-                />
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/r/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/r/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tags/regression-analysis/</loc>
-    <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/regression-analysis/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/regression-analysis/"
-                />
   </url>
   
   <url>
     <loc>/post/2019-10-10-remove-space-in-bulk/</loc>
     <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-10-10-remove-space-in-bulk/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-10-10-remove-space-in-bulk/"
-                />
   </url>
   
   <url>
     <loc>/tags/window/</loc>
     <lastmod>2019-10-10T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/window/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/window/"
-                />
   </url>
   
   <url>
     <loc>/post/2019-10-09-orange-juice/</loc>
     <lastmod>2019-10-09T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-10-09-orange-juice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-10-09-orange-juice/"
-                />
+  </url>
+  
+  <url>
+    <loc>/tags/plot/</loc>
+    <lastmod>2019-10-09T23:30:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-10-09T23:30:45+08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/2019-10-08-alumni-contribution/</loc>
     <lastmod>2019-10-08T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-10-08-alumni-contribution/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-10-08-alumni-contribution/"
-                />
   </url>
   
   <url>
     <loc>/post/2019-10-07-evm/</loc>
     <lastmod>2019-10-07T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-10-07-evm/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-10-07-evm/"
-                />
   </url>
   
   <url>
     <loc>/tags/evm/</loc>
     <lastmod>2019-10-07T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/evm/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/evm/"
-                />
   </url>
   
   <url>
     <loc>/tags/large-scale-construction-project/</loc>
     <lastmod>2019-10-07T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/large-scale-construction-project/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/large-scale-construction-project/"
-                />
   </url>
   
   <url>
     <loc>/tags/pump-efficiency/</loc>
     <lastmod>2019-09-29T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/pump-efficiency/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/pump-efficiency/"
-                />
   </url>
   
   <url>
     <loc>/tags/pump-replacement/</loc>
     <lastmod>2019-09-29T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/pump-replacement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/pump-replacement/"
-                />
   </url>
   
   <url>
     <loc>/post/2019-09-29-pump-efficiency/</loc>
     <lastmod>2019-09-29T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-09-29-pump-efficiency/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-09-29-pump-efficiency/"
-                />
   </url>
   
   <url>
     <loc>/tags/excel/</loc>
     <lastmod>2019-09-15T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/excel/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/excel/"
-                />
   </url>
   
   <url>
     <loc>/post/2019-09-15-excel-combine/</loc>
     <lastmod>2019-09-15T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/2019-09-15-excel-combine/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/2019-09-15-excel-combine/"
-                />
   </url>
   
   <url>
     <loc>/tags/mutiple-worksheet/</loc>
     <lastmod>2019-09-15T23:30:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/mutiple-worksheet/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/mutiple-worksheet/"
-                />
   </url>
   
   <url>
@@ -948,21 +803,6 @@
   </url>
   
   <url>
-    <loc>/categories/feasibility-study/</loc>
-    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/feasibility-study/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/feasibility-study/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -974,6 +814,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tags/feasibility-study/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/feasibility-study/</loc>
+    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/feasibility-study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/feasibility-study/"
                 />
   </url>
   

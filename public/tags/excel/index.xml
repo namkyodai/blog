@@ -19,6 +19,12 @@
       <guid>/post/2019-09-15-excel-combine/</guid>
       <description>
 
+&lt;h1 id=&#34;new-header&#34;&gt;new header&lt;/h1&gt;
+
+&lt;h2 id=&#34;new-2nd-header&#34;&gt;new 2nd header&lt;/h2&gt;
+
+&lt;h3 id=&#34;new-level&#34;&gt;new level&lt;/h3&gt;
+
 &lt;p&gt;What if our Client provides us with a number of poorly recorded databases with thousands of records in different Excel formats? not only that, within each Excel file, there are hundreds of worksheets with in-homogeneous structures –F.. Excel ^_^, but that is the reality, particularly when we have to work with Clients whose business are not much involved with TECH.&lt;/p&gt;
 
 &lt;p&gt;What if our Client provides us with a number of poorly recorded databases with thousands of records in different Excel formats? not only that, within each Excel file, there are hundreds of worksheets with in-homogeneous structures –F&amp;hellip;. Excel ^_^, but that is the reality, particularly when we have to work with Clients whose business are not much involved with TECH.&lt;/p&gt;

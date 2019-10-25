@@ -5,12 +5,28 @@
     <link>/vi/tags/</link>
       <atom:link href="/vi/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Sat, 19 Oct 2019 11:08:22 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Fri, 25 Oct 2019 22:58:39 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/vi/tags/</link>
     </image>
+    
+    <item>
+      <title>Phật Giáo</title>
+      <link>/vi/tags/phat-giao/</link>
+      <pubDate>Fri, 25 Oct 2019 22:58:39 +0800</pubDate>
+      <guid>/vi/tags/phat-giao/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thích Nhất Hạnh</title>
+      <link>/vi/tags/thich-nhat-hanh/</link>
+      <pubDate>Fri, 25 Oct 2019 22:58:39 +0800</pubDate>
+      <guid>/vi/tags/thich-nhat-hanh/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Asset Management</title>
@@ -41,86 +57,6 @@
       <link>/vi/tags/water/</link>
       <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
       <guid>/vi/tags/water/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plot</title>
-      <link>/vi/tags/plot/</link>
-      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
-      <guid>/vi/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>/vi/tags/r/</link>
-      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
-      <guid>/vi/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Regression Analysis</title>
-      <link>/vi/tags/regression-analysis/</link>
-      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
-      <guid>/vi/tags/regression-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Window</title>
-      <link>/vi/tags/window/</link>
-      <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
-      <guid>/vi/tags/window/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EVM</title>
-      <link>/vi/tags/evm/</link>
-      <pubDate>Mon, 07 Oct 2019 23:30:45 +0800</pubDate>
-      <guid>/vi/tags/evm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Large Scale Construction Project</title>
-      <link>/vi/tags/large-scale-construction-project/</link>
-      <pubDate>Mon, 07 Oct 2019 23:30:45 +0800</pubDate>
-      <guid>/vi/tags/large-scale-construction-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pump efficiency</title>
-      <link>/vi/tags/pump-efficiency/</link>
-      <pubDate>Sun, 29 Sep 2019 23:30:45 +0800</pubDate>
-      <guid>/vi/tags/pump-efficiency/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pump Replacement</title>
-      <link>/vi/tags/pump-replacement/</link>
-      <pubDate>Sun, 29 Sep 2019 23:30:45 +0800</pubDate>
-      <guid>/vi/tags/pump-replacement/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>excel</title>
-      <link>/vi/tags/excel/</link>
-      <pubDate>Sun, 15 Sep 2019 23:30:45 +0800</pubDate>
-      <guid>/vi/tags/excel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mutiple worksheet</title>
-      <link>/vi/tags/mutiple-worksheet/</link>
-      <pubDate>Sun, 15 Sep 2019 23:30:45 +0800</pubDate>
-      <guid>/vi/tags/mutiple-worksheet/</guid>
       <description></description>
     </item>
     
@@ -233,6 +169,14 @@
       <link>/vi/tags/crack/</link>
       <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
       <guid>/vi/tags/crack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression Analysis</title>
+      <link>/vi/tags/regression-analysis/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/regression-analysis/</guid>
       <description></description>
     </item>
     

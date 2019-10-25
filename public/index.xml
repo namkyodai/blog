@@ -5,12 +5,511 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description></description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Sat, 19 Oct 2019 11:08:22 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Fri, 25 Oct 2019 22:58:39 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title></title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>Polynomial Regression – Volcano Eruption</title>
+      <link>/post/2019-10-25-ra-polynomial/</link>
+      <pubDate>Fri, 25 Oct 2019 22:58:39 +0800</pubDate>
+      <guid>/post/2019-10-25-ra-polynomial/</guid>
+      <description>
+
+&lt;h1 id=&#34;what-is-polynomial-regression-and-when-to-use-it&#34;&gt;What is Polynomial Regression? and when to use it&lt;/h1&gt;
+
+&lt;p&gt;There is a good set of internet articles that well describe the Math behind the Polynomial regression. Some of good references can be with the following links&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Local_regression&#34; target=&#34;_blank&#34;&gt;https://en.wikipedia.org/wiki/Local_regression&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&#34; target=&#34;_blank&#34;&gt;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We use polynomial regression in cases when observing histogram, scatter plot, or distribution of data that are not well distributed or clustered into two or more than two groups as shown in below figure.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Loess_curve.svg/1024px-Loess_curve.svg.png&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The plot show that the data points are scattered and seem like the pattern of them follows a sin function. We cannot use linear regression in such as case as linear regression is a straight line function.&lt;/p&gt;
+
+&lt;h1 id=&#34;data&#34;&gt;Data&lt;/h1&gt;
+
+&lt;p&gt;Data is from the paper &lt;a href=&#34;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&#34; target=&#34;_blank&#34;&gt;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&lt;/a&gt; that includes 272 rows of data on the duration of eruption and waiting time until the next eruption of the Old Faithful volcano.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;OldFaithful[1:10,]
+
+TimeEruption TimeWaiting
+1         3.600          79
+2         1.800          54
+3         3.333          74
+4         2.283          62
+5         4.533          85
+6         2.883          55
+7         4.700          88
+8         3.600          85
+9         1.950          51
+10        4.350          85
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;code&#34;&gt;Code&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/namkyodai/BusinessAnalytics/tree/master/OldFaithful&#34; target=&#34;_blank&#34;&gt;github link&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(locfit)
+## first we read in the data
+## first we read in the data
+#OldFaithful &amp;lt;- read.csv(&amp;quot;https://www.biz.uiowa.edu/faculty/jledolter/DataMining/OldFaithful.csv&amp;quot;)
+
+
+OldFaithful &amp;lt;- read.csv(&amp;quot;OldFaithful.csv&amp;quot;)
+OldFaithful[1:10,]
+
+## density histograms and smoothed density histograms
+## time of eruption
+plot.new()
+#par(mfrow=c(1,1))
+par(mar=c(4,4,1,1)+0.1,mfrow=c(1,2),bg=&amp;quot;white&amp;quot;,cex = 1, cex.main = 1)
+hist(OldFaithful$TimeEruption,freq=FALSE)
+
+#use locfit https://www.rdocumentation.org/packages/locfit/versions/19980714-2/topics/locfit
+fit1 &amp;lt;- locfit(~lp(TimeEruption),data=OldFaithful)
+#lp function https://www.rdocumentation.org/packages/lpSolve/versions/5.6.13.1/topics/lp
+#lp is a local polynomial model term for Locfit models.
+#https://www.rdocumentation.org/packages/locfit/versions/1.5-9.1/topics/lp
+plot(fit1)
+dev.copy(png,&#39;oldfaithful_timeeruption01.png&#39;,width = 800, height = 400)
+dev.off()
+
+## waiting time to next eruption
+hist(OldFaithful$TimeWaiting,freq=FALSE)
+fit2 &amp;lt;- locfit(~lp(TimeWaiting),data=OldFaithful)
+plot(fit2)
+dev.copy(png,&#39;oldfaithful_TimeWaiting01.png&#39;,width = 800, height = 400)
+dev.off()
+
+#------------------------------
+## experiment with different smoothing constants
+fit3 &amp;lt;- locfit(~lp(TimeWaiting,nn=0.9,deg=2),data=OldFaithful) #nn is the nearest neighbour component, and deg is the degree of polynomial. default value of nn is 0.6 and deg is 2.
+plot(fit3)
+fit4 &amp;lt;- locfit(~lp(TimeWaiting,nn=0.3,deg=2),data=OldFaithful)
+plot(fit4)
+dev.copy(png,&#39;oldfaithful_TimeWaiting02.png&#39;,width = 800, height = 400)
+dev.off()
+
+
+## cross-validation of smoothing constant
+## for waiting time to next eruption
+alpha&amp;lt;-seq(0.20,1,by=0.01)
+n1=length(alpha)
+g=matrix(nrow=n1,ncol=4)
+for (k in 1:length(alpha)) {
+  g[k,]&amp;lt;-gcv(~lp(TimeWaiting,nn=alpha[k]),data=OldFaithful)
+}
+g
+#gcv is used to estimate the penalty coefficient from the generalized cross-validation criteria. https://www.rdocumentation.org/packages/SpatialExtremes/versions/2.0-7/topics/gcv
+
+plot(g[,4]~g[,3],ylab=&amp;quot;GCV&amp;quot;,xlab=&amp;quot;degrees of freedom&amp;quot;)
+#the minimum point of the curve indicate the best value of nn. In this case, we can find the minimum value point.
+which.min(g[,4])
+#This indicate
+nn=alpha[which.min(g[,4])] #this is the value of the minimum nn.
+
+fit5 &amp;lt;- locfit(~lp(TimeWaiting,nn=nn,deg=2),data=OldFaithful)
+plot(fit5)
+dev.copy(png,&#39;oldfaithful_TimeWaiting03.png&#39;,width = 800, height = 400)
+dev.off()
+
+
+#------------------------
+## local polynomial regression of TimeEruption on TimeWaiting
+plot(TimeWaiting~TimeEruption,data=OldFaithful)
+# standard regression fit
+fitreg=lm(TimeWaiting~TimeEruption,data=OldFaithful)
+plot(TimeWaiting~TimeEruption,data=OldFaithful)
+abline(fitreg)
+dev.copy(png,&#39;oldfaithful_TimeWaitingvseruption01.png&#39;,width = 800, height = 400)
+dev.off()
+
+#-----------------------------------
+# fit with nearest neighbor bandwidth
+
+plot.new()
+#par(mfrow=c(1,1))
+par(mar=c(4,4,1,1)+0.1,mfrow=c(2,2),bg=&amp;quot;white&amp;quot;,cex = 1, cex.main = 1)
+
+fit6 &amp;lt;- locfit(TimeWaiting~lp(TimeEruption),data=OldFaithful)
+plot(fit6)
+fit7 &amp;lt;- locfit(TimeWaiting~lp(TimeEruption,deg=1),data=OldFaithful)
+plot(fit7)
+fit8 &amp;lt;- locfit(TimeWaiting~lp(TimeEruption,deg=0),data=OldFaithful)
+plot(fit8)
+hist(OldFaithful$TimeEruption,freq=FALSE)
+dev.copy(png,&#39;oldfaithful_TimeWaitingvseruption02.png&#39;,width = 800, height = 800)
+dev.off()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;graphs-and-highlights&#34;&gt;Graphs and Highlights&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaiting01.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Blow graph shows the minimum points where we can find the best nn value to be used for plotting the right curve.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaiting03.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Part of the code to generate the above 2 graphs is from line 43 to line 61&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## cross-validation of smoothing constant
+## for waiting time to next eruption
+alpha&amp;lt;-seq(0.20,1,by=0.01)
+n1=length(alpha)
+g=matrix(nrow=n1,ncol=4)
+for (k in 1:length(alpha)) {
+  g[k,]&amp;lt;-gcv(~lp(TimeWaiting,nn=alpha[k]),data=OldFaithful)
+}
+g
+#gcv is used to estimate the penalty coefficient from the generalized cross-validation criteria. https://www.rdocumentation.org/packages/SpatialExtremes/versions/2.0-7/topics/gcv
+
+plot(g[,4]~g[,3],ylab=&amp;quot;GCV&amp;quot;,xlab=&amp;quot;degrees of freedom&amp;quot;)
+#the minimum point of the curve indicate the best value of nn. In this case, we can find the minimum value point.
+which.min(g[,4])
+#This indicate
+nn=alpha[which.min(g[,4])] #this is the value of the minimum nn.
+
+fit5 &amp;lt;- locfit(~lp(TimeWaiting,nn=nn,deg=2),data=OldFaithful)
+plot(fit5)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaiting02.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaitingvseruption02.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaitingvseruption02.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_timeeruption01.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Price of 2nd hand Toyota cars - Regression Analysis</title>
+      <link>/post/2019-10-24-ra-price-2nd-toyota/</link>
+      <pubDate>Thu, 24 Oct 2019 23:30:45 +0800</pubDate>
+      <guid>/post/2019-10-24-ra-price-2nd-toyota/</guid>
+      <description>
+
+&lt;p&gt;This example shows another very simple regression analysis using data of secondhand Toyota car prices. Code is copied from the book “Data Mining and Business Analytics with R” with minor modification on the graphs.&lt;/p&gt;
+
+&lt;p&gt;The regressions are done treating Price of Cars as functions of predictors such as Car weight, Model types, Number of cylinders, etc.&lt;/p&gt;
+
+&lt;p&gt;Focus is on: (1) Select a trained set of data that gives Mean Error close to 0 as possible; (2) Cross Validate the data to provide an insight on better Predictors to be used in the model.&lt;/p&gt;
+
+&lt;h1 id=&#34;data&#34;&gt;Data.&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#toyota &amp;lt;- read.csv(&amp;quot;ToyotaCorolla.csv&amp;quot;)
+toyota[1:3,]
+  Price Age    KM FuelType HP MetColor Automatic   CC Doors Weight
+1 13500  23 46986   Diesel 90        1         0 2000     3   1165
+2 13750  23 72937   Diesel 90        1         0 2000     3   1165
+3 13950  24 41711   Diesel 90        1         0 2000     3   1165
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;code&#34;&gt;CODE&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## first we read in the data
+toyota &amp;lt;- read.csv(&amp;quot;https://www.biz.uiowa.edu/faculty/jledolter/DataMining/ToyotaCorolla.csv&amp;quot;)
+#toyota &amp;lt;- read.csv(&amp;quot;ToyotaCorolla.csv&amp;quot;)
+toyota[1:3,]
+summary(toyota)
+hist(toyota$Price)
+## next we create indicator variables for the categorical variable
+## FuelType with its three nominal outcomes: CNG, Diesel, and Petrol
+v1=rep(1,length(toyota$FuelType))
+v2=rep(0,length(toyota$FuelType))
+toyota$FuelType1=ifelse(toyota$FuelType==&amp;quot;CNG&amp;quot;,v1,v2) #return value of CNG to v1, otherwise 0
+toyota$FuelType2=ifelse(toyota$FuelType==&amp;quot;Diesel&amp;quot;,v1,v2) #return value of Diesel to v1, otherwise 0
+auto=toyota[-4] #ignore column 4 (Fueltype)
+auto[1:3,]
+
+plot.new()
+#par(mfrow=c(1,1))
+par(mar=c(4,4,1,1)+0.1,mfrow=c(4,2),bg=&amp;quot;white&amp;quot;,cex = 0.7, cex.main = 1)
+
+plot(Price~Age,data=auto)
+plot(Price~KM,data=auto)
+plot(Price~HP,data=auto)
+plot(Price~MetColor,data=auto)
+plot(Price~Automatic,data=auto)
+plot(Price~CC,data=auto)
+plot(Price~Doors,data=auto)
+plot(Price~Weight,data=auto)
+
+dev.copy(png,&#39;toyota_xyplot.png&#39;,width = 500, height = 800)
+dev.off()
+
+
+## regression on all data
+m1=lm(Price~.,data=auto)
+summary(m1)
+
+set.seed(1)
+## fixing the seed value for the random selection guarantees the
+## same results in repeated runs
+n=length(auto$Price)
+n1=1000
+n2=n-n1
+train=sample(1:n,n1) # generate random n1 integer number of data among the size from 1 to n.
+
+## regression on training set
+m1=lm(Price~.,data=auto[train,])
+summary(m1)
+pred=predict(m1,newdat=auto[-train,]) #adding a set of n2 number into regression model
+obs=auto$Price[-train]
+diff=obs-pred
+percdiff=abs(diff)/obs
+me=mean(diff)
+rmse=sqrt(sum(diff**2)/n2)
+mape=100*(mean(percdiff))
+me   # mean error
+rmse # root mean square error
+mape # mean absolute percent error
+
+## cross-validation (leave one out)
+n=length(auto$Price)
+diff=dim(n)
+percdiff=dim(n)
+for (k in 1:n) {
+  train1=c(1:n)
+  train=train1[train1!=k]
+  m1=lm(Price~.,data=auto[train,])
+  pred=predict(m1,newdat=auto[-train,])
+  obs=auto$Price[-train]
+  diff[k]=obs-pred
+  percdiff[k]=abs(diff[k])/obs
+}
+me=mean(diff)
+rmse=sqrt(mean(diff**2))
+mape=100*(mean(percdiff))
+me   # mean error
+rmse # root mean square error
+mape # mean absolute percent error
+
+## cross-validation (leave one out): Model with just Age
+n=length(auto$Price)
+diff=dim(n)
+percdiff=dim(n)
+for (k in 1:n) {
+  train1=c(1:n)
+  train=train1[train1!=k]
+  m1=lm(Price~Age,data=auto[train,])
+  pred=predict(m1,newdat=auto[-train,])
+  obs=auto$Price[-train]
+  diff[k]=obs-pred
+  percdiff[k]=abs(diff[k])/obs
+}
+me=mean(diff)
+rmse=sqrt(mean(diff**2))
+mape=100*(mean(percdiff))
+me   # mean error
+rmse # root mean square error
+mape # mean absolute percent error
+
+## Adding the squares of Age and KM to the model
+auto$Age2=auto$Age^2
+auto$KM2=auto$KM^2
+m11=lm(Price~Age+KM,data=auto)
+summary(m11)
+m12=lm(Price~Age+Age2+KM+KM2,data=auto)
+summary(m12)
+m13=lm(Price~Age+Age2+KM,data=auto)
+summary(m13)
+
+#----------------
+plot.new()
+#par(mfrow=c(1,1))
+par(mar=c(4,4,1,1)+0.1,mfrow=c(2,2),bg=&amp;quot;white&amp;quot;,cex = 0.7, cex.main = 1)
+plot(m11$res~m11$fitted)
+hist(m11$res)
+plot(m12$res~m12$fitted)
+dev.copy(png,&#39;toyota_m11m12.png&#39;,width = 800, height = 500)
+dev.off()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;graphs-and-outcomes&#34;&gt;Graphs and Outcomes&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/2ndToyotaCarPrices/toyota_xyplot.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/2ndToyotaCarPrices/toyota_m11m12.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;highlights&#34;&gt;Highlights&lt;/h1&gt;
+
+&lt;p&gt;Function ifelse() is used to return the logical value YES or NO.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## next we create indicator variables for the categorical variable
+## FuelType with its three nominal outcomes: CNG, Diesel, and Petrol
+v1=rep(1,length(toyota$FuelType))
+v2=rep(0,length(toyota$FuelType))
+toyota$FuelType1=ifelse(toyota$FuelType==&amp;quot;CNG&amp;quot;,v1,v2) #return value of CNG to v1, otherwise 0
+toyota$FuelType2=ifelse(toyota$FuelType==&amp;quot;Diesel&amp;quot;,v1,v2) #return value of Diesel to v1, otherwise 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;m1=lm(Price~.,data=auto)
+summary(m1)
+
+Call:
+lm(formula = Price ~ ., data = auto)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-10642.3   -737.7      3.1    731.3   6451.5
+
+Coefficients:
+              Estimate Std. Error t value Pr(&amp;amp;gt;|t|)
+(Intercept) -2.681e+03  1.219e+03  -2.199 0.028036 *
+Age         -1.220e+02  2.602e+00 -46.889  &amp;lt; 2e-16 ***
+KM          -1.621e-02  1.313e-03 -12.347  &amp;lt; 2e-16 ***
+HP           6.081e+01  5.756e+00  10.565  &amp;lt; 2e-16 ***
+MetColor     5.716e+01  7.494e+01   0.763 0.445738
+Automatic    3.303e+02  1.571e+02   2.102 0.035708 *
+CC          -4.174e+00  5.453e-01  -7.656 3.53e-14 ***
+Doors       -7.776e+00  4.006e+01  -0.194 0.846129
+Weight       2.001e+01  1.203e+00  16.629  &amp;lt; 2e-16 ***
+FuelType1   -1.121e+03  3.324e+02  -3.372 0.000767 ***
+FuelType2    2.269e+03  4.394e+02   5.164 2.75e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1316 on 1425 degrees of freedom
+Multiple R-squared:  0.8693,    Adjusted R-squared:  0.8684
+F-statistic:   948 on 10 and 1425 DF,  p-value: &amp;lt; 2.2e-16
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(1)
+## fixing the seed value for the random selection guarantees the
+## same results in repeated runs
+n=length(auto$Price)
+n1=1000
+n2=n-n1
+train=sample(1:n,n1) # generate random n1 integer number of data among the size from 1 to n.
+
+## regression on training set
+m1=lm(Price~.,data=auto[train,])
+summary(m1)
+
+Call:
+lm(formula = Price ~ ., data = auto[train, ])
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-8914.6  -778.2   -22.0   751.4  6480.4
+
+Coefficients:
+              Estimate Std. Error t value Pr(&amp;amp;gt;|t|)
+(Intercept)  5.337e+02  1.417e+03   0.377    0.706
+Age         -1.233e+02  3.184e+00 -38.725  &amp;lt; 2e-16 ***
+KM          -1.726e-02  1.585e-03 -10.892  &amp;lt; 2e-16 ***
+HP           5.472e+01  7.662e+00   7.142 1.78e-12 ***
+MetColor     1.581e+02  9.199e+01   1.719    0.086 .
+Automatic    2.703e+02  1.982e+02   1.364    0.173
+CC          -3.634e+00  7.031e-01  -5.168 2.86e-07 ***
+Doors        3.828e+01  4.851e+01   0.789    0.430
+Weight       1.671e+01  1.379e+00  12.118  &amp;lt; 2e-16 ***
+FuelType1   -5.950e+02  4.366e+02  -1.363    0.173
+FuelType2    2.279e+03  5.582e+02   4.083 4.80e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1343 on 989 degrees of freedom
+Multiple R-squared:  0.8573,    Adjusted R-squared:  0.8559
+F-statistic: 594.3 on 10 and 989 DF,  p-value: &amp;lt; 2.2e-16
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## regression on training set
+m1=lm(Price~.,data=auto[train,])
+summary(m1)
+pred=predict(m1,newdat=auto[-train,]) #adding a set of n2 number into regression model
+obs=auto$Price[-train]
+diff=obs-pred
+percdiff=abs(diff)/obs
+me=mean(diff)
+rmse=sqrt(sum(diff**2)/n2)
+mape=100*(mean(percdiff))
+me   # mean error
+rmse # root mean square error
+mape # mean absolute percent error
+
+&amp;gt; me   # mean error
+[1] -48.70784
+&amp;gt; rmse # root mean square error
+[1] 1283.097
+&amp;gt; mape # mean absolute percent error
+[1] 9.208957
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above results give quite high value of Mean Errors, indicating a certain level of bias&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## cross-validation (leave one out)
+n=length(auto$Price)
+diff=dim(n)
+percdiff=dim(n)
+for (k in 1:n) {
+  train1=c(1:n)
+  train=train1[train1!=k]
+  m1=lm(Price~.,data=auto[train,])
+  pred=predict(m1,newdat=auto[-train,])
+  obs=auto$Price[-train]
+  diff[k]=obs-pred
+  percdiff[k]=abs(diff[k])/obs
+}
+me=mean(diff)
+rmse=sqrt(mean(diff**2))
+mape=100*(mean(percdiff))
+me   # mean error
+rmse # root mean square error
+mape # mean absolute percent error
+
+
+&amp;gt; me   # mean error
+[1] -2.726251
+&amp;gt; rmse # root mean square error
+[1] 1354.509
+&amp;gt; mape # mean absolute percent error
+[1] 9.530529
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, the Mean Error is -2.7, which is a lot better than that of previous model. We can still further improve&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## cross-validation (leave one out): Model with just Age
+n=length(auto$Price)
+diff=dim(n)
+percdiff=dim(n)
+for (k in 1:n) {
+  train1=c(1:n)
+  train=train1[train1!=k]
+  m1=lm(Price~Age,data=auto[train,])
+  pred=predict(m1,newdat=auto[-train,])
+  obs=auto$Price[-train]
+  diff[k]=obs-pred
+  percdiff[k]=abs(diff[k])/obs
+}
+me=mean(diff)
+rmse=sqrt(mean(diff**2))
+mape=100*(mean(percdiff))
+me   # mean error
+rmse # root mean square error
+mape # mean absolute percent error
+
+
+&amp;gt; me   # mean error
+[1] 0.6085014
+&amp;gt; rmse # root mean square error
+[1] 1748.76
+&amp;gt; mape # mean absolute percent error
+[1] 12.13156
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;See, the mean value of 0.6 now. Surely better than previous one.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Lamesa 2 - Maynilad</title>
@@ -1384,6 +1883,12 @@ The difference of investment
       <pubDate>Sun, 15 Sep 2019 23:30:45 +0800</pubDate>
       <guid>/post/2019-09-15-excel-combine/</guid>
       <description>
+
+&lt;h1 id=&#34;new-header&#34;&gt;new header&lt;/h1&gt;
+
+&lt;h2 id=&#34;new-2nd-header&#34;&gt;new 2nd header&lt;/h2&gt;
+
+&lt;h3 id=&#34;new-level&#34;&gt;new level&lt;/h3&gt;
 
 &lt;p&gt;What if our Client provides us with a number of poorly recorded databases with thousands of records in different Excel formats? not only that, within each Excel file, there are hundreds of worksheets with in-homogeneous structures –F.. Excel ^_^, but that is the reality, particularly when we have to work with Clients whose business are not much involved with TECH.&lt;/p&gt;
 
