@@ -1,17 +1,33 @@
 ---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
 title: "Đạo Phật Ngày Nay"
-date: 2019-11-05T20:16:35+08:00
+subtitle: ""
+summary: ""
 authors: []
 tags: [Phật Giáo, Thích Nhất Hạnh]
-draft: true
-#Featured image
+categories: []
+date: 2019-11-05T20:16:35+08:00
+lastmod: 2019-11-05T22:58:39+08:00
+featured: false
+draft: false
+
+# Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
- caption: ""
- focal_point: ""
- preview_only: false
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
 ---
+
 ![](/img/daophatngaynay.jpg)
 # Vị trí đạo phật trong văn hóa
 Tôi xin nhắc lại rằng đạo Phật là tất cả mọi hình thức sinh hoạt nào có thể làm sống được nguyên lý Phật học. Nhắc lại như vậy để chúng ta cùng thấy rằng cần phải có một nhận thức phóng khoáng và cởi mở, không nô lệ hình thức, danh từ, thành kiến. Hãy gọi đạo Phật là tất cả mọi hình thức sinh hoạt nào nhằm đến mục đích ly khổ đắc lạc, chuyển mê khải ngộ, đoạn hoặc chứng chân (rời khổ đạt vui, chuyển sai lầm thành giác ngộ, phá mê loạn để tìm gặp chân lý).
