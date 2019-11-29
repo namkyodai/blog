@@ -83,7 +83,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.c7559ce645083af89938eddb077e0c5d.css">
+  <link rel="stylesheet" href="/css/academic.min.70ad938936228f620b2c68a380ab9522.css">
 
   
 
@@ -469,7 +469,7 @@
     <div class="article-style">
       
       In many cases, we need to remove space in the names of files saved inside a tree of folders/subfolders. We can use following CODE to do the job.
-:renameNoSpace [/R] @echo off setlocal disableDelayedExpansion if /i &quot;%~1&quot;==&quot;/R&quot; ( set &quot;forOption=%~1 %2&quot; set &quot;inPath=&quot; ) else ( set &quot;forOption=&quot; if &quot;%~1&quot; neq &quot;&quot; (set &quot;inPath=%~1\&quot;) else set &quot;inPath=&quot; ) for %forOption% %%F in (&quot;%inPath%* *&quot;) do ( if /i &quot;%~f0&quot; neq &quot;%%~fF&quot; ( set &quot;folder=%%~dpF&quot; set &quot;file=%%~nxF&quot; setlocal enableDelayedExpansion echo ren &quot;!
+:renameNoSpace [/R]@echo offsetlocal disableDelayedExpansionif /i &quot;%~1&quot;==&quot;/R&quot; (set &quot;forOption=%~1 %2&quot;set &quot;inPath=&quot;) else (set &quot;forOption=&quot;if &quot;%~1&quot; neq &quot;&quot; (set &quot;inPath=%~1\&quot;) else set &quot;inPath=&quot;)for %forOption% %%F in (&quot;%inPath%* *&quot;) do (if /i &quot;%~f0&quot; neq &quot;%%~fF&quot; (set &quot;folder=%%~dpF&quot;set &quot;file=%%~nxF&quot;setlocal enableDelayedExpansionecho ren &quot;!
       
     </div>
   </div>
@@ -595,7 +595,7 @@
   
 
   <p class="powered-by">
-    &copy; 2019 Nam Le &middot; 
+    © 2019 Nam Le &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

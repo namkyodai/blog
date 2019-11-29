@@ -17,176 +17,149 @@
       <link>/post/2019-10-25-ra-polynomial/</link>
       <pubDate>Fri, 25 Oct 2019 22:58:39 +0800</pubDate>
       <guid>/post/2019-10-25-ra-polynomial/</guid>
-      <description>
-
-&lt;h1 id=&#34;what-is-polynomial-regression-and-when-to-use-it&#34;&gt;What is Polynomial Regression? and when to use it&lt;/h1&gt;
-
+      <description>&lt;h1 id=&#34;what-is-polynomial-regression-and-when-to-use-it&#34;&gt;What is Polynomial Regression? and when to use it&lt;/h1&gt;
 &lt;p&gt;There is a good set of internet articles that well describe the Math behind the Polynomial regression. Some of good references can be with the following links&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Local_regression&#34; target=&#34;_blank&#34;&gt;https://en.wikipedia.org/wiki/Local_regression&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&#34; target=&#34;_blank&#34;&gt;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Local_regression&#34;&gt;https://en.wikipedia.org/wiki/Local_regression&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&#34;&gt;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;We use polynomial regression in cases when observing histogram, scatter plot, or distribution of data that are not well distributed or clustered into two or more than two groups as shown in below figure.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Loess_curve.svg/1024px-Loess_curve.svg.png&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Loess_curve.svg/1024px-Loess_curve.svg.png&#34; alt=&#34;Foo&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;The plot show that the data points are scattered and seem like the pattern of them follows a sin function. We cannot use linear regression in such as case as linear regression is a straight line function.&lt;/p&gt;
-
 &lt;h1 id=&#34;data&#34;&gt;Data&lt;/h1&gt;
-
-&lt;p&gt;Data is from the paper &lt;a href=&#34;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&#34; target=&#34;_blank&#34;&gt;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&lt;/a&gt; that includes 272 rows of data on the duration of eruption and waiting time until the next eruption of the Old Faithful volcano.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;OldFaithful[1:10,]
+&lt;p&gt;Data is from the paper &lt;a href=&#34;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&#34;&gt;https://onlinelibrary.wiley.com/doi/10.1002/9781118596289.ch4&lt;/a&gt; that includes 272 rows of data on the duration of eruption and waiting time until the next eruption of the Old Faithful volcano.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;OldFaithful[1&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,]
 
 TimeEruption TimeWaiting
-1         3.600          79
-2         1.800          54
-3         3.333          74
-4         2.283          62
-5         4.533          85
-6         2.883          55
-7         4.700          88
-8         3.600          85
-9         1.950          51
-10        4.350          85
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;code&#34;&gt;Code&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/namkyodai/BusinessAnalytics/tree/master/OldFaithful&#34; target=&#34;_blank&#34;&gt;github link&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(locfit)
-## first we read in the data
-## first we read in the data
-#OldFaithful &amp;lt;- read.csv(&amp;quot;https://www.biz.uiowa.edu/faculty/jledolter/DataMining/OldFaithful.csv&amp;quot;)
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;3.600&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;79&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;1.800&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;54&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;3.333&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;74&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;2.283&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;62&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;4.533&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;85&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;2.883&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;55&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;4.700&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;88&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;3.600&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;85&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;1.950&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;51&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;4.350&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;85&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;code&#34;&gt;Code&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/namkyodai/BusinessAnalytics/tree/master/OldFaithful&#34;&gt;github link&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(locfit)
+&lt;span style=&#34;color:#75715e&#34;&gt;## first we read in the data&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## first we read in the data&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#OldFaithful &amp;lt;- read.csv(&amp;#34;https://www.biz.uiowa.edu/faculty/jledolter/DataMining/OldFaithful.csv&amp;#34;)&lt;/span&gt;
 
 
-OldFaithful &amp;lt;- read.csv(&amp;quot;OldFaithful.csv&amp;quot;)
-OldFaithful[1:10,]
+OldFaithful &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;read.csv&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;OldFaithful.csv&amp;#34;&lt;/span&gt;)
+OldFaithful[1&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,]
 
-## density histograms and smoothed density histograms
-## time of eruption
-plot.new()
-#par(mfrow=c(1,1))
-par(mar=c(4,4,1,1)+0.1,mfrow=c(1,2),bg=&amp;quot;white&amp;quot;,cex = 1, cex.main = 1)
-hist(OldFaithful$TimeEruption,freq=FALSE)
+&lt;span style=&#34;color:#75715e&#34;&gt;## density histograms and smoothed density histograms&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## time of eruption&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot.new&lt;/span&gt;()
+&lt;span style=&#34;color:#75715e&#34;&gt;#par(mfrow=c(1,1))&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;par&lt;/span&gt;(mar&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#ae81ff&#34;&gt;+0.1&lt;/span&gt;,mfrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;),bg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;white&amp;#34;&lt;/span&gt;,cex &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, cex.main &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;hist&lt;/span&gt;(OldFaithful&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;TimeEruption,freq&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FALSE&lt;/span&gt;)
 
-#use locfit https://www.rdocumentation.org/packages/locfit/versions/19980714-2/topics/locfit
-fit1 &amp;lt;- locfit(~lp(TimeEruption),data=OldFaithful)
-#lp function https://www.rdocumentation.org/packages/lpSolve/versions/5.6.13.1/topics/lp
-#lp is a local polynomial model term for Locfit models.
-#https://www.rdocumentation.org/packages/locfit/versions/1.5-9.1/topics/lp
-plot(fit1)
-dev.copy(png,&#39;oldfaithful_timeeruption01.png&#39;,width = 800, height = 400)
-dev.off()
+&lt;span style=&#34;color:#75715e&#34;&gt;#use locfit https://www.rdocumentation.org/packages/locfit/versions/19980714-2/topics/locfit&lt;/span&gt;
+fit1 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;locfit&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lp&lt;/span&gt;(TimeEruption),data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
+&lt;span style=&#34;color:#75715e&#34;&gt;#lp function https://www.rdocumentation.org/packages/lpSolve/versions/5.6.13.1/topics/lp&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#lp is a local polynomial model term for Locfit models.&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#https://www.rdocumentation.org/packages/locfit/versions/1.5-9.1/topics/lp&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(fit1)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.copy&lt;/span&gt;(png,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;oldfaithful_timeeruption01.png&amp;#39;&lt;/span&gt;,width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;, height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;400&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.off&lt;/span&gt;()
 
-## waiting time to next eruption
-hist(OldFaithful$TimeWaiting,freq=FALSE)
-fit2 &amp;lt;- locfit(~lp(TimeWaiting),data=OldFaithful)
-plot(fit2)
-dev.copy(png,&#39;oldfaithful_TimeWaiting01.png&#39;,width = 800, height = 400)
-dev.off()
+&lt;span style=&#34;color:#75715e&#34;&gt;## waiting time to next eruption&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;hist&lt;/span&gt;(OldFaithful&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;TimeWaiting,freq&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FALSE&lt;/span&gt;)
+fit2 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;locfit&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lp&lt;/span&gt;(TimeWaiting),data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(fit2)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.copy&lt;/span&gt;(png,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;oldfaithful_TimeWaiting01.png&amp;#39;&lt;/span&gt;,width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;, height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;400&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.off&lt;/span&gt;()
 
-#------------------------------
-## experiment with different smoothing constants
-fit3 &amp;lt;- locfit(~lp(TimeWaiting,nn=0.9,deg=2),data=OldFaithful) #nn is the nearest neighbour component, and deg is the degree of polynomial. default value of nn is 0.6 and deg is 2.
-plot(fit3)
-fit4 &amp;lt;- locfit(~lp(TimeWaiting,nn=0.3,deg=2),data=OldFaithful)
-plot(fit4)
-dev.copy(png,&#39;oldfaithful_TimeWaiting02.png&#39;,width = 800, height = 400)
-dev.off()
+&lt;span style=&#34;color:#75715e&#34;&gt;#------------------------------&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## experiment with different smoothing constants&lt;/span&gt;
+fit3 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;locfit&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lp&lt;/span&gt;(TimeWaiting,nn&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.9&lt;/span&gt;,deg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;),data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful) &lt;span style=&#34;color:#75715e&#34;&gt;#nn is the nearest neighbour component, and deg is the degree of polynomial. default value of nn is 0.6 and deg is 2.&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(fit3)
+fit4 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;locfit&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lp&lt;/span&gt;(TimeWaiting,nn&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.3&lt;/span&gt;,deg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;),data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(fit4)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.copy&lt;/span&gt;(png,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;oldfaithful_TimeWaiting02.png&amp;#39;&lt;/span&gt;,width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;, height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;400&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.off&lt;/span&gt;()
 
 
-## cross-validation of smoothing constant
-## for waiting time to next eruption
-alpha&amp;lt;-seq(0.20,1,by=0.01)
-n1=length(alpha)
-g=matrix(nrow=n1,ncol=4)
-for (k in 1:length(alpha)) {
-  g[k,]&amp;lt;-gcv(~lp(TimeWaiting,nn=alpha[k]),data=OldFaithful)
+&lt;span style=&#34;color:#75715e&#34;&gt;## cross-validation of smoothing constant&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## for waiting time to next eruption&lt;/span&gt;
+alpha&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;seq&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,by&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;)
+n1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(alpha)
+g&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;matrix&lt;/span&gt;(nrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n1,ncol&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(k in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(alpha)) {
+  g[k,]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;gcv&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lp&lt;/span&gt;(TimeWaiting,nn&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;alpha[k]),data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
 }
 g
-#gcv is used to estimate the penalty coefficient from the generalized cross-validation criteria. https://www.rdocumentation.org/packages/SpatialExtremes/versions/2.0-7/topics/gcv
+&lt;span style=&#34;color:#75715e&#34;&gt;#gcv is used to estimate the penalty coefficient from the generalized cross-validation criteria. https://www.rdocumentation.org/packages/SpatialExtremes/versions/2.0-7/topics/gcv&lt;/span&gt;
 
-plot(g[,4]~g[,3],ylab=&amp;quot;GCV&amp;quot;,xlab=&amp;quot;degrees of freedom&amp;quot;)
-#the minimum point of the curve indicate the best value of nn. In this case, we can find the minimum value point.
-which.min(g[,4])
-#This indicate
-nn=alpha[which.min(g[,4])] #this is the value of the minimum nn.
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(g[,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;g[,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;],ylab&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;GCV&amp;#34;&lt;/span&gt;,xlab&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;degrees of freedom&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#75715e&#34;&gt;#the minimum point of the curve indicate the best value of nn. In this case, we can find the minimum value point.&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;which.min&lt;/span&gt;(g[,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;])
+&lt;span style=&#34;color:#75715e&#34;&gt;#This indicate&lt;/span&gt;
+nn&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;alpha&lt;span style=&#34;color:#a6e22e&#34;&gt;[which.min&lt;/span&gt;(g[,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;])] &lt;span style=&#34;color:#75715e&#34;&gt;#this is the value of the minimum nn.&lt;/span&gt;
 
-fit5 &amp;lt;- locfit(~lp(TimeWaiting,nn=nn,deg=2),data=OldFaithful)
-plot(fit5)
-dev.copy(png,&#39;oldfaithful_TimeWaiting03.png&#39;,width = 800, height = 400)
-dev.off()
+fit5 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;locfit&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lp&lt;/span&gt;(TimeWaiting,nn&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;nn,deg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;),data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(fit5)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.copy&lt;/span&gt;(png,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;oldfaithful_TimeWaiting03.png&amp;#39;&lt;/span&gt;,width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;, height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;400&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.off&lt;/span&gt;()
 
 
-#------------------------
-## local polynomial regression of TimeEruption on TimeWaiting
-plot(TimeWaiting~TimeEruption,data=OldFaithful)
-# standard regression fit
-fitreg=lm(TimeWaiting~TimeEruption,data=OldFaithful)
-plot(TimeWaiting~TimeEruption,data=OldFaithful)
-abline(fitreg)
-dev.copy(png,&#39;oldfaithful_TimeWaitingvseruption01.png&#39;,width = 800, height = 400)
-dev.off()
+&lt;span style=&#34;color:#75715e&#34;&gt;#------------------------&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## local polynomial regression of TimeEruption on TimeWaiting&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(TimeWaiting&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;TimeEruption,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
+&lt;span style=&#34;color:#75715e&#34;&gt;# standard regression fit&lt;/span&gt;
+fitreg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(TimeWaiting&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;TimeEruption,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(TimeWaiting&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;TimeEruption,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;abline&lt;/span&gt;(fitreg)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.copy&lt;/span&gt;(png,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;oldfaithful_TimeWaitingvseruption01.png&amp;#39;&lt;/span&gt;,width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;, height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;400&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.off&lt;/span&gt;()
 
-#-----------------------------------
-# fit with nearest neighbor bandwidth
+&lt;span style=&#34;color:#75715e&#34;&gt;#-----------------------------------&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# fit with nearest neighbor bandwidth&lt;/span&gt;
 
-plot.new()
-#par(mfrow=c(1,1))
-par(mar=c(4,4,1,1)+0.1,mfrow=c(2,2),bg=&amp;quot;white&amp;quot;,cex = 1, cex.main = 1)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot.new&lt;/span&gt;()
+&lt;span style=&#34;color:#75715e&#34;&gt;#par(mfrow=c(1,1))&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;par&lt;/span&gt;(mar&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#ae81ff&#34;&gt;+0.1&lt;/span&gt;,mfrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;),bg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;white&amp;#34;&lt;/span&gt;,cex &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, cex.main &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
 
-fit6 &amp;lt;- locfit(TimeWaiting~lp(TimeEruption),data=OldFaithful)
-plot(fit6)
-fit7 &amp;lt;- locfit(TimeWaiting~lp(TimeEruption,deg=1),data=OldFaithful)
-plot(fit7)
-fit8 &amp;lt;- locfit(TimeWaiting~lp(TimeEruption,deg=0),data=OldFaithful)
-plot(fit8)
-hist(OldFaithful$TimeEruption,freq=FALSE)
-dev.copy(png,&#39;oldfaithful_TimeWaitingvseruption02.png&#39;,width = 800, height = 800)
-dev.off()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;graphs-and-highlights&#34;&gt;Graphs and Highlights&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaiting01.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
+fit6 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;locfit&lt;/span&gt;(TimeWaiting&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lp&lt;/span&gt;(TimeEruption),data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(fit6)
+fit7 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;locfit&lt;/span&gt;(TimeWaiting&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lp&lt;/span&gt;(TimeEruption,deg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;),data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(fit7)
+fit8 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;locfit&lt;/span&gt;(TimeWaiting&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lp&lt;/span&gt;(TimeEruption,deg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;),data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(fit8)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;hist&lt;/span&gt;(OldFaithful&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;TimeEruption,freq&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FALSE&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.copy&lt;/span&gt;(png,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;oldfaithful_TimeWaitingvseruption02.png&amp;#39;&lt;/span&gt;,width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;, height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.off&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;graphs-and-highlights&#34;&gt;Graphs and Highlights&lt;/h1&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaiting01.png?raw=true&#34; alt=&#34;Foo&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;Blow graph shows the minimum points where we can find the best nn value to be used for plotting the right curve.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaiting03.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaiting03.png?raw=true&#34; alt=&#34;Foo&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;Part of the code to generate the above 2 graphs is from line 43 to line 61&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## cross-validation of smoothing constant
-## for waiting time to next eruption
-alpha&amp;lt;-seq(0.20,1,by=0.01)
-n1=length(alpha)
-g=matrix(nrow=n1,ncol=4)
-for (k in 1:length(alpha)) {
-  g[k,]&amp;lt;-gcv(~lp(TimeWaiting,nn=alpha[k]),data=OldFaithful)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## cross-validation of smoothing constant&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## for waiting time to next eruption&lt;/span&gt;
+alpha&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;seq&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.20&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,by&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;)
+n1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(alpha)
+g&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;matrix&lt;/span&gt;(nrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n1,ncol&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(k in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(alpha)) {
+  g[k,]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;gcv&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lp&lt;/span&gt;(TimeWaiting,nn&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;alpha[k]),data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
 }
 g
-#gcv is used to estimate the penalty coefficient from the generalized cross-validation criteria. https://www.rdocumentation.org/packages/SpatialExtremes/versions/2.0-7/topics/gcv
+&lt;span style=&#34;color:#75715e&#34;&gt;#gcv is used to estimate the penalty coefficient from the generalized cross-validation criteria. https://www.rdocumentation.org/packages/SpatialExtremes/versions/2.0-7/topics/gcv&lt;/span&gt;
 
-plot(g[,4]~g[,3],ylab=&amp;quot;GCV&amp;quot;,xlab=&amp;quot;degrees of freedom&amp;quot;)
-#the minimum point of the curve indicate the best value of nn. In this case, we can find the minimum value point.
-which.min(g[,4])
-#This indicate
-nn=alpha[which.min(g[,4])] #this is the value of the minimum nn.
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(g[,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;g[,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;],ylab&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;GCV&amp;#34;&lt;/span&gt;,xlab&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;degrees of freedom&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#75715e&#34;&gt;#the minimum point of the curve indicate the best value of nn. In this case, we can find the minimum value point.&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;which.min&lt;/span&gt;(g[,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;])
+&lt;span style=&#34;color:#75715e&#34;&gt;#This indicate&lt;/span&gt;
+nn&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;alpha&lt;span style=&#34;color:#a6e22e&#34;&gt;[which.min&lt;/span&gt;(g[,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;])] &lt;span style=&#34;color:#75715e&#34;&gt;#this is the value of the minimum nn.&lt;/span&gt;
 
-fit5 &amp;lt;- locfit(~lp(TimeWaiting,nn=nn,deg=2),data=OldFaithful)
-plot(fit5)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaiting02.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaitingvseruption02.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaitingvseruption02.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_timeeruption01.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+fit5 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;locfit&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lp&lt;/span&gt;(TimeWaiting,nn&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;nn,deg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;),data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OldFaithful)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(fit5)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaiting02.png?raw=true&#34; alt=&#34;Foo&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaitingvseruption02.png?raw=true&#34; alt=&#34;Foo&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_TimeWaitingvseruption02.png?raw=true&#34; alt=&#34;Foo&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/OldFaithful/oldfaithful_timeeruption01.png?raw=true&#34; alt=&#34;Foo&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -195,319 +168,289 @@ plot(fit5)
       <link>/post/2019-10-24-ra-price-2nd-toyota/</link>
       <pubDate>Thu, 24 Oct 2019 23:30:45 +0800</pubDate>
       <guid>/post/2019-10-24-ra-price-2nd-toyota/</guid>
-      <description>
-
-&lt;p&gt;This example shows another very simple regression analysis using data of secondhand Toyota car prices. Code is copied from the book “Data Mining and Business Analytics with R” with minor modification on the graphs.&lt;/p&gt;
-
+      <description>&lt;p&gt;This example shows another very simple regression analysis using data of secondhand Toyota car prices. Code is copied from the book “Data Mining and Business Analytics with R” with minor modification on the graphs.&lt;/p&gt;
 &lt;p&gt;The regressions are done treating Price of Cars as functions of predictors such as Car weight, Model types, Number of cylinders, etc.&lt;/p&gt;
-
 &lt;p&gt;Focus is on: (1) Select a trained set of data that gives Mean Error close to 0 as possible; (2) Cross Validate the data to provide an insight on better Predictors to be used in the model.&lt;/p&gt;
-
 &lt;h1 id=&#34;data&#34;&gt;Data.&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#toyota &amp;lt;- read.csv(&amp;quot;ToyotaCorolla.csv&amp;quot;)
-toyota[1:3,]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#toyota &amp;lt;- read.csv(&amp;#34;ToyotaCorolla.csv&amp;#34;)&lt;/span&gt;
+toyota[1&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,]
   Price Age    KM FuelType HP MetColor Automatic   CC Doors Weight
-1 13500  23 46986   Diesel 90        1         0 2000     3   1165
-2 13750  23 72937   Diesel 90        1         0 2000     3   1165
-3 13950  24 41711   Diesel 90        1         0 2000     3   1165
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13500&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;23&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;46986&lt;/span&gt;   Diesel &lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2000&lt;/span&gt;     &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1165&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13750&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;23&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;72937&lt;/span&gt;   Diesel &lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2000&lt;/span&gt;     &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1165&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13950&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;41711&lt;/span&gt;   Diesel &lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2000&lt;/span&gt;     &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1165&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;code&#34;&gt;CODE&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## first we read in the data&lt;/span&gt;
+toyota &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;read.csv&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;https://www.biz.uiowa.edu/faculty/jledolter/DataMining/ToyotaCorolla.csv&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#75715e&#34;&gt;#toyota &amp;lt;- read.csv(&amp;#34;ToyotaCorolla.csv&amp;#34;)&lt;/span&gt;
+toyota[1&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(toyota)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;hist&lt;/span&gt;(toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price)
+&lt;span style=&#34;color:#75715e&#34;&gt;## next we create indicator variables for the categorical variable&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## FuelType with its three nominal outcomes: CNG, Diesel, and Petrol&lt;/span&gt;
+v1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;rep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType))
+v2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;rep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType))
+toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ifelse&lt;/span&gt;(toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;CNG&amp;#34;&lt;/span&gt;,v1,v2) &lt;span style=&#34;color:#75715e&#34;&gt;#return value of CNG to v1, otherwise 0&lt;/span&gt;
+toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ifelse&lt;/span&gt;(toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Diesel&amp;#34;&lt;/span&gt;,v1,v2) &lt;span style=&#34;color:#75715e&#34;&gt;#return value of Diesel to v1, otherwise 0&lt;/span&gt;
+auto&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;toyota[&lt;span style=&#34;color:#ae81ff&#34;&gt;-4&lt;/span&gt;] &lt;span style=&#34;color:#75715e&#34;&gt;#ignore column 4 (Fueltype)&lt;/span&gt;
+auto[1&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,]
 
-&lt;h1 id=&#34;code&#34;&gt;CODE&lt;/h1&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot.new&lt;/span&gt;()
+&lt;span style=&#34;color:#75715e&#34;&gt;#par(mfrow=c(1,1))&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;par&lt;/span&gt;(mar&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#ae81ff&#34;&gt;+0.1&lt;/span&gt;,mfrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;),bg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;white&amp;#34;&lt;/span&gt;,cex &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.7&lt;/span&gt;, cex.main &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
 
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## first we read in the data
-toyota &amp;lt;- read.csv(&amp;quot;https://www.biz.uiowa.edu/faculty/jledolter/DataMining/ToyotaCorolla.csv&amp;quot;)
-#toyota &amp;lt;- read.csv(&amp;quot;ToyotaCorolla.csv&amp;quot;)
-toyota[1:3,]
-summary(toyota)
-hist(toyota$Price)
-## next we create indicator variables for the categorical variable
-## FuelType with its three nominal outcomes: CNG, Diesel, and Petrol
-v1=rep(1,length(toyota$FuelType))
-v2=rep(0,length(toyota$FuelType))
-toyota$FuelType1=ifelse(toyota$FuelType==&amp;quot;CNG&amp;quot;,v1,v2) #return value of CNG to v1, otherwise 0
-toyota$FuelType2=ifelse(toyota$FuelType==&amp;quot;Diesel&amp;quot;,v1,v2) #return value of Diesel to v1, otherwise 0
-auto=toyota[-4] #ignore column 4 (Fueltype)
-auto[1:3,]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;Age,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;KM,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;HP,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;MetColor,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;Automatic,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;CC,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;Doors,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;Weight,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
 
-plot.new()
-#par(mfrow=c(1,1))
-par(mar=c(4,4,1,1)+0.1,mfrow=c(4,2),bg=&amp;quot;white&amp;quot;,cex = 0.7, cex.main = 1)
-
-plot(Price~Age,data=auto)
-plot(Price~KM,data=auto)
-plot(Price~HP,data=auto)
-plot(Price~MetColor,data=auto)
-plot(Price~Automatic,data=auto)
-plot(Price~CC,data=auto)
-plot(Price~Doors,data=auto)
-plot(Price~Weight,data=auto)
-
-dev.copy(png,&#39;toyota_xyplot.png&#39;,width = 500, height = 800)
-dev.off()
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.copy&lt;/span&gt;(png,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;toyota_xyplot.png&amp;#39;&lt;/span&gt;,width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;, height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.off&lt;/span&gt;()
 
 
-## regression on all data
-m1=lm(Price~.,data=auto)
-summary(m1)
+&lt;span style=&#34;color:#75715e&#34;&gt;## regression on all data&lt;/span&gt;
+m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;.,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m1)
 
-set.seed(1)
-## fixing the seed value for the random selection guarantees the
-## same results in repeated runs
-n=length(auto$Price)
-n1=1000
-n2=n-n1
-train=sample(1:n,n1) # generate random n1 integer number of data among the size from 1 to n.
+&lt;span style=&#34;color:#a6e22e&#34;&gt;set.seed&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+&lt;span style=&#34;color:#75715e&#34;&gt;## fixing the seed value for the random selection guarantees the&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## same results in repeated runs&lt;/span&gt;
+n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price)
+n1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;
+n2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;n1
+train&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;sample&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n,n1) &lt;span style=&#34;color:#75715e&#34;&gt;# generate random n1 integer number of data among the size from 1 to n.&lt;/span&gt;
 
-## regression on training set
-m1=lm(Price~.,data=auto[train,])
-summary(m1)
-pred=predict(m1,newdat=auto[-train,]) #adding a set of n2 number into regression model
-obs=auto$Price[-train]
-diff=obs-pred
-percdiff=abs(diff)/obs
-me=mean(diff)
-rmse=sqrt(sum(diff**2)/n2)
-mape=100*(mean(percdiff))
-me   # mean error
-rmse # root mean square error
-mape # mean absolute percent error
+&lt;span style=&#34;color:#75715e&#34;&gt;## regression on training set&lt;/span&gt;
+m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;.,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[train,])
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m1)
+pred&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(m1,newdat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train,]) &lt;span style=&#34;color:#75715e&#34;&gt;#adding a set of n2 number into regression model&lt;/span&gt;
+obs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train]
+diff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;obs&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pred
+percdiff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;abs&lt;/span&gt;(diff)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;obs
+me&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff)
+rmse&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;sqrt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;sum&lt;/span&gt;(diff&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;n2)
+mape&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(percdiff))
+me   &lt;span style=&#34;color:#75715e&#34;&gt;# mean error&lt;/span&gt;
+rmse &lt;span style=&#34;color:#75715e&#34;&gt;# root mean square error&lt;/span&gt;
+mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt;/span&gt;
 
-## cross-validation (leave one out)
-n=length(auto$Price)
-diff=dim(n)
-percdiff=dim(n)
-for (k in 1:n) {
-  train1=c(1:n)
-  train=train1[train1!=k]
-  m1=lm(Price~.,data=auto[train,])
-  pred=predict(m1,newdat=auto[-train,])
-  obs=auto$Price[-train]
-  diff[k]=obs-pred
-  percdiff[k]=abs(diff[k])/obs
+&lt;span style=&#34;color:#75715e&#34;&gt;## cross-validation (leave one out)&lt;/span&gt;
+n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price)
+diff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+percdiff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(k in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n) {
+  train1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n)
+  train&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;train1[train1&lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt;k]
+  m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;.,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[train,])
+  pred&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(m1,newdat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train,])
+  obs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train]
+  diff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;obs&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pred
+  percdiff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;abs&lt;/span&gt;(diff[k])&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;obs
 }
-me=mean(diff)
-rmse=sqrt(mean(diff**2))
-mape=100*(mean(percdiff))
-me   # mean error
-rmse # root mean square error
-mape # mean absolute percent error
+me&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff)
+rmse&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;sqrt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;))
+mape&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(percdiff))
+me   &lt;span style=&#34;color:#75715e&#34;&gt;# mean error&lt;/span&gt;
+rmse &lt;span style=&#34;color:#75715e&#34;&gt;# root mean square error&lt;/span&gt;
+mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt;/span&gt;
 
-## cross-validation (leave one out): Model with just Age
-n=length(auto$Price)
-diff=dim(n)
-percdiff=dim(n)
-for (k in 1:n) {
-  train1=c(1:n)
-  train=train1[train1!=k]
-  m1=lm(Price~Age,data=auto[train,])
-  pred=predict(m1,newdat=auto[-train,])
-  obs=auto$Price[-train]
-  diff[k]=obs-pred
-  percdiff[k]=abs(diff[k])/obs
+&lt;span style=&#34;color:#75715e&#34;&gt;## cross-validation (leave one out): Model with just Age&lt;/span&gt;
+n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price)
+diff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+percdiff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(k in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n) {
+  train1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n)
+  train&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;train1[train1&lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt;k]
+  m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;Age,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[train,])
+  pred&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(m1,newdat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train,])
+  obs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train]
+  diff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;obs&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pred
+  percdiff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;abs&lt;/span&gt;(diff[k])&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;obs
 }
-me=mean(diff)
-rmse=sqrt(mean(diff**2))
-mape=100*(mean(percdiff))
-me   # mean error
-rmse # root mean square error
-mape # mean absolute percent error
+me&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff)
+rmse&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;sqrt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;))
+mape&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(percdiff))
+me   &lt;span style=&#34;color:#75715e&#34;&gt;# mean error&lt;/span&gt;
+rmse &lt;span style=&#34;color:#75715e&#34;&gt;# root mean square error&lt;/span&gt;
+mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt;/span&gt;
 
-## Adding the squares of Age and KM to the model
-auto$Age2=auto$Age^2
-auto$KM2=auto$KM^2
-m11=lm(Price~Age+KM,data=auto)
-summary(m11)
-m12=lm(Price~Age+Age2+KM+KM2,data=auto)
-summary(m12)
-m13=lm(Price~Age+Age2+KM,data=auto)
-summary(m13)
+&lt;span style=&#34;color:#75715e&#34;&gt;## Adding the squares of Age and KM to the model&lt;/span&gt;
+auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Age2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Age^2
+auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;KM2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;KM^2
+m11&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;Age&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;KM,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m11)
+m12&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;Age&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;Age2&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;KM&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;KM2,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m12)
+m13&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;Age&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;Age2&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;KM,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m13)
 
-#----------------
-plot.new()
-#par(mfrow=c(1,1))
-par(mar=c(4,4,1,1)+0.1,mfrow=c(2,2),bg=&amp;quot;white&amp;quot;,cex = 0.7, cex.main = 1)
-plot(m11$res~m11$fitted)
-hist(m11$res)
-plot(m12$res~m12$fitted)
-dev.copy(png,&#39;toyota_m11m12.png&#39;,width = 800, height = 500)
-dev.off()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;graphs-and-outcomes&#34;&gt;Graphs and Outcomes&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/2ndToyotaCarPrices/toyota_xyplot.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/2ndToyotaCarPrices/toyota_m11m12.png?raw=true&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;span style=&#34;color:#75715e&#34;&gt;#----------------&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot.new&lt;/span&gt;()
+&lt;span style=&#34;color:#75715e&#34;&gt;#par(mfrow=c(1,1))&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;par&lt;/span&gt;(mar&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#ae81ff&#34;&gt;+0.1&lt;/span&gt;,mfrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;),bg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;white&amp;#34;&lt;/span&gt;,cex &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.7&lt;/span&gt;, cex.main &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(m11&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;res&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;m11&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;fitted)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;hist&lt;/span&gt;(m11&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;res)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(m12&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;res&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;m12&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;fitted)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.copy&lt;/span&gt;(png,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;toyota_m11m12.png&amp;#39;&lt;/span&gt;,width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;, height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.off&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;graphs-and-outcomes&#34;&gt;Graphs and Outcomes&lt;/h1&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/2ndToyotaCarPrices/toyota_xyplot.png?raw=true&#34; alt=&#34;Foo&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://github.com/namkyodai/BusinessAnalytics/blob/master/2ndToyotaCarPrices/toyota_m11m12.png?raw=true&#34; alt=&#34;Foo&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;highlights&#34;&gt;Highlights&lt;/h1&gt;
-
 &lt;p&gt;Function ifelse() is used to return the logical value YES or NO.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## next we create indicator variables for the categorical variable&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## FuelType with its three nominal outcomes: CNG, Diesel, and Petrol&lt;/span&gt;
+v1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;rep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType))
+v2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;rep&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType))
+toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ifelse&lt;/span&gt;(toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;CNG&amp;#34;&lt;/span&gt;,v1,v2) &lt;span style=&#34;color:#75715e&#34;&gt;#return value of CNG to v1, otherwise 0&lt;/span&gt;
+toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ifelse&lt;/span&gt;(toyota&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;FuelType&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Diesel&amp;#34;&lt;/span&gt;,v1,v2) &lt;span style=&#34;color:#75715e&#34;&gt;#return value of Diesel to v1, otherwise 0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;.,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m1)
 
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## next we create indicator variables for the categorical variable
-## FuelType with its three nominal outcomes: CNG, Diesel, and Petrol
-v1=rep(1,length(toyota$FuelType))
-v2=rep(0,length(toyota$FuelType))
-toyota$FuelType1=ifelse(toyota$FuelType==&amp;quot;CNG&amp;quot;,v1,v2) #return value of CNG to v1, otherwise 0
-toyota$FuelType2=ifelse(toyota$FuelType==&amp;quot;Diesel&amp;quot;,v1,v2) #return value of Diesel to v1, otherwise 0
-&lt;/code&gt;&lt;/pre&gt;
+Call&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(formula &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Price &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt; ., data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; auto)
 
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;m1=lm(Price~.,data=auto)
-summary(m1)
+Residuals&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+     Min       &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;Q   Median       &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;Q      Max
+&lt;span style=&#34;color:#ae81ff&#34;&gt;-10642.3&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;-737.7&lt;/span&gt;      &lt;span style=&#34;color:#ae81ff&#34;&gt;3.1&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;731.3&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;6451.5&lt;/span&gt;
 
-Call:
-lm(formula = Price ~ ., data = auto)
+Coefficients&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+              Estimate Std. Error t value &lt;span style=&#34;color:#a6e22e&#34;&gt;Pr&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;)
+(Intercept) &lt;span style=&#34;color:#ae81ff&#34;&gt;-2.681e+03&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.219e+03&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;-2.199&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.028036&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+Age         &lt;span style=&#34;color:#ae81ff&#34;&gt;-1.220e+02&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;2.602e+00&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-46.889&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2e-16&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+KM          &lt;span style=&#34;color:#ae81ff&#34;&gt;-1.621e-02&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.313e-03&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-12.347&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2e-16&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+HP           &lt;span style=&#34;color:#ae81ff&#34;&gt;6.081e+01&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;5.756e+00&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;10.565&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2e-16&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+MetColor     &lt;span style=&#34;color:#ae81ff&#34;&gt;5.716e+01&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;7.494e+01&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.763&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.445738&lt;/span&gt;
+Automatic    &lt;span style=&#34;color:#ae81ff&#34;&gt;3.303e+02&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.571e+02&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;2.102&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.035708&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+CC          &lt;span style=&#34;color:#ae81ff&#34;&gt;-4.174e+00&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;5.453e-01&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;-7.656&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.53e-14&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+Doors       &lt;span style=&#34;color:#ae81ff&#34;&gt;-7.776e+00&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4.006e+01&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.194&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.846129&lt;/span&gt;
+Weight       &lt;span style=&#34;color:#ae81ff&#34;&gt;2.001e+01&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.203e+00&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;16.629&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2e-16&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+FuelType1   &lt;span style=&#34;color:#ae81ff&#34;&gt;-1.121e+03&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;3.324e+02&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;-3.372&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.000767&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+FuelType2    &lt;span style=&#34;color:#ae81ff&#34;&gt;2.269e+03&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4.394e+02&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;5.164&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.75e-07&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;
+Signif. codes&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.001&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt; ‘.’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt; ‘ ’ &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
 
-Residuals:
-     Min       1Q   Median       3Q      Max
--10642.3   -737.7      3.1    731.3   6451.5
+Residual standard error&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1316&lt;/span&gt; on &lt;span style=&#34;color:#ae81ff&#34;&gt;1425&lt;/span&gt; degrees of freedom
+Multiple R&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;squared&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8693&lt;/span&gt;,    Adjusted R&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;squared&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8684&lt;/span&gt;
+F&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;statistic&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;948&lt;/span&gt; on &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; and &lt;span style=&#34;color:#ae81ff&#34;&gt;1425&lt;/span&gt; DF,  p&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.2e-16&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;set.seed&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+&lt;span style=&#34;color:#75715e&#34;&gt;## fixing the seed value for the random selection guarantees the&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;## same results in repeated runs&lt;/span&gt;
+n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price)
+n1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;
+n2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;n1
+train&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;sample&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n,n1) &lt;span style=&#34;color:#75715e&#34;&gt;# generate random n1 integer number of data among the size from 1 to n.&lt;/span&gt;
 
-Coefficients:
-              Estimate Std. Error t value Pr(&amp;amp;gt;|t|)
-(Intercept) -2.681e+03  1.219e+03  -2.199 0.028036 *
-Age         -1.220e+02  2.602e+00 -46.889  &amp;lt; 2e-16 ***
-KM          -1.621e-02  1.313e-03 -12.347  &amp;lt; 2e-16 ***
-HP           6.081e+01  5.756e+00  10.565  &amp;lt; 2e-16 ***
-MetColor     5.716e+01  7.494e+01   0.763 0.445738
-Automatic    3.303e+02  1.571e+02   2.102 0.035708 *
-CC          -4.174e+00  5.453e-01  -7.656 3.53e-14 ***
-Doors       -7.776e+00  4.006e+01  -0.194 0.846129
-Weight       2.001e+01  1.203e+00  16.629  &amp;lt; 2e-16 ***
-FuelType1   -1.121e+03  3.324e+02  -3.372 0.000767 ***
-FuelType2    2.269e+03  4.394e+02   5.164 2.75e-07 ***
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+&lt;span style=&#34;color:#75715e&#34;&gt;## regression on training set&lt;/span&gt;
+m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;.,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[train,])
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m1)
 
-Residual standard error: 1316 on 1425 degrees of freedom
-Multiple R-squared:  0.8693,    Adjusted R-squared:  0.8684
-F-statistic:   948 on 10 and 1425 DF,  p-value: &amp;lt; 2.2e-16
-&lt;/code&gt;&lt;/pre&gt;
+Call&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(formula &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Price &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt; ., data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; auto[train, ])
 
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(1)
-## fixing the seed value for the random selection guarantees the
-## same results in repeated runs
-n=length(auto$Price)
-n1=1000
-n2=n-n1
-train=sample(1:n,n1) # generate random n1 integer number of data among the size from 1 to n.
+Residuals&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+    Min      &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;Q  Median      &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;Q     Max
+&lt;span style=&#34;color:#ae81ff&#34;&gt;-8914.6&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;-778.2&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;-22.0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;751.4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6480.4&lt;/span&gt;
 
-## regression on training set
-m1=lm(Price~.,data=auto[train,])
-summary(m1)
+Coefficients&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+              Estimate Std. Error t value &lt;span style=&#34;color:#a6e22e&#34;&gt;Pr&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;)
+(Intercept)  &lt;span style=&#34;color:#ae81ff&#34;&gt;5.337e+02&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.417e+03&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.377&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;0.706&lt;/span&gt;
+Age         &lt;span style=&#34;color:#ae81ff&#34;&gt;-1.233e+02&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;3.184e+00&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-38.725&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2e-16&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+KM          &lt;span style=&#34;color:#ae81ff&#34;&gt;-1.726e-02&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.585e-03&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-10.892&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2e-16&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+HP           &lt;span style=&#34;color:#ae81ff&#34;&gt;5.472e+01&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;7.662e+00&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;7.142&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.78e-12&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+MetColor     &lt;span style=&#34;color:#ae81ff&#34;&gt;1.581e+02&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;9.199e+01&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1.719&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;0.086&lt;/span&gt; .
+Automatic    &lt;span style=&#34;color:#ae81ff&#34;&gt;2.703e+02&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.982e+02&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1.364&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;0.173&lt;/span&gt;
+CC          &lt;span style=&#34;color:#ae81ff&#34;&gt;-3.634e+00&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;7.031e-01&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;-5.168&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.86e-07&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+Doors        &lt;span style=&#34;color:#ae81ff&#34;&gt;3.828e+01&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4.851e+01&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.789&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;0.430&lt;/span&gt;
+Weight       &lt;span style=&#34;color:#ae81ff&#34;&gt;1.671e+01&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.379e+00&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;12.118&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2e-16&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+FuelType1   &lt;span style=&#34;color:#ae81ff&#34;&gt;-5.950e+02&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4.366e+02&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;-1.363&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;0.173&lt;/span&gt;
+FuelType2    &lt;span style=&#34;color:#ae81ff&#34;&gt;2.279e+03&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;5.582e+02&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;4.083&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4.80e-05&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;
+Signif. codes&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.001&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt; ‘.’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt; ‘ ’ &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
 
-Call:
-lm(formula = Price ~ ., data = auto[train, ])
+Residual standard error&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1343&lt;/span&gt; on &lt;span style=&#34;color:#ae81ff&#34;&gt;989&lt;/span&gt; degrees of freedom
+Multiple R&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;squared&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8573&lt;/span&gt;,    Adjusted R&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;squared&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8559&lt;/span&gt;
+F&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;statistic&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;594.3&lt;/span&gt; on &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; and &lt;span style=&#34;color:#ae81ff&#34;&gt;989&lt;/span&gt; DF,  p&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.2e-16&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## regression on training set&lt;/span&gt;
+m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;.,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[train,])
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m1)
+pred&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(m1,newdat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train,]) &lt;span style=&#34;color:#75715e&#34;&gt;#adding a set of n2 number into regression model&lt;/span&gt;
+obs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train]
+diff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;obs&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pred
+percdiff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;abs&lt;/span&gt;(diff)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;obs
+me&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff)
+rmse&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;sqrt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;sum&lt;/span&gt;(diff&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;n2)
+mape&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(percdiff))
+me   &lt;span style=&#34;color:#75715e&#34;&gt;# mean error&lt;/span&gt;
+rmse &lt;span style=&#34;color:#75715e&#34;&gt;# root mean square error&lt;/span&gt;
+mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt;/span&gt;
 
-Residuals:
-    Min      1Q  Median      3Q     Max
--8914.6  -778.2   -22.0   751.4  6480.4
-
-Coefficients:
-              Estimate Std. Error t value Pr(&amp;amp;gt;|t|)
-(Intercept)  5.337e+02  1.417e+03   0.377    0.706
-Age         -1.233e+02  3.184e+00 -38.725  &amp;lt; 2e-16 ***
-KM          -1.726e-02  1.585e-03 -10.892  &amp;lt; 2e-16 ***
-HP           5.472e+01  7.662e+00   7.142 1.78e-12 ***
-MetColor     1.581e+02  9.199e+01   1.719    0.086 .
-Automatic    2.703e+02  1.982e+02   1.364    0.173
-CC          -3.634e+00  7.031e-01  -5.168 2.86e-07 ***
-Doors        3.828e+01  4.851e+01   0.789    0.430
-Weight       1.671e+01  1.379e+00  12.118  &amp;lt; 2e-16 ***
-FuelType1   -5.950e+02  4.366e+02  -1.363    0.173
-FuelType2    2.279e+03  5.582e+02   4.083 4.80e-05 ***
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-Residual standard error: 1343 on 989 degrees of freedom
-Multiple R-squared:  0.8573,    Adjusted R-squared:  0.8559
-F-statistic: 594.3 on 10 and 989 DF,  p-value: &amp;lt; 2.2e-16
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## regression on training set
-m1=lm(Price~.,data=auto[train,])
-summary(m1)
-pred=predict(m1,newdat=auto[-train,]) #adding a set of n2 number into regression model
-obs=auto$Price[-train]
-diff=obs-pred
-percdiff=abs(diff)/obs
-me=mean(diff)
-rmse=sqrt(sum(diff**2)/n2)
-mape=100*(mean(percdiff))
-me   # mean error
-rmse # root mean square error
-mape # mean absolute percent error
-
-&amp;gt; me   # mean error
-[1] -48.70784
-&amp;gt; rmse # root mean square error
-[1] 1283.097
-&amp;gt; mape # mean absolute percent error
-[1] 9.208957
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The above results give quite high value of Mean Errors, indicating a certain level of bias&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## cross-validation (leave one out)
-n=length(auto$Price)
-diff=dim(n)
-percdiff=dim(n)
-for (k in 1:n) {
-  train1=c(1:n)
-  train=train1[train1!=k]
-  m1=lm(Price~.,data=auto[train,])
-  pred=predict(m1,newdat=auto[-train,])
-  obs=auto$Price[-train]
-  diff[k]=obs-pred
-  percdiff[k]=abs(diff[k])/obs
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; me   &lt;span style=&#34;color:#75715e&#34;&gt;# mean error&lt;/span&gt;
+[1] &lt;span style=&#34;color:#ae81ff&#34;&gt;-48.70784&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; rmse &lt;span style=&#34;color:#75715e&#34;&gt;# root mean square error&lt;/span&gt;
+[1] &lt;span style=&#34;color:#ae81ff&#34;&gt;1283.097&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt;/span&gt;
+[1] &lt;span style=&#34;color:#ae81ff&#34;&gt;9.208957&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The above results give quite high value of Mean Errors, indicating a certain level of bias&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## cross-validation (leave one out)&lt;/span&gt;
+n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price)
+diff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+percdiff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(k in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n) {
+  train1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n)
+  train&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;train1[train1&lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt;k]
+  m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;.,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[train,])
+  pred&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(m1,newdat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train,])
+  obs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train]
+  diff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;obs&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pred
+  percdiff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;abs&lt;/span&gt;(diff[k])&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;obs
 }
-me=mean(diff)
-rmse=sqrt(mean(diff**2))
-mape=100*(mean(percdiff))
-me   # mean error
-rmse # root mean square error
-mape # mean absolute percent error
+me&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff)
+rmse&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;sqrt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;))
+mape&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(percdiff))
+me   &lt;span style=&#34;color:#75715e&#34;&gt;# mean error&lt;/span&gt;
+rmse &lt;span style=&#34;color:#75715e&#34;&gt;# root mean square error&lt;/span&gt;
+mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt;/span&gt;
 
 
-&amp;gt; me   # mean error
-[1] -2.726251
-&amp;gt; rmse # root mean square error
-[1] 1354.509
-&amp;gt; mape # mean absolute percent error
-[1] 9.530529
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, the Mean Error is -2.7, which is a lot better than that of previous model. We can still further improve&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## cross-validation (leave one out): Model with just Age
-n=length(auto$Price)
-diff=dim(n)
-percdiff=dim(n)
-for (k in 1:n) {
-  train1=c(1:n)
-  train=train1[train1!=k]
-  m1=lm(Price~Age,data=auto[train,])
-  pred=predict(m1,newdat=auto[-train,])
-  obs=auto$Price[-train]
-  diff[k]=obs-pred
-  percdiff[k]=abs(diff[k])/obs
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; me   &lt;span style=&#34;color:#75715e&#34;&gt;# mean error&lt;/span&gt;
+[1] &lt;span style=&#34;color:#ae81ff&#34;&gt;-2.726251&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; rmse &lt;span style=&#34;color:#75715e&#34;&gt;# root mean square error&lt;/span&gt;
+[1] &lt;span style=&#34;color:#ae81ff&#34;&gt;1354.509&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt;/span&gt;
+[1] &lt;span style=&#34;color:#ae81ff&#34;&gt;9.530529&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, the Mean Error is -2.7, which is a lot better than that of previous model. We can still further improve&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## cross-validation (leave one out): Model with just Age&lt;/span&gt;
+n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price)
+diff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+percdiff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(k in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n) {
+  train1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n)
+  train&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;train1[train1&lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt;k]
+  m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(Price&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;Age,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[train,])
+  pred&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(m1,newdat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train,])
+  obs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;auto&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Price[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train]
+  diff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;obs&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pred
+  percdiff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;abs&lt;/span&gt;(diff[k])&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;obs
 }
-me=mean(diff)
-rmse=sqrt(mean(diff**2))
-mape=100*(mean(percdiff))
-me   # mean error
-rmse # root mean square error
-mape # mean absolute percent error
+me&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff)
+rmse&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;sqrt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;))
+mape&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(percdiff))
+me   &lt;span style=&#34;color:#75715e&#34;&gt;# mean error&lt;/span&gt;
+rmse &lt;span style=&#34;color:#75715e&#34;&gt;# root mean square error&lt;/span&gt;
+mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt;/span&gt;
 
 
-&amp;gt; me   # mean error
-[1] 0.6085014
-&amp;gt; rmse # root mean square error
-[1] 1748.76
-&amp;gt; mape # mean absolute percent error
-[1] 12.13156
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;See, the mean value of 0.6 now. Surely better than previous one.&lt;/p&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; me   &lt;span style=&#34;color:#75715e&#34;&gt;# mean error&lt;/span&gt;
+[1] &lt;span style=&#34;color:#ae81ff&#34;&gt;0.6085014&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; rmse &lt;span style=&#34;color:#75715e&#34;&gt;# root mean square error&lt;/span&gt;
+[1] &lt;span style=&#34;color:#ae81ff&#34;&gt;1748.76&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt;/span&gt;
+[1] &lt;span style=&#34;color:#ae81ff&#34;&gt;12.13156&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;See, the mean value of 0.6 now. Surely better than previous one.&lt;/p&gt;
 </description>
     </item>
     
@@ -516,244 +459,227 @@ mape # mean absolute percent error
       <link>/post/2019-10-10-fuel-efficiency/</link>
       <pubDate>Thu, 10 Oct 2019 23:30:45 +0800</pubDate>
       <guid>/post/2019-10-10-fuel-efficiency/</guid>
-      <description>
-
-&lt;p&gt;This example shows a very simple regression analysis using fuel data of 38 cars. Code is copied from the book “Data Mining and Business Analytics with R” with minor modification on the graphs.&lt;/p&gt;
-
+      <description>&lt;p&gt;This example shows a very simple regression analysis using fuel data of 38 cars. Code is copied from the book “Data Mining and Business Analytics with R” with minor modification on the graphs.&lt;/p&gt;
 &lt;p&gt;There are 2 learning points to be remembered with this example.&lt;/p&gt;
-
 &lt;h1 id=&#34;leaps-package-with-regsubsets-fuction&#34;&gt;Leaps package with regsubsets fuction.&lt;/h1&gt;
-
 &lt;p&gt;Regsubsets function allows to perform regression on subsets of data, particularly useful to compare across model’s predictors to understand the fit of the model.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.rdocumentation.org/packages/leaps/versions/2.1-1/topics/regsubsets&#34; target=&#34;_blank&#34;&gt;https://www.rdocumentation.org/packages/leaps/versions/2.1-1/topics/regsubsets&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;cross-validation&#34;&gt;Cross-Validation&lt;/h1&gt;
-
+&lt;p&gt;&lt;a href=&#34;https://www.rdocumentation.org/packages/leaps/versions/2.1-1/topics/regsubsets&#34;&gt;https://www.rdocumentation.org/packages/leaps/versions/2.1-1/topics/regsubsets&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;crossvalidation&#34;&gt;Cross-Validation&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Cross-validation removes one case from the data set of n cases, fits the model to the reduced data set, and predicts the response of that one case that has been removed from the estimation. This is repeated for each of the n cases. The summary statistics of the n genuine out-of-sample prediction errors (mean error, root mean square error, mean absolute percent error) help us assess the out-of-sample prediction performance. Cross-validation is very informative as it evaluates the model on new data. We find that the model with all six regressors performs better. It leads to a mean absolute percent error of about 6.75% (as compared to 8.23% for the model with weight as the only regressor).&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;&amp;gt; FuelEff
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; FuelEff
     GPM    WT DIS NC  HP  ACC ET
-1  5.917 4.360 350  8 155 14.9  1
-2  6.452 4.054 351  8 142 14.3  1
-3  5.208 3.605 267  8 125 15.0  1
-4  5.405 3.940 360  8 150 13.0  1
-5  3.333 2.155  98  4  68 16.5  0
-6  3.636 2.560 134  4  95 14.2  0
-7  3.676 2.300 119  4  97 14.7  0
-8  3.236 2.230 105  4  75 14.5  0
-9  4.926 2.830 131  5 103 15.9  0
-10 5.882 3.140 163  6 125 13.6  0
-11 4.630 2.795 121  4 115 15.7  0
-12 6.173 3.410 163  6 133 15.8  0
-13 4.854 3.380 231  6 105 15.8  0
-14 4.808 3.070 200  6  85 16.7  0
-15 5.376 3.620 225  6 110 18.7  0
-16 5.525 3.410 258  6 120 15.1  0
-17 5.882 3.840 305  8 130 15.4  1
-18 5.682 3.725 302  8 129 13.4  1
-19 6.061 3.955 351  8 138 13.2  1
-20 5.495 3.830 318  8 135 15.2  1
-21 3.774 2.585 140  4  88 14.4  0
-22 4.566 2.910 171  6 109 16.6  1
-23 2.933 1.975  86  4  65 15.2  0
-24 2.849 1.915  98  4  80 14.4  0
-25 3.650 2.670 121  4  80 15.0  0
-26 3.175 1.990  89  4  71 14.9  0
-27 3.390 2.135  98  4  68 16.6  0
-28 3.521 2.670 151  4  90 16.0  0
-29 3.472 2.595 173  6 115 11.3  1
-30 3.731 2.700 173  6 115 12.9  1
-31 2.985 2.556 151  4  90 13.2  0
-32 2.924 2.200 105  4  70 13.2  0
-33 3.145 2.020  85  4  65 19.2  0
-34 2.681 2.130  91  4  69 14.7  0
-35 3.279 2.190  97  4  78 14.1  0
-36 4.545 2.815 146  6  97 14.5  0
-37 4.651 2.600 121  4 110 12.8  0
-38 3.135 1.925  89  4  71 14.0  0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;code&#34;&gt;CODE&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## first we read in the data
-FuelEff &amp;lt;- read.csv(&amp;quot;https://www.biz.uiowa.edu/faculty/jledolter/DataMining/FuelEfficiency.csv&amp;quot;)
-#FuelEff &amp;lt;- read.csv(&amp;quot;FuelEfficiency.csv&amp;quot;)
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;5.917&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4.360&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;350&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;155&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.9&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6.452&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4.054&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;351&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;142&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.3&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;5.208&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.605&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;267&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;125&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15.0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;5.405&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.940&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;360&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;150&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13.0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;3.333&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.155&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;98&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;68&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16.5&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;3.636&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.560&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;134&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;95&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.2&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;3.676&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.300&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;119&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;97&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.7&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;3.236&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.230&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;105&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;75&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.5&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4.926&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.830&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;131&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;103&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15.9&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5.882&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.140&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;163&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;125&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13.6&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4.630&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.795&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;121&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;115&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15.7&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.173&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.410&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;163&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;133&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15.8&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4.854&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.380&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;231&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;105&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15.8&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4.808&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.070&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;85&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16.7&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5.376&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.620&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;225&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;110&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;18.7&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5.525&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.410&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;258&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15.1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5.882&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.840&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;305&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;130&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15.4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;18&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5.682&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.725&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;302&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;129&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13.4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.061&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.955&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;351&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;138&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13.2&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5.495&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.830&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;318&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;135&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15.2&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.774&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.585&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;140&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;88&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;22&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4.566&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.910&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;171&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;109&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16.6&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;23&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.933&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.975&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;86&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15.2&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.849&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.915&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;98&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;25&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.650&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.670&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;121&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15.0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;26&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.175&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.990&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;89&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;71&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.9&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;27&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.390&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.135&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;98&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;68&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16.6&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;28&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.521&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.670&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;151&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16.0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;29&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.472&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.595&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;173&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;115&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;11.3&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.731&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.700&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;173&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;115&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12.9&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;31&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.985&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.556&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;151&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13.2&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.924&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.200&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;105&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;70&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13.2&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;33&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.145&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.020&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;85&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19.2&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.681&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.130&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;91&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;69&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.7&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;35&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.279&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.190&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;97&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;78&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;36&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4.545&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.815&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;146&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;97&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.5&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;37&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4.651&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.600&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;121&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;110&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12.8&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;38&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.135&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.925&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;89&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;71&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14.0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;code&#34;&gt;CODE&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## first we read in the data&lt;/span&gt;
+FuelEff &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;read.csv&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;https://www.biz.uiowa.edu/faculty/jledolter/DataMining/FuelEfficiency.csv&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#75715e&#34;&gt;#FuelEff &amp;lt;- read.csv(&amp;#34;FuelEfficiency.csv&amp;#34;)&lt;/span&gt;
 
 FuelEff
 
-#----------------------------
-plot.new()
-#par(mfrow=c(1,1))
-par(mar=c(4,4,1,1)+0.1,mfrow=c(3,3),bg=&amp;quot;white&amp;quot;,cex = 1, cex.main = 1)
-plot(GPM~MPG,data=FuelEff)
-plot(GPM~WT,data=FuelEff)
-plot(GPM~DIS,data=FuelEff)
-plot(GPM~NC,data=FuelEff)
-plot(GPM~HP,data=FuelEff)
-plot(GPM~ACC,data=FuelEff)
-plot(GPM~ET,data=FuelEff)
+&lt;span style=&#34;color:#75715e&#34;&gt;#----------------------------&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot.new&lt;/span&gt;()
+&lt;span style=&#34;color:#75715e&#34;&gt;#par(mfrow=c(1,1))&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;par&lt;/span&gt;(mar&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&lt;span style=&#34;color:#ae81ff&#34;&gt;+0.1&lt;/span&gt;,mfrow&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;),bg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;white&amp;#34;&lt;/span&gt;,cex &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, cex.main &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;MPG,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;WT,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;DIS,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;NC,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;HP,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;ACC,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;plot&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;ET,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff)
 
-dev.copy(png,&#39;fueleff_xyplot.png&#39;,width = 800, height = 800)
-dev.off()
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.copy&lt;/span&gt;(png,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;fueleff_xyplot.png&amp;#39;&lt;/span&gt;,width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;, height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;dev.off&lt;/span&gt;()
 
 
-FuelEff=FuelEff[-1] #ignore the MPG column
+FuelEff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff[&lt;span style=&#34;color:#ae81ff&#34;&gt;-1&lt;/span&gt;] &lt;span style=&#34;color:#75715e&#34;&gt;#ignore the MPG column&lt;/span&gt;
 FuelEff
 
-## regression on all data
-m1=lm(GPM~.,data=FuelEff)
-summary(m1)
+&lt;span style=&#34;color:#75715e&#34;&gt;## regression on all data&lt;/span&gt;
+m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;.,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m1)
 
-cor(FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;cor&lt;/span&gt;(FuelEff)
 
-## best subset regression in R
-library(leaps)
-X=FuelEff[,2:7]
-y=FuelEff[,1]
+&lt;span style=&#34;color:#75715e&#34;&gt;## best subset regression in R&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(leaps)
+X&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff[,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;]
+y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff[,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]
 
-#use the regsubsets function from package leaps to compute regression of the subsets
-#https://www.rdocumentation.org/packages/leaps/versions/2.1-1/topics/regsubsets
+&lt;span style=&#34;color:#75715e&#34;&gt;#use the regsubsets function from package leaps to compute regression of the subsets&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#https://www.rdocumentation.org/packages/leaps/versions/2.1-1/topics/regsubsets&lt;/span&gt;
 
 
-out=summary(regsubsets(X,y,nbest=2,nvmax=ncol(X)))
-tab=cbind(out$which,out$rsq,out$adjr2,out$cp)
+out&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;regsubsets&lt;/span&gt;(X,y,nbest&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,nvmax&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ncol&lt;/span&gt;(X)))
+tab&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cbind&lt;/span&gt;(out&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;which,out&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;rsq,out&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;adjr2,out&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;cp)
 tab
 
-m2=lm(GPM~WT,data=FuelEff)
-summary(m2)
+m2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;WT,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m2)
 
-## cross-validation (leave one out) for the model on all six regressors
-n=length(FuelEff$GPM)
-diff=dim(n)
-percdiff=dim(n)
-for (k in 1:n) {
-  train1=c(1:n)
-  train=train1[train1!=k]
-  ## the R expression &amp;quot;train1[train1!=k]&amp;quot; picks from train1 those
-  ## elements that are different from k and stores those elements in the
-  ## object train.
-  ## For k=1, train consists of elements that are different from 1; that
-  ## is 2, 3, …, n.
-  m1=lm(GPM~.,data=FuelEff[train,])
-  pred=predict(m1,newdat=FuelEff[-train,]) #adding the new data, which is ignored earlier
-  obs=FuelEff$GPM[-train]
-  diff[k]=obs-pred
-  percdiff[k]=abs(diff[k])/obs
+&lt;span style=&#34;color:#75715e&#34;&gt;## cross-validation (leave one out) for the model on all six regressors&lt;/span&gt;
+n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(FuelEff&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;GPM)
+diff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+percdiff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(k in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n) {
+  train1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n)
+  train&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;train1[train1&lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt;k]
+  &lt;span style=&#34;color:#75715e&#34;&gt;## the R expression &amp;#34;train1[train1!=k]&amp;#34; picks from train1 those&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;## elements that are different from k and stores those elements in the&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;## object train.&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;## For k=1, train consists of elements that are different from 1; that&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;## is 2, 3, …, n.&lt;/span&gt;
+  m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;.,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff[train,])
+  pred&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(m1,newdat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train,]) &lt;span style=&#34;color:#75715e&#34;&gt;#adding the new data, which is ignored earlier&lt;/span&gt;
+  obs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;GPM[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train]
+  diff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;obs&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pred
+  percdiff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;abs&lt;/span&gt;(diff[k])&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;obs
 }
-me=mean(diff)
-rmse=sqrt(mean(diff**2))
-mape=100*(mean(percdiff))
-me   # mean error
-rmse # root mean square error
-mape # mean absolute percent error
+me&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff)
+rmse&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;sqrt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;))
+mape&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(percdiff))
+me   &lt;span style=&#34;color:#75715e&#34;&gt;# mean error&lt;/span&gt;
+rmse &lt;span style=&#34;color:#75715e&#34;&gt;# root mean square error&lt;/span&gt;
+mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt;/span&gt;
 
-## cross-validation (leave one out) for the model on weight only
-n=length(FuelEff$GPM)
-diff=dim(n)
-percdiff=dim(n)
-for (k in 1:n) {
-  train1=c(1:n)
-  train=train1[train1!=k]
-  m2=lm(GPM~WT,data=FuelEff[train,])
-  pred=predict(m2,newdat=FuelEff[-train,])
-  obs=FuelEff$GPM[-train]
-  diff[k]=obs-pred
-  percdiff[k]=abs(diff[k])/obs
+&lt;span style=&#34;color:#75715e&#34;&gt;## cross-validation (leave one out) for the model on weight only&lt;/span&gt;
+n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;(FuelEff&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;GPM)
+diff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+percdiff&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dim&lt;/span&gt;(n)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;for &lt;/span&gt;(k in &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n) {
+  train1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n)
+  train&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;train1[train1&lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt;k]
+  m2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;WT,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff[train,])
+  pred&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;predict&lt;/span&gt;(m2,newdat&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train,])
+  obs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;GPM[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;train]
+  diff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;obs&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pred
+  percdiff[k]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;abs&lt;/span&gt;(diff[k])&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;obs
 }
-me=mean(diff)
-rmse=sqrt(mean(diff**2))
-mape=100*(mean(percdiff))
-me   # mean error
-rmse # root mean square error
-mape # mean absolute percent error
-&lt;/code&gt;&lt;/pre&gt;
+me&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff)
+rmse&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;sqrt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(diff&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;))
+mape&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;mean&lt;/span&gt;(percdiff))
+me   &lt;span style=&#34;color:#75715e&#34;&gt;# mean error&lt;/span&gt;
+rmse &lt;span style=&#34;color:#75715e&#34;&gt;# root mean square error&lt;/span&gt;
+mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;graphs-and-outcomes&#34;&gt;Graphs and Outcomes&lt;/h1&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/FuelEfficiency/fueleff_xyplot.png&#34; alt=&#34;Foo&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## regression on all data&lt;/span&gt;
+m1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;.,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m1)
+Call&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(formula &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; GPM &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt; ., data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; FuelEff)
 
-&lt;h1 id=&#34;graphs-and-outcomes&#34;&gt;Graphs and Outcomes&lt;/h1&gt;
+Residuals&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+    Min      &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;Q  Median      &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;Q     Max
+&lt;span style=&#34;color:#ae81ff&#34;&gt;-0.4996&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.2547&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0402&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.1956&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.6455&lt;/span&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://namkyodai.github.io&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/FuelEfficiency/fueleff_xyplot.png&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+Coefficients&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+             Estimate Std. Error t value &lt;span style=&#34;color:#a6e22e&#34;&gt;Pr&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;)
+(Intercept) &lt;span style=&#34;color:#ae81ff&#34;&gt;-2.599357&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.663403&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;-3.918&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.000458&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+WT           &lt;span style=&#34;color:#ae81ff&#34;&gt;0.787768&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.451925&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1.743&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.091222&lt;/span&gt; .
+DIS         &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.004890&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.002696&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;-1.814&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.079408&lt;/span&gt; .
+NC           &lt;span style=&#34;color:#ae81ff&#34;&gt;0.444157&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.122683&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;3.620&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.001036&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+HP           &lt;span style=&#34;color:#ae81ff&#34;&gt;0.023599&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.006742&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;3.500&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.001431&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+ACC          &lt;span style=&#34;color:#ae81ff&#34;&gt;0.068814&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.044213&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1.556&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.129757&lt;/span&gt;
+ET          &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.959634&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.266785&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;-3.597&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.001104&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;
+Signif. codes&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.001&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt; ‘.’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt; ‘ ’ &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## regression on all data
-m1=lm(GPM~.,data=FuelEff)
-summary(m1)
-Call:
-lm(formula = GPM ~ ., data = FuelEff)
+Residual standard error&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.313&lt;/span&gt; on &lt;span style=&#34;color:#ae81ff&#34;&gt;31&lt;/span&gt; degrees of freedom
+Multiple R&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;squared&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9386&lt;/span&gt;,    Adjusted R&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;squared&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9267&lt;/span&gt;
+F&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;statistic&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;78.94&lt;/span&gt; on &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; and &lt;span style=&#34;color:#ae81ff&#34;&gt;31&lt;/span&gt; DF,  p&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.2e-16&lt;/span&gt;
 
-Residuals:
-    Min      1Q  Median      3Q     Max
--0.4996 -0.2547  0.0402  0.1956  0.6455
-
-Coefficients:
-             Estimate Std. Error t value Pr(&amp;amp;gt;|t|)
-(Intercept) -2.599357   0.663403  -3.918 0.000458 ***
-WT           0.787768   0.451925   1.743 0.091222 .
-DIS         -0.004890   0.002696  -1.814 0.079408 .
-NC           0.444157   0.122683   3.620 0.001036 **
-HP           0.023599   0.006742   3.500 0.001431 **
-ACC          0.068814   0.044213   1.556 0.129757
-ET          -0.959634   0.266785  -3.597 0.001104 **
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-Residual standard error: 0.313 on 31 degrees of freedom
-Multiple R-squared:  0.9386,    Adjusted R-squared:  0.9267
-F-statistic: 78.94 on 6 and 31 DF,  p-value: &amp;lt; 2.2e-16
-
-cor(FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;cor&lt;/span&gt;(FuelEff)
            GPM          WT        DIS         NC         HP         ACC         ET
-GPM 1.00000000  0.92626656  0.8229098  0.8411880  0.8876992  0.03307093  0.5206121
-WT  0.92626656  1.00000000  0.9507647  0.9166777  0.9172204 -0.03357386  0.6673661
-DIS 0.82290984  0.95076469  1.0000000  0.9402812  0.8717993 -0.14341745  0.7746636
-NC  0.84118805  0.91667774  0.9402812  1.0000000  0.8638473 -0.12924363  0.8311721
-HP  0.88769915  0.91722045  0.8717993  0.8638473  1.0000000 -0.25262113  0.7202350
-ACC 0.03307093 -0.03357386 -0.1434174 -0.1292436 -0.2526211  1.00000000 -0.3102336
-ET  0.52061208  0.66736606  0.7746636  0.8311721  0.7202350 -0.31023357  1.0000000
+GPM &lt;span style=&#34;color:#ae81ff&#34;&gt;1.00000000&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.92626656&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8229098&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8411880&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8876992&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.03307093&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5206121&lt;/span&gt;
+WT  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.92626656&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.00000000&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9507647&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9166777&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9172204&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.03357386&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.6673661&lt;/span&gt;
+DIS &lt;span style=&#34;color:#ae81ff&#34;&gt;0.82290984&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.95076469&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.0000000&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9402812&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8717993&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.14341745&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.7746636&lt;/span&gt;
+NC  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.84118805&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.91667774&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9402812&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.0000000&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8638473&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.12924363&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8311721&lt;/span&gt;
+HP  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.88769915&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.91722045&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8717993&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8638473&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.0000000&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.25262113&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.7202350&lt;/span&gt;
+ACC &lt;span style=&#34;color:#ae81ff&#34;&gt;0.03307093&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.03357386&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.1434174&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.1292436&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.2526211&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.00000000&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.3102336&lt;/span&gt;
+ET  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.52061208&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.66736606&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.7746636&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8311721&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.7202350&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.31023357&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.0000000&lt;/span&gt;
 
 
-## best subset regression in R
-library(leaps)
-X=FuelEff[,2:7]
-y=FuelEff[,1]
-out=summary(regsubsets(X,y,nbest=2,nvmax=ncol(X)))
-tab=cbind(out$which,out$rsq,out$adjr2,out$cp)
-tab
-  (Intercept) WT DIS NC HP ACC ET
-1           1  1   0  0  0   0  0 0.8579697 0.8540244 37.674750
-1           1  0   0  0  1   0  0 0.7880098 0.7821212 72.979632
-2           1  1   1  0  0   0  0 0.8926952 0.8865635 22.150747
-2           1  1   0  0  0   0  1 0.8751262 0.8679906 31.016828
-3           1  0   0  1  1   0  1 0.9145736 0.9070360 13.109930
-3           1  1   1  1  0   0  0 0.9028083 0.8942326 19.047230
-4           1  0   0  1  1   1  1 0.9313442 0.9230223  6.646728
-4           1  1   0  1  1   0  1 0.9204005 0.9107520 12.169443
-5           1  1   1  1  1   0  1 0.9337702 0.9234218  7.422476
-5           1  0   1  1  1   1  1 0.9325494 0.9220103  8.038535
-6           1  1   1  1  1   1  1 0.9385706 0.9266810  7.000000
+&lt;span style=&#34;color:#75715e&#34;&gt;## best subset regression in R&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(leaps)
+X&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff[,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;]
+y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff[,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]
+out&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;regsubsets&lt;/span&gt;(X,y,nbest&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,nvmax&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ncol&lt;/span&gt;(X)))
+tab&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cbind&lt;/span&gt;(out&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;which,out&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;rsq,out&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;adjr2,out&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;cp)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;tab
+&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;  &lt;/span&gt;(Intercept) WT DIS NC HP ACC ET
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8579697&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8540244&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;37.674750&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.7880098&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.7821212&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;72.979632&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8926952&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8865635&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;22.150747&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8751262&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8679906&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;31.016828&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9145736&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9070360&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;13.109930&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9028083&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.8942326&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;19.047230&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9313442&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9230223&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;6.646728&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9204005&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9107520&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12.169443&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9337702&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9234218&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;7.422476&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9325494&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9220103&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;8.038535&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;           &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9385706&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.9266810&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;7.000000&lt;/span&gt;
 
-m2=lm(GPM~WT,data=FuelEff)
-summary(m2)
-Call:
-lm(formula = GPM ~ WT, data = FuelEff)
+m2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(GPM&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;WT,data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FuelEff)
+&lt;span style=&#34;color:#a6e22e&#34;&gt;summary&lt;/span&gt;(m2)
+Call&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;lm&lt;/span&gt;(formula &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; GPM &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt; WT, data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; FuelEff)
 
-Residuals:
-     Min       1Q   Median       3Q      Max
--0.88072 -0.29041  0.00659  0.19021  1.13164
+Residuals&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+     Min       &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;Q   Median       &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;Q      Max
+&lt;span style=&#34;color:#ae81ff&#34;&gt;-0.88072&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.29041&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.00659&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.19021&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;1.13164&lt;/span&gt;
 
-Coefficients:
-             Estimate Std. Error t value Pr(&amp;amp;gt;|t|)
-(Intercept) -0.006101   0.302681   -0.02    0.984
-WT           1.514798   0.102721   14.75   &amp;lt;2e-16 ***
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Coefficients&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+             Estimate Std. Error t value &lt;span style=&#34;color:#a6e22e&#34;&gt;Pr&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;)
+(Intercept) &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.006101&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.302681&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;-0.02&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;0.984&lt;/span&gt;
+WT           &lt;span style=&#34;color:#ae81ff&#34;&gt;1.514798&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0.102721&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;14.75&lt;/span&gt;   &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2e-16&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;
+Signif. codes&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.001&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt; ‘&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt; ‘.’ &lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt; ‘ ’ &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
 
-Residual standard error: 0.4417 on 36 degrees of freedom
-Multiple R-squared:  0.858, Adjusted R-squared:  0.854
-F-statistic: 217.5 on 1 and 36 DF,  p-value: &amp;lt; 2.2e-16
+Residual standard error&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.4417&lt;/span&gt; on &lt;span style=&#34;color:#ae81ff&#34;&gt;36&lt;/span&gt; degrees of freedom
+Multiple R&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;squared&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.858&lt;/span&gt;, Adjusted R&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;squared&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;0.854&lt;/span&gt;
+F&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;statistic&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;217.5&lt;/span&gt; on &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; and &lt;span style=&#34;color:#ae81ff&#34;&gt;36&lt;/span&gt; DF,  p&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;value&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.2e-16&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>

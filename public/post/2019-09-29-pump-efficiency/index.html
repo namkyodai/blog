@@ -84,7 +84,7 @@ Ideally, failure data on pump components should be recorded in time-series fashi
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.c7559ce645083af89938eddb077e0c5d.css">
+  <link rel="stylesheet" href="/css/academic.min.70ad938936228f620b2c68a380ab9522.css">
 
   
 
@@ -644,41 +644,24 @@ Ideally, failure data on pump components should be recorded in time-series fashi
   <div class="article-container">
 
     <div class="article-style">
-      
-
-<p>This post describes a generic approach on the computation of Net Present Value (NPV) and Life Cycle Cost estimation (LCC) for Preventive Intervention (PI) on pumps (e.g. centrifugal pumps) when decision makers are uncertain on, or do not have a rich set of data on failure of pump components.</p>
-
+      <p>This post describes a generic approach on the computation of Net Present Value (NPV) and Life Cycle Cost estimation (LCC) for Preventive Intervention (PI) on pumps (e.g. centrifugal pumps) when decision makers are uncertain on, or do not have a rich set of data on failure of pump components.</p>
 <p>Ideally, failure data on pump components should be recorded in time-series fashion that allows analyst to investigate on the frequency of failure and come up with a prediction. The prediction is powerful in view of generating budget for purchasing spare parts for not only one pump station but also for the entire network of pump stations. This is so-called Integrated Asset Management approach that should be at the center of an organization who has a long term view on how to sustain and prolong their assets.</p>
-
 <p>However, in many practical situations, failure data is limited or recorded inappropriately that does not become a useful set of information for analytic. In such a circumstance, decisions on whether to replace/rehabilitate pumps should be dependent on various uncertainty factors such as efficiency, assumption on average decaying rate of the assets, and most importantly the energy consumption vs the production produce.</p>
-
 <p>This article presents a simple yet useful model for managers to make decisions on replacement of pumps if they are more or less aware of deficiency, low efficiency, and high ratio of energy and production over time.</p>
-
 <p>Aside from the above, it is also worth to consider replacement of pumps when the two following aspects are existed.</p>
-
 <ul>
 <li>Asset obsolescence;</li>
 <li>Technological innovation.</li>
 </ul>
-
 <p>There two aspects should be viewed in a combination. Asset obsolescence could be a result of technological innovation or changes in standards and requirements. Suffice it to state that pumps of a station were designed/installed more than a decade ago, nowadays, pumps are designed and manufactured to be more reliable and durable, whilst the capital cost is significant lower than that in the past.</p>
-
 <h1 id="the-model">The model</h1>
-
-<p>Total Cost (TC) incurred in a period of T years is defined as the summation of Capital Cost &copy; and Operation cost (O). It is note that operational cost includes routine maintenance cost.</p>
-
-<p>$$ TC(T) = \sum<em>{i=1}^{I} \sum</em>{t=1}^{T}\frac{C<em>{i,t}+O</em>{i,t}\times \epsilon<em>{i,t}^{new}\times u</em>{i,t}+(1-\delta<em>{i,t})\times O</em>{i,t}\epsilon<em>{i,t}^{old}\times u</em>{i,t}}{(1+\rho)^t}$$</p>
-
-<p>In the equation,  $\epsilon<em>{i,t}$, $u</em>{i,t}$, and  $\delta_{i,t}$ are the decreasing rate of efficiency, utilization, and decision variable of pump i in year t, respectively.</p>
-
+<p>Total Cost (TC) incurred in a period of T years is defined as the summation of Capital Cost (C) and Operation cost (O). It is note that operational cost includes routine maintenance cost.</p>
+<p>$$ TC(T) = \sum_{i=1}^{I} \sum_{t=1}^{T}\frac{C_{i,t}+O_{i,t}\times \epsilon_{i,t}^{new}\times u_{i,t}+(1-\delta_{i,t})\times O_{i,t}\epsilon_{i,t}^{old}\times u_{i,t}}{(1+\rho)^t}$$</p>
+<p>In the equation,  $\epsilon_{i,t}$, $u_{i,t}$, and  $\delta_{i,t}$ are the decreasing rate of efficiency, utilization, and decision variable of pump i in year t, respectively.</p>
 <h1 id="example">Example</h1>
-
 <p>A pump station has 6 booster pumps with the same configuration of 500 horsepower. The station has been in commission for more than 10 years and there has been a progressive degradation process, though it has not been captured appropriately. Sufficient failure data at component level is not available.</p>
-
 <p>Tests have been conducted to measure the flow and the power rating that allows to come up efficiency of pump. However, due to non-optimal pipe configuration, the obtained efficiencies are also subjected to uncertainties.</p>
-
 <p>Under such circumstance, decision makers have to make decisions under uncertainties.</p>
-
 <ul>
 <li>Discount factor is 8.5% annually;</li>
 <li>Capital cost for buying/installing a new pump of 500 horsepower would cost 5 millions Peso (~10,000 usd);</li>
@@ -687,237 +670,226 @@ Ideally, failure data on pump components should be recorded in time-series fashi
 <li>Price of 1 KW is 6.5 Peso;</li>
 <li>There are 2 Intervention Strategies (IS) to be considerred. Herein refer to TC1 and TC2, respectively. TC1 is to replace existing pump with a new one in a step of 1 year. TC2 is Do Nothing, i.e., to keep the existing pumps as they are.</li>
 </ul>
-
 <h1 id="source-code">Source Code</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">#this subroutine is used to estimate the cashflow of an investment for pump stations</span>
 
-<pre><code class="language-r">#this subroutine is used to estimate the cashflow of an investment for pump stations
+Npumps <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span> <span style="color:#75715e">#total number of pumps</span>
+TPeriod<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span> <span style="color:#75715e">#this infers 5 years</span>
+TC1<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">matrix</span>(nrow<span style="color:#f92672">=</span>TPeriod,ncol <span style="color:#f92672">=</span> Npumps) <span style="color:#75715e">#Option 1</span>
+TC2<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">matrix</span>(nrow<span style="color:#f92672">=</span>TPeriod,ncol <span style="color:#f92672">=</span> Npumps) <span style="color:#75715e">#Option 2</span>
+CAPEX<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">matrix</span>(nrow<span style="color:#f92672">=</span>TPeriod,ncol <span style="color:#f92672">=</span> Npumps) <span style="color:#75715e">#Captical investment cost</span>
+OPEX<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">matrix</span>(nrow<span style="color:#f92672">=</span>TPeriod,ncol <span style="color:#f92672">=</span> Npumps) <span style="color:#75715e">#Operational Cost</span>
+delta<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">matrix</span>(nrow<span style="color:#f92672">=</span>TPeriod,ncol <span style="color:#f92672">=</span> Npumps) <span style="color:#75715e">#decrease in efficiency</span>
+epsilonold<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">matrix</span>(nrow<span style="color:#f92672">=</span>TPeriod,ncol <span style="color:#f92672">=</span> Npumps) <span style="color:#75715e">#decrease in efficiency</span>
+epsilonnew<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">matrix</span>(nrow<span style="color:#f92672">=</span>TPeriod,ncol <span style="color:#f92672">=</span> Npumps) <span style="color:#75715e">#decrease in efficiency</span>
+u<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">matrix</span>(nrow<span style="color:#f92672">=</span>TPeriod,ncol <span style="color:#f92672">=</span> Npumps) <span style="color:#75715e">#ultilization</span>
+rho<span style="color:#f92672">=</span><span style="color:#ae81ff">0.085</span> <span style="color:#75715e">#discount factor</span>
+pricee<span style="color:#f92672">=</span><span style="color:#ae81ff">6.5</span>
+hoursepower<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>
+utilization<span style="color:#f92672">=</span><span style="color:#ae81ff">0.98</span>
+Newpumpcost<span style="color:#f92672">=</span><span style="color:#ae81ff">5000000</span>
 
-Npumps = 6 #total number of pumps
-TPeriod=10 #this infers 5 years
-TC1&lt;-matrix(nrow=TPeriod,ncol = Npumps) #Option 1
-TC2&lt;-matrix(nrow=TPeriod,ncol = Npumps) #Option 2
-CAPEX&lt;-matrix(nrow=TPeriod,ncol = Npumps) #Captical investment cost
-OPEX&lt;-matrix(nrow=TPeriod,ncol = Npumps) #Operational Cost
-delta&lt;-matrix(nrow=TPeriod,ncol = Npumps) #decrease in efficiency
-epsilonold&lt;-matrix(nrow=TPeriod,ncol = Npumps) #decrease in efficiency
-epsilonnew&lt;-matrix(nrow=TPeriod,ncol = Npumps) #decrease in efficiency
-u&lt;-matrix(nrow=TPeriod,ncol = Npumps) #ultilization
-rho=0.085 #discount factor
-pricee=6.5
-hoursepower=500
-utilization=0.98
-Newpumpcost=5000000
+<span style="color:#75715e">#Option 1 - Stagging investment for pump</span>
 
-#Option 1 - Stagging investment for pump
-
-for (t in 1: TPeriod){
-  if (t&lt;2){
-    for (i in 1:Npumps){
-      epsilonold[t,i]&lt;-1.05
+<span style="color:#a6e22e">for </span>(t in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> TPeriod){
+  <span style="color:#a6e22e">if </span>(t<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">2</span>){
+    <span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>Npumps){
+      epsilonold[t,i]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1.05</span>
     }
   } else {
-    for (i in 1:Npumps){
-    epsilonold[t,i]&lt;-epsilonold[t-1,i]*1.05
+    <span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>Npumps){
+    epsilonold[t,i]<span style="color:#f92672">&lt;-</span>epsilonold[t<span style="color:#ae81ff">-1</span>,i]<span style="color:#f92672">*</span><span style="color:#ae81ff">1.05</span>
     }
   }
 }
-for (t in 1:TPeriod){
-  for (i in 1:Npumps){
-    delta[,]&lt;-0
-    delta[1,1]&lt;-1
-    epsilonnew[1,1]&lt;-1
-    delta[2,2]&lt;-1
-    epsilonnew[2,2]&lt;-1
-    delta[3,3]&lt;-1
-    epsilonnew[3,3]&lt;-1
-    delta[4,4]&lt;-1
-    epsilonnew[4,4]&lt;-1
-    delta[5,5]&lt;-1
-    epsilonnew[5,5]&lt;-1
-    delta[6,6]&lt;-1
-    epsilonnew[6,6]&lt;-1
-    CAPEX[t,i]&lt;-Newpumpcost #peso
-    u[t,i]&lt;-utilization
-    OPEX[t,i]&lt;- pricee*hoursepower*365*24*0.746*u[t,i] #peso
+<span style="color:#a6e22e">for </span>(t in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>TPeriod){
+  <span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>Npumps){
+    delta[,]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">0</span>
+    delta[1,<span style="color:#ae81ff">1</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    epsilonnew[1,<span style="color:#ae81ff">1</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    delta[2,<span style="color:#ae81ff">2</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    epsilonnew[2,<span style="color:#ae81ff">2</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    delta[3,<span style="color:#ae81ff">3</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    epsilonnew[3,<span style="color:#ae81ff">3</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    delta[4,<span style="color:#ae81ff">4</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    epsilonnew[4,<span style="color:#ae81ff">4</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    delta[5,<span style="color:#ae81ff">5</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    epsilonnew[5,<span style="color:#ae81ff">5</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    delta[6,<span style="color:#ae81ff">6</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    epsilonnew[6,<span style="color:#ae81ff">6</span>]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
+    CAPEX[t,i]<span style="color:#f92672">&lt;-</span>Newpumpcost <span style="color:#75715e">#peso</span>
+    u[t,i]<span style="color:#f92672">&lt;-</span>utilization
+    OPEX[t,i]<span style="color:#f92672">&lt;-</span> pricee<span style="color:#f92672">*</span>hoursepower<span style="color:#f92672">*</span><span style="color:#ae81ff">365</span><span style="color:#f92672">*</span><span style="color:#ae81ff">24</span><span style="color:#f92672">*</span><span style="color:#ae81ff">0.746</span><span style="color:#f92672">*</span>u[t,i] <span style="color:#75715e">#peso</span>
       }
 }
-for (t in 1: TPeriod){
-  for (i in 1:Npumps){
-    if (delta[t,i]==1){
+<span style="color:#a6e22e">for </span>(t in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> TPeriod){
+  <span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>Npumps){
+    <span style="color:#a6e22e">if </span>(delta[t,i]<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span>){
 
-      epsilonnew[t,i]&lt;-1
+      epsilonnew[t,i]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
 
-    } else if (i==1 &amp;amp; t==1){
+    } else <span style="color:#a6e22e">if </span>(i<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;</span>amp; t<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span>){
 
-        epsilonnew[t,i]&lt;-1
+        epsilonnew[t,i]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1</span>
 
 
-    } else if (t&amp;gt;1){
-      epsilonnew[t,i]&lt;-epsilonnew[t-1,i]*1
+    } else <span style="color:#a6e22e">if </span>(t<span style="color:#f92672">&amp;</span>gt;<span style="color:#ae81ff">1</span>){
+      epsilonnew[t,i]<span style="color:#f92672">&lt;-</span>epsilonnew[t<span style="color:#ae81ff">-1</span>,i]<span style="color:#f92672">*</span><span style="color:#ae81ff">1</span>
     }
 
   }
 
 }
 
-epsilonnew[is.na(epsilonnew)] &lt;- 0
+epsilonnew<span style="color:#a6e22e">[is.na</span>(epsilonnew)] <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
 
-#redefine the value of epsilonold based on new value of epsilonnew
+<span style="color:#75715e">#redefine the value of epsilonold based on new value of epsilonnew</span>
 
 
-for (t in 1: TPeriod){
-  for (i in 1:Npumps){
-    if (epsilonnew[t,i]&lt;1){
+<span style="color:#a6e22e">for </span>(t in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> TPeriod){
+  <span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>Npumps){
+    <span style="color:#a6e22e">if </span>(epsilonnew[t,i]<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">1</span>){
 
-      epsilonold[t,i]&lt;-epsilonold[t,i]
+      epsilonold[t,i]<span style="color:#f92672">&lt;-</span>epsilonold[t,i]
 
-    } else if (epsilonnew[t,i]==1){
-       epsilonold[t,i]&lt;-0
+    } else <span style="color:#a6e22e">if </span>(epsilonnew[t,i]<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span>){
+       epsilonold[t,i]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">0</span>
      }
    }
  }
 
 
-for (i in 1:Npumps){
-  for (t in 1:TPeriod){
-    TC1[t,i]&lt;-(((CAPEX[t,i]*delta[t,i]+OPEX[t,i]*epsilonnew[t,i]))+(1-delta[t,i])*OPEX[t,i]*epsilonold[t,i])/(1+rho)**t
+<span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>Npumps){
+  <span style="color:#a6e22e">for </span>(t in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>TPeriod){
+    TC1[t,i]<span style="color:#f92672">&lt;-</span>(((CAPEX[t,i]<span style="color:#f92672">*</span>delta[t,i]<span style="color:#f92672">+</span>OPEX[t,i]<span style="color:#f92672">*</span>epsilonnew[t,i]))<span style="color:#f92672">+</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>delta[t,i])<span style="color:#f92672">*</span>OPEX[t,i]<span style="color:#f92672">*</span>epsilonold[t,i])<span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">+</span>rho)<span style="color:#f92672">*</span><span style="color:#f92672">*</span>t
   }
 }
-cat(&quot;Replacement of pumps \n&quot;)
+<span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Replacement of pumps \n&#34;</span>)
 
-print(TC1)
+<span style="color:#a6e22e">print</span>(TC1)
 
-#stop(&quot;dd&quot;)
+<span style="color:#75715e">#stop(&#34;dd&#34;)</span>
 
-#Option 2 - Do Nothing
+<span style="color:#75715e">#Option 2 - Do Nothing</span>
 
-for (t in 1:TPeriod){
-  for (i in 1:Npumps){
-    delta[,]&lt;-0
-    CAPEX[t,i]&lt;-0 #peso
-    u[t,i]&lt;-utilization
-    epsilonnew[t,i]&lt;-1.0
-      OPEX[t,i]&lt;- pricee*hoursepower*365*24*0.746*u[t,i] #peso
+<span style="color:#a6e22e">for </span>(t in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>TPeriod){
+  <span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>Npumps){
+    delta[,]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">0</span>
+    CAPEX[t,i]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">0</span> <span style="color:#75715e">#peso</span>
+    u[t,i]<span style="color:#f92672">&lt;-</span>utilization
+    epsilonnew[t,i]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1.0</span>
+      OPEX[t,i]<span style="color:#f92672">&lt;-</span> pricee<span style="color:#f92672">*</span>hoursepower<span style="color:#f92672">*</span><span style="color:#ae81ff">365</span><span style="color:#f92672">*</span><span style="color:#ae81ff">24</span><span style="color:#f92672">*</span><span style="color:#ae81ff">0.746</span><span style="color:#f92672">*</span>u[t,i] <span style="color:#75715e">#peso</span>
   }
 }
 
-for (t in 1: TPeriod){
-  if (t&lt;2){
-    for (i in 1:Npumps){
-      epsilonold[t,i]&lt;-1.05
+<span style="color:#a6e22e">for </span>(t in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> TPeriod){
+  <span style="color:#a6e22e">if </span>(t<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">2</span>){
+    <span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>Npumps){
+      epsilonold[t,i]<span style="color:#f92672">&lt;-</span><span style="color:#ae81ff">1.05</span>
     }
   } else {
-    for (i in 1:Npumps){
-      epsilonold[t,i]&lt;-epsilonold[t-1,i]*1.05
+    <span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>Npumps){
+      epsilonold[t,i]<span style="color:#f92672">&lt;-</span>epsilonold[t<span style="color:#ae81ff">-1</span>,i]<span style="color:#f92672">*</span><span style="color:#ae81ff">1.05</span>
     }
   }
 }
 
 
-for (i in 1:Npumps){
-  for (t in 1:TPeriod){
-    TC2[t,i]&lt;-(((CAPEX[t,i]+OPEX[t,i]*epsilonnew[t,i])*delta[t,i])+(1-delta[t,i])*OPEX[t,i]*epsilonold[t,i])/(1+rho)**t
+<span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>Npumps){
+  <span style="color:#a6e22e">for </span>(t in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>TPeriod){
+    TC2[t,i]<span style="color:#f92672">&lt;-</span>(((CAPEX[t,i]<span style="color:#f92672">+</span>OPEX[t,i]<span style="color:#f92672">*</span>epsilonnew[t,i])<span style="color:#f92672">*</span>delta[t,i])<span style="color:#f92672">+</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>delta[t,i])<span style="color:#f92672">*</span>OPEX[t,i]<span style="color:#f92672">*</span>epsilonold[t,i])<span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">+</span>rho)<span style="color:#f92672">*</span><span style="color:#f92672">*</span>t
   }
 }
 
-cat(&quot;Do Nothing \n&quot;)
-print(TC2)
+<span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Do Nothing \n&#34;</span>)
+<span style="color:#a6e22e">print</span>(TC2)
 
-cat(&quot;The difference of investment \n&quot;)
-print(TC1-TC2)
+<span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">The difference of investment \n&#34;</span>)
+<span style="color:#a6e22e">print</span>(TC1<span style="color:#f92672">-</span>TC2)
 
-#plot the graph for comparison
+<span style="color:#75715e">#plot the graph for comparison</span>
 
-library(ggplot2)
-time=c(1:TPeriod)
+<span style="color:#a6e22e">library</span>(ggplot2)
+time<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>TPeriod)
 
-x&lt;-data.frame(dat=TC1[,1],IS=rep(&quot;TC1&quot;))
-y&lt;-data.frame(dat=TC2[,1],IS=rep(&quot;TC2&quot;))
+x<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">data.frame</span>(dat<span style="color:#f92672">=</span>TC1[,<span style="color:#ae81ff">1</span>],IS<span style="color:#f92672">=</span><span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TC1&#34;</span>))
+y<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">data.frame</span>(dat<span style="color:#f92672">=</span>TC2[,<span style="color:#ae81ff">1</span>],IS<span style="color:#f92672">=</span><span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TC2&#34;</span>))
 
-x&lt;-cbind(time,x)
-y&lt;-cbind(time,y)
- xy&lt;- rbind(x, y)
-ggplot(xy, aes(fill=IS, y=dat, x=factor(time))) + geom_bar(position=&quot;dodge&quot;, stat=&quot;identity&quot;)
-stop(&quot;&quot;)
+x<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">cbind</span>(time,x)
+y<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">cbind</span>(time,y)
+ xy<span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rbind</span>(x, y)
+<span style="color:#a6e22e">ggplot</span>(xy, <span style="color:#a6e22e">aes</span>(fill<span style="color:#f92672">=</span>IS, y<span style="color:#f92672">=</span>dat, x<span style="color:#f92672">=</span><span style="color:#a6e22e">factor</span>(time))) <span style="color:#f92672">+</span> <span style="color:#a6e22e">geom_bar</span>(position<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">dodge&#34;</span>, stat<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">identity&#34;</span>)
+<span style="color:#a6e22e">stop</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>)
 
-TC1&lt;-data.frame(TC1,IS=rep(&quot;TC1&quot;))
-TC2&lt;-data.frame(TC2,IS=rep(&quot;TC2&quot;))
-#TC2&lt;-data.frame(TC2=TC2[,1])
+TC1<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">data.frame</span>(TC1,IS<span style="color:#f92672">=</span><span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TC1&#34;</span>))
+TC2<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">data.frame</span>(TC2,IS<span style="color:#f92672">=</span><span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TC2&#34;</span>))
+<span style="color:#75715e">#TC2&lt;-data.frame(TC2=TC2[,1])</span>
 
-#TC1&lt;-data.frame(TC1)
-#TC2&lt;-data.frame(TC2)
+<span style="color:#75715e">#TC1&lt;-data.frame(TC1)</span>
+<span style="color:#75715e">#TC2&lt;-data.frame(TC2)</span>
 
-TC1&lt;-cbind(time,TC1)
-TC2&lt;-cbind(time,TC2)
+TC1<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">cbind</span>(time,TC1)
+TC2<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">cbind</span>(time,TC2)
 
-library(reshape)
+<span style="color:#a6e22e">library</span>(reshape)
 
-mdataTC1 &lt;- melt(TC1,id=c(&quot;time&quot;,&quot;IS&quot;))
+mdataTC1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">melt</span>(TC1,id<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">time&#34;</span>,<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">IS&#34;</span>))
 
-mdataTC2 &lt;- melt(TC2,id=c(&quot;time&quot;,&quot;IS&quot;))
+mdataTC2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">melt</span>(TC2,id<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">time&#34;</span>,<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">IS&#34;</span>))
 
-#joint the two data
-total &lt;- rbind(mdataTC1, mdataTC2)
+<span style="color:#75715e">#joint the two data</span>
+total <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rbind</span>(mdataTC1, mdataTC2)
 
-ggplot(total, aes(fill=IS, y=value, x=factor(time)),variable=X1) + geom_bar(position=&quot;dodge&quot;, stat=&quot;identity&quot;)
+<span style="color:#a6e22e">ggplot</span>(total, <span style="color:#a6e22e">aes</span>(fill<span style="color:#f92672">=</span>IS, y<span style="color:#f92672">=</span>value, x<span style="color:#f92672">=</span><span style="color:#a6e22e">factor</span>(time)),variable<span style="color:#f92672">=</span>X1) <span style="color:#f92672">+</span> <span style="color:#a6e22e">geom_bar</span>(position<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">dodge&#34;</span>, stat<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">identity&#34;</span>)
 
-#ggplot(total, aes(fill=variable, y=value, x=factor(time)),variable=X1) + geom_bar(position=&quot;fill&quot;, stat=&quot;identity&quot;)
+<span style="color:#75715e">#ggplot(total, aes(fill=variable, y=value, x=factor(time)),variable=X1) + geom_bar(position=&#34;fill&#34;, stat=&#34;identity&#34;)</span>
 
-#ggplot(total, aes(y=value, x=variable, color=IS, fill=IS)) + geom_bar( stat=&quot;identity&quot;) +   facet_wrap(~factor(time))
+<span style="color:#75715e">#ggplot(total, aes(y=value, x=variable, color=IS, fill=IS)) + geom_bar( stat=&#34;identity&#34;) +   facet_wrap(~factor(time))</span>
 
-</code></pre>
-
-<h1 id="results">Results</h1>
-
+</code></pre></div><h1 id="results">Results</h1>
 <p>Estimation results are shown in following tables</p>
-
 <blockquote>
 <p>source(&lsquo;C:/Dropbox/workspace/RProjects/PlantAudit/PAG/tc.R&rsquo;)
 Replacement of pumps</p>
-
-<pre><code class="language-r">          [,1]     [,2]     [,3]     [,4]     [,5]     [,6]
- [1,] 23791565 20142433 20142433 20142433 20142433 20142433
- [2,] 17680433 21927709 19492677 19492677 19492677 19492677
- [3,] 16295330 16295330 20209870 18863881 18863881 18863881
- [4,] 15018737 15018737 15018737 18626609 18255369 18255369
- [5,] 13842154 13842154 13842154 13842154 17167381 17666486
- [6,] 12757746 12757746 12757746 12757746 12757746 15822471
- [7,] 11758291 11758291 11758291 11758291 11758291 11758291
- [8,] 10837135 10837135 10837135 10837135 10837135 10837135
- [9,]  9988142  9988142  9988142  9988142  9988142  9988142
-[10,]  9205661  9205661  9205661  9205661  9205661  9205661
-Do Nothing
-          [,1]     [,2]     [,3]     [,4]     [,5]     [,6]
- [1,] 20142433 20142433 20142433 20142433 20142433 20142433
- [2,] 19492677 19492677 19492677 19492677 19492677 19492677
- [3,] 18863881 18863881 18863881 18863881 18863881 18863881
- [4,] 18255369 18255369 18255369 18255369 18255369 18255369
- [5,] 17666486 17666486 17666486 17666486 17666486 17666486
- [6,] 17096599 17096599 17096599 17096599 17096599 17096599
- [7,] 16545096 16545096 16545096 16545096 16545096 16545096
- [8,] 16011383 16011383 16011383 16011383 16011383 16011383
- [9,] 15494887 15494887 15494887 15494887 15494887 15494887
-[10,] 14995052 14995052 14995052 14995052 14995052 14995052
-The difference of investment
-          [,1]     [,2]     [,3]       [,4]       [,5]     [,6]
- [1,]  3649131        0        0        0.0        0.0        0
- [2,] -1812244  2435032        0        0.0        0.0        0
- [3,] -2568551 -2568551  1345989        0.0        0.0        0
- [4,] -3236632 -3236632 -3236632   371239.7        0.0        0
- [5,] -3824332 -3824332 -3824332 -3824332.0  -499104.8        0
- [6,] -4338854 -4338854 -4338854 -4338853.7 -4338853.7 -1274128
- [7,] -4786805 -4786805 -4786805 -4786805.2 -4786805.2 -4786805
- [8,] -5174249 -5174249 -5174249 -5174248.9 -5174248.9 -5174249
- [9,] -5506745 -5506745 -5506745 -5506744.7 -5506744.7 -5506745
-[10,] -5789391 -5789391 -5789391 -5789390.9 -5789390.9 -5789391
-</code></pre>
-
-<p>As can be seen from the table of difference, if pump 1 is to be replaced (TC1) now (year 1), the Owner needs to spend 5 millions Peso for the pump, plus the energy cost for that year, the total cost in year 1 would be 23,791,565 Peso. Meanwhile, if pump 1 is to follow TC2 (Do Nothing), there is a cost of 20,142,433 Peso, which is basically the energy cost. The difference between TC1 and TC2 in year 1 is 3,649,131 Peso, meaning the Owner will spend more money in year 1. In other words, there is a negative cash flow in the first year.</p>
 </blockquote>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">          [,<span style="color:#ae81ff">1</span>]     [,<span style="color:#ae81ff">2</span>]     [,<span style="color:#ae81ff">3</span>]     [,<span style="color:#ae81ff">4</span>]     [,<span style="color:#ae81ff">5</span>]     [,<span style="color:#ae81ff">6</span>]
+ [1,] <span style="color:#ae81ff">23791565</span> <span style="color:#ae81ff">20142433</span> <span style="color:#ae81ff">20142433</span> <span style="color:#ae81ff">20142433</span> <span style="color:#ae81ff">20142433</span> <span style="color:#ae81ff">20142433</span>
+ [2,] <span style="color:#ae81ff">17680433</span> <span style="color:#ae81ff">21927709</span> <span style="color:#ae81ff">19492677</span> <span style="color:#ae81ff">19492677</span> <span style="color:#ae81ff">19492677</span> <span style="color:#ae81ff">19492677</span>
+ [3,] <span style="color:#ae81ff">16295330</span> <span style="color:#ae81ff">16295330</span> <span style="color:#ae81ff">20209870</span> <span style="color:#ae81ff">18863881</span> <span style="color:#ae81ff">18863881</span> <span style="color:#ae81ff">18863881</span>
+ [4,] <span style="color:#ae81ff">15018737</span> <span style="color:#ae81ff">15018737</span> <span style="color:#ae81ff">15018737</span> <span style="color:#ae81ff">18626609</span> <span style="color:#ae81ff">18255369</span> <span style="color:#ae81ff">18255369</span>
+ [5,] <span style="color:#ae81ff">13842154</span> <span style="color:#ae81ff">13842154</span> <span style="color:#ae81ff">13842154</span> <span style="color:#ae81ff">13842154</span> <span style="color:#ae81ff">17167381</span> <span style="color:#ae81ff">17666486</span>
+ [6,] <span style="color:#ae81ff">12757746</span> <span style="color:#ae81ff">12757746</span> <span style="color:#ae81ff">12757746</span> <span style="color:#ae81ff">12757746</span> <span style="color:#ae81ff">12757746</span> <span style="color:#ae81ff">15822471</span>
+ [7,] <span style="color:#ae81ff">11758291</span> <span style="color:#ae81ff">11758291</span> <span style="color:#ae81ff">11758291</span> <span style="color:#ae81ff">11758291</span> <span style="color:#ae81ff">11758291</span> <span style="color:#ae81ff">11758291</span>
+ [8,] <span style="color:#ae81ff">10837135</span> <span style="color:#ae81ff">10837135</span> <span style="color:#ae81ff">10837135</span> <span style="color:#ae81ff">10837135</span> <span style="color:#ae81ff">10837135</span> <span style="color:#ae81ff">10837135</span>
+ [9,]  <span style="color:#ae81ff">9988142</span>  <span style="color:#ae81ff">9988142</span>  <span style="color:#ae81ff">9988142</span>  <span style="color:#ae81ff">9988142</span>  <span style="color:#ae81ff">9988142</span>  <span style="color:#ae81ff">9988142</span>
+[10,]  <span style="color:#ae81ff">9205661</span>  <span style="color:#ae81ff">9205661</span>  <span style="color:#ae81ff">9205661</span>  <span style="color:#ae81ff">9205661</span>  <span style="color:#ae81ff">9205661</span>  <span style="color:#ae81ff">9205661</span>
+Do Nothing
+          [,<span style="color:#ae81ff">1</span>]     [,<span style="color:#ae81ff">2</span>]     [,<span style="color:#ae81ff">3</span>]     [,<span style="color:#ae81ff">4</span>]     [,<span style="color:#ae81ff">5</span>]     [,<span style="color:#ae81ff">6</span>]
+ [1,] <span style="color:#ae81ff">20142433</span> <span style="color:#ae81ff">20142433</span> <span style="color:#ae81ff">20142433</span> <span style="color:#ae81ff">20142433</span> <span style="color:#ae81ff">20142433</span> <span style="color:#ae81ff">20142433</span>
+ [2,] <span style="color:#ae81ff">19492677</span> <span style="color:#ae81ff">19492677</span> <span style="color:#ae81ff">19492677</span> <span style="color:#ae81ff">19492677</span> <span style="color:#ae81ff">19492677</span> <span style="color:#ae81ff">19492677</span>
+ [3,] <span style="color:#ae81ff">18863881</span> <span style="color:#ae81ff">18863881</span> <span style="color:#ae81ff">18863881</span> <span style="color:#ae81ff">18863881</span> <span style="color:#ae81ff">18863881</span> <span style="color:#ae81ff">18863881</span>
+ [4,] <span style="color:#ae81ff">18255369</span> <span style="color:#ae81ff">18255369</span> <span style="color:#ae81ff">18255369</span> <span style="color:#ae81ff">18255369</span> <span style="color:#ae81ff">18255369</span> <span style="color:#ae81ff">18255369</span>
+ [5,] <span style="color:#ae81ff">17666486</span> <span style="color:#ae81ff">17666486</span> <span style="color:#ae81ff">17666486</span> <span style="color:#ae81ff">17666486</span> <span style="color:#ae81ff">17666486</span> <span style="color:#ae81ff">17666486</span>
+ [6,] <span style="color:#ae81ff">17096599</span> <span style="color:#ae81ff">17096599</span> <span style="color:#ae81ff">17096599</span> <span style="color:#ae81ff">17096599</span> <span style="color:#ae81ff">17096599</span> <span style="color:#ae81ff">17096599</span>
+ [7,] <span style="color:#ae81ff">16545096</span> <span style="color:#ae81ff">16545096</span> <span style="color:#ae81ff">16545096</span> <span style="color:#ae81ff">16545096</span> <span style="color:#ae81ff">16545096</span> <span style="color:#ae81ff">16545096</span>
+ [8,] <span style="color:#ae81ff">16011383</span> <span style="color:#ae81ff">16011383</span> <span style="color:#ae81ff">16011383</span> <span style="color:#ae81ff">16011383</span> <span style="color:#ae81ff">16011383</span> <span style="color:#ae81ff">16011383</span>
+ [9,] <span style="color:#ae81ff">15494887</span> <span style="color:#ae81ff">15494887</span> <span style="color:#ae81ff">15494887</span> <span style="color:#ae81ff">15494887</span> <span style="color:#ae81ff">15494887</span> <span style="color:#ae81ff">15494887</span>
+[10,] <span style="color:#ae81ff">14995052</span> <span style="color:#ae81ff">14995052</span> <span style="color:#ae81ff">14995052</span> <span style="color:#ae81ff">14995052</span> <span style="color:#ae81ff">14995052</span> <span style="color:#ae81ff">14995052</span>
+The difference of investment
+          [,<span style="color:#ae81ff">1</span>]     [,<span style="color:#ae81ff">2</span>]     [,<span style="color:#ae81ff">3</span>]       [,<span style="color:#ae81ff">4</span>]       [,<span style="color:#ae81ff">5</span>]     [,<span style="color:#ae81ff">6</span>]
+ [1,]  <span style="color:#ae81ff">3649131</span>        <span style="color:#ae81ff">0</span>        <span style="color:#ae81ff">0</span>        <span style="color:#ae81ff">0.0</span>        <span style="color:#ae81ff">0.0</span>        <span style="color:#ae81ff">0</span>
+ [2,] <span style="color:#ae81ff">-1812244</span>  <span style="color:#ae81ff">2435032</span>        <span style="color:#ae81ff">0</span>        <span style="color:#ae81ff">0.0</span>        <span style="color:#ae81ff">0.0</span>        <span style="color:#ae81ff">0</span>
+ [3,] <span style="color:#ae81ff">-2568551</span> <span style="color:#ae81ff">-2568551</span>  <span style="color:#ae81ff">1345989</span>        <span style="color:#ae81ff">0.0</span>        <span style="color:#ae81ff">0.0</span>        <span style="color:#ae81ff">0</span>
+ [4,] <span style="color:#ae81ff">-3236632</span> <span style="color:#ae81ff">-3236632</span> <span style="color:#ae81ff">-3236632</span>   <span style="color:#ae81ff">371239.7</span>        <span style="color:#ae81ff">0.0</span>        <span style="color:#ae81ff">0</span>
+ [5,] <span style="color:#ae81ff">-3824332</span> <span style="color:#ae81ff">-3824332</span> <span style="color:#ae81ff">-3824332</span> <span style="color:#ae81ff">-3824332.0</span>  <span style="color:#ae81ff">-499104.8</span>        <span style="color:#ae81ff">0</span>
+ [6,] <span style="color:#ae81ff">-4338854</span> <span style="color:#ae81ff">-4338854</span> <span style="color:#ae81ff">-4338854</span> <span style="color:#ae81ff">-4338853.7</span> <span style="color:#ae81ff">-4338853.7</span> <span style="color:#ae81ff">-1274128</span>
+ [7,] <span style="color:#ae81ff">-4786805</span> <span style="color:#ae81ff">-4786805</span> <span style="color:#ae81ff">-4786805</span> <span style="color:#ae81ff">-4786805.2</span> <span style="color:#ae81ff">-4786805.2</span> <span style="color:#ae81ff">-4786805</span>
+ [8,] <span style="color:#ae81ff">-5174249</span> <span style="color:#ae81ff">-5174249</span> <span style="color:#ae81ff">-5174249</span> <span style="color:#ae81ff">-5174248.9</span> <span style="color:#ae81ff">-5174248.9</span> <span style="color:#ae81ff">-5174249</span>
+ [9,] <span style="color:#ae81ff">-5506745</span> <span style="color:#ae81ff">-5506745</span> <span style="color:#ae81ff">-5506745</span> <span style="color:#ae81ff">-5506744.7</span> <span style="color:#ae81ff">-5506744.7</span> <span style="color:#ae81ff">-5506745</span>
+[10,] <span style="color:#ae81ff">-5789391</span> <span style="color:#ae81ff">-5789391</span> <span style="color:#ae81ff">-5789391</span> <span style="color:#ae81ff">-5789390.9</span> <span style="color:#ae81ff">-5789390.9</span> <span style="color:#ae81ff">-5789391</span>
+</code></pre></div><p>As can be seen from the table of difference, if pump 1 is to be replaced (TC1) now (year 1), the Owner needs to spend 5 millions Peso for the pump, plus the energy cost for that year, the total cost in year 1 would be 23,791,565 Peso. Meanwhile, if pump 1 is to follow TC2 (Do Nothing), there is a cost of 20,142,433 Peso, which is basically the energy cost. The difference between TC1 and TC2 in year 1 is 3,649,131 Peso, meaning the Owner will spend more money in year 1. In other words, there is a negative cash flow in the first year.</p>
 <p>However, from 2nd year onward, there is a decreasing in energy consumption, this is thanks to the higher efficiency pump that consume less energy. As a result, there is a saving of -1,812,244 Peso. This value has been discounted and it is the Net Present Value of the OPEX incurred in year two. This difference can be notably seen in the following graph. This graph clearly shows that more energy in following years will be saved if the pump 1 is to be replaced now. It can also be dictated that the amount of cost associated with the saving in energy will compensate the CAPEX within 2 years of investment.</p>
-
-<p><a href="http://namkyodai.github.io" rel="some text"><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ROIpumps/ROIpump_roi.png" alt="Foo" /></a></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ROIpumps/ROIpump_roi.png" alt="Foo"><!-- raw HTML omitted --></p>
 
     </div>
 
@@ -1227,7 +1199,7 @@ The difference of investment
   
 
   <p class="powered-by">
-    &copy; 2019 Nam Le &middot; 
+    © 2019 Nam Le &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

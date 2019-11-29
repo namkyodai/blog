@@ -90,18 +90,18 @@ phone = "+63-929-089-8110 (For Viber/Whatsapp/Lines/Zalo kindly add +84-983-7801
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "Amorsolo Square", city = "Makati", region = "NCR", postcode = "1200", country = "The Philippines", country_code = "PH"}
+#address = {street = "Amorsolo Square", city = "Makati", region = "NCR", postcode = "1200", country = "The Philippines", country_code = "PH"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "14.565645", longitude = "121.035092"}
+#coordinates = {latitude = "14.565645", longitude = "121.035092"}
 
 # Directions for visitors to locate you.
 #directions = "Enter Building 1 and take the stairs to Office 200 on Floor 2"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
-office_hours = ["Monday-Friday 08:00 to 17:00"]
+#office_hours = ["Monday-Friday 08:00 to 17:00"]
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
 #appointment_url = "https://calendly.com"

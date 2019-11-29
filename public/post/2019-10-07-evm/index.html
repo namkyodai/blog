@@ -84,7 +84,7 @@ In a large scale engineering project, Contractors shall have an excellent and FU
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.c7559ce645083af89938eddb077e0c5d.css">
+  <link rel="stylesheet" href="/css/academic.min.70ad938936228f620b2c68a380ab9522.css">
 
   
 
@@ -644,101 +644,90 @@ In a large scale engineering project, Contractors shall have an excellent and FU
   <div class="article-container">
 
     <div class="article-style">
-      
-
-<p>Earned Value Management (EVM) is a widely used method, if not to say, a imperative method in project management. Without the EVM, the Project Managers and stakeholders (PM) cannot track and monitor the Progress and Schedule, cannot understand the causes of problems and delays.</p>
-
+      <p>Earned Value Management (EVM) is a widely used method, if not to say, a imperative method in project management. Without the EVM, the Project Managers and stakeholders (PM) cannot track and monitor the Progress and Schedule, cannot understand the causes of problems and delays.</p>
 <p>In a large scale engineering project, Contractors shall have an excellent and FULL TIME experienced Planners who can confidently perform EVM analysis and report to the PM and the project team weekly and monthly. The analysis report shall includes</p>
-
 <ul>
 <li>Updated Project Schedule with actual progress;</li>
 <li>Comparison between the Actual Progress vs Baselines;</li>
 <li>Critical Path Analysis (CPA) and identification of factors contributing to especially delays;
 The EVM.</li>
 </ul>
-
-<p><a href="http://namkyodai.github.io" rel="some text"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/EarnedValueChartNormalized.jpg" alt="Foo" /></a></p>
-
+<p><!-- raw HTML omitted --><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/EarnedValueChartNormalized.jpg" alt="Foo"><!-- raw HTML omitted --></p>
 <p>It seems that creating the graph like the one shown above is EASY. ^_^ Nope, it is not easy at all, but if it is not difficult if Planners understand the statistics and a smart way to work with compiling data.</p>
-
 <p>This article presents 2 different ways to generate the EVM graphs.</p>
-
 <h1 id="evm-for-consultancy-project-using-ms-project-and-r">EVM for Consultancy Project using MS Project and R</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">#Coded by Nam Le (namlt@prontonmail.ch)</span>
+<span style="color:#a6e22e">library</span>(scales)
+<span style="color:#a6e22e">library</span>(reshape2)
+<span style="color:#a6e22e">library</span>(ggplot2)
 
-<pre><code class="language-r">#Coded by Nam Le (namlt@prontonmail.ch)
-library(scales)
-library(reshape2)
-library(ggplot2)
+<span style="color:#75715e">#----------DATA-----------------</span>
+data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Scurve.csv&#34;</span>, header<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">,&#34;</span>)
+k<span style="color:#f92672">=</span><span style="color:#a6e22e">data.frame</span>(data)
 
-#----------DATA-----------------
-data &lt;- read.csv(file=&quot;Scurve.csv&quot;, header=TRUE, sep=&quot;,&quot;)
-k=data.frame(data)
+<span style="color:#75715e"># -----------------------------This needs to be modified whenever you plot</span>
 
-# -----------------------------This needs to be modified whenever you plot
+<span style="color:#a6e22e">plot.new</span>()
+<span style="color:#a6e22e">par</span>(mar<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>), bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">ivory&#34;</span>)
+week<span style="color:#f92672">=</span> <span style="color:#a6e22e">length</span>(data[<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(data[,<span style="color:#ae81ff">3</span>]),<span style="color:#ae81ff">3</span>]) <span style="color:#75715e">#the lastest week that EV value is available. Or you can simply put the number of week in instead of using length(data[!is.na(data[,3]),3]). Here 3 is the column.</span>
+scalefactor<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>
+trucy<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>
+ticktime<span style="color:#f92672">=</span><span style="color:#ae81ff">35</span>   <span style="color:#75715e">#Set the Project Week at which you want to limit the X-axis</span>
+varrange<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">-30</span>,<span style="color:#ae81ff">30</span>)
 
-plot.new()
-par(mar=c(4, 4, 4, 4), bg=&quot;ivory&quot;)
-week= length(data[!is.na(data[,3]),3]) #the lastest week that EV value is available. Or you can simply put the number of week in instead of using length(data[!is.na(data[,3]),3]). Here 3 is the column.
-scalefactor=100
-trucy=100
-ticktime=35   #Set the Project Week at which you want to limit the X-axis
-varrange=c(-30,30)
+<span style="color:#75715e">#Posion of texbox (PV, EV, and VAR in the graph)</span>
+htextbox<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(week<span style="color:#ae81ff">-5</span>,week)
+vtextbox<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>
+ <span style="color:#75715e"># --------------------------------</span>
+ <span style="color:#75715e"># ----------------------------</span>
+<span style="color:#75715e">#Plot the baseline</span>
 
-#Posion of texbox (PV, EV, and VAR in the graph)
-htextbox=c(week-5,week)
-vtextbox=20
- # --------------------------------
- # ----------------------------
-#Plot the baseline
+<span style="color:#a6e22e">plot</span>(data<span style="color:#f92672">$</span>BS01[1<span style="color:#f92672">:</span>ticktime],pch<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>,axes<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>,ylim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,trucy),ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>, xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">blue&#34;</span>,type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">o&#34;</span>,lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,lty<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, main <span style="color:#f92672">=</span><span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">S-curve of week&#34;</span>, week))
+<span style="color:#a6e22e">axis</span>(<span style="color:#ae81ff">2</span>, ylim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,trucy),col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">darkblue&#34;</span>,las<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+<span style="color:#a6e22e">mtext</span>(<span style="color:#a6e22e">expression</span>(<span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Cummulative percentage (%)&#34;</span>)),side<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,line<span style="color:#f92672">=</span><span style="color:#ae81ff">2.2</span>, adj <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> )
+<span style="color:#a6e22e">axis</span>(<span style="color:#ae81ff">1</span>,<span style="color:#a6e22e">pretty</span>(<span style="color:#a6e22e">range</span>(data<span style="color:#f92672">$</span>Week),<span style="color:#ae81ff">30</span>))
+<span style="color:#a6e22e">mtext</span>(<span style="color:#a6e22e">expression</span>(<span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Project Week&#34;</span>)),side<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">black&#34;</span>,line<span style="color:#f92672">=</span><span style="color:#ae81ff">2.2</span>)
+<span style="color:#a6e22e">box</span>()
 
-plot(data$BS01[1:ticktime],pch=4,axes=FALSE,ylim=c(0,trucy),ylab=&quot;&quot;, xlab=&quot;&quot;,col=&quot;blue&quot;,type=&quot;o&quot;,lwd=1,lty=1, main =paste(&quot;S-curve of week&quot;, week))
-axis(2, ylim=c(0,trucy),col=&quot;darkblue&quot;,las=1)
-mtext(expression(paste(&quot;Cummulative percentage (%)&quot;)),side=2,line=2.2, adj = 0.5 )
-axis(1,pretty(range(data$Week),30))
-mtext(expression(paste(&quot;Project Week&quot;)),side=1,col=&quot;black&quot;,line=2.2)
-box()
+<span style="color:#75715e">#plot the EV curve</span>
+<span style="color:#a6e22e">par</span>(new<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(data<span style="color:#f92672">$</span>EV[1<span style="color:#f92672">:</span>ticktime],pch<span style="color:#f92672">=</span><span style="color:#ae81ff">18</span>,axes<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>,ylim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,trucy),ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>, xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">red&#34;</span>,type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">o&#34;</span>,lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,lty<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
 
-#plot the EV curve
-par(new=TRUE)
-plot(data$EV[1:ticktime],pch=18,axes=FALSE,ylim=c(0,trucy),ylab=&quot;&quot;, xlab=&quot;&quot;,col=&quot;red&quot;,type=&quot;o&quot;,lwd=1,lty=2)
+<span style="color:#75715e">#adding stick at the actual week</span>
+<span style="color:#a6e22e">abline</span>(v<span style="color:#f92672">=</span>week, col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">darkviolet&#34;</span>,lty<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
 
-#adding stick at the actual week
-abline(v=week, col=&quot;darkviolet&quot;,lty=3)
+<span style="color:#a6e22e">par</span>(new<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+<span style="color:#75715e">#library(gplots)</span>
+<span style="color:#a6e22e">library</span>(astro) <span style="color:#75715e">#this package is for astronomy but it has some fantastic function for plotting. Here I use the textbox function</span>
+<span style="color:#a6e22e">textbox</span>(htextbox, vtextbox, textlist<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">PV  =&#34;</span>,<span style="color:#a6e22e">format</span>(<span style="color:#a6e22e">round</span>(data<span style="color:#f92672">$</span>BS01[week],<span style="color:#ae81ff">2</span>)),<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">EV  =&#34;</span>,<span style="color:#a6e22e">format</span>(<span style="color:#a6e22e">round</span>(data<span style="color:#f92672">$</span>EV[week],<span style="color:#ae81ff">2</span>)),<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">VAR=&#34;</span>,<span style="color:#a6e22e">format</span>(<span style="color:#a6e22e">round</span>(data<span style="color:#f92672">$</span>EV[week]<span style="color:#f92672">-</span>data<span style="color:#f92672">$</span>BS01[week],<span style="color:#ae81ff">2</span>)))), justify<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">f&#39;</span>, cex<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">purple&#34;</span>, font<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, border<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">green&#34;</span>, margin<span style="color:#f92672">=</span><span style="color:#ae81ff">-0.025</span>,adj<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>,box<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">aliceblue&#34;</span>)
+<span style="color:#75715e">#alternatively, we can also use legend function for the same purpose, but I believe textbox function gives better look.</span>
 
-par(new=TRUE)
-#library(gplots)
-library(astro) #this package is for astronomy but it has some fantastic function for plotting. Here I use the textbox function
-textbox(htextbox, vtextbox, textlist=c(paste(&quot;PV  =&quot;,format(round(data$BS01[week],2)),&quot;EV  =&quot;,format(round(data$EV[week],2)),&quot;VAR=&quot;,format(round(data$EV[week]-data$BS01[week],2)))), justify='f', cex=0.7,col=&quot;purple&quot;, font=2, border=&quot;green&quot;, margin=-0.025,adj=0,box=1,fill=&quot;aliceblue&quot;)
-#alternatively, we can also use legend function for the same purpose, but I believe textbox function gives better look.
+<span style="color:#75715e">#legend(30, 50, c(paste(&#34;PV:&#34;),format(round(data$BS01[week],2)),paste(&#34;EV:&#34;),format(round(data$EV[week],2)), paste(&#34;VAR:&#34;),format(round(data$BS01[week]-data$EV[week],2))), col=c(&#34;blue&#34;,&#34;red&#34;,&#34;green&#34;),cex = 0.6)</span>
 
-#legend(30, 50, c(paste(&quot;PV:&quot;),format(round(data$BS01[week],2)),paste(&quot;EV:&quot;),format(round(data$EV[week],2)), paste(&quot;VAR:&quot;),format(round(data$BS01[week]-data$EV[week],2))), col=c(&quot;blue&quot;,&quot;red&quot;,&quot;green&quot;),cex = 0.6)
+ <span style="color:#75715e">#plot the VAR curve using</span>
+<span style="color:#a6e22e">par</span>(new<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>((data<span style="color:#f92672">$</span>EV[1<span style="color:#f92672">:</span>ticktime]<span style="color:#f92672">-</span>data<span style="color:#f92672">$</span>BS01[1<span style="color:#f92672">:</span>ticktime]),pch<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,axes<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>,ylim<span style="color:#f92672">=</span>varrange,ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>, xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">cadetblue4&#34;</span>,type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">o&#34;</span>,lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,lty<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+<span style="color:#a6e22e">axis</span>(<span style="color:#ae81ff">4</span>, ylim<span style="color:#f92672">=</span>varrange,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">darkblue&#34;</span>,las<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+<span style="color:#a6e22e">mtext</span>(<span style="color:#a6e22e">expression</span>(<span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Variance (%)&#34;</span>)),side<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>,line<span style="color:#f92672">=</span><span style="color:#ae81ff">2.2</span>, adj <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>  )
+<span style="color:#a6e22e">abline</span>(h<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">darkviolet&#34;</span>,lty<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
 
- #plot the VAR curve using
-par(new=TRUE)
-plot((data$EV[1:ticktime]-data$BS01[1:ticktime]),pch=1,axes=FALSE,ylim=varrange,ylab=&quot;&quot;, xlab=&quot;&quot;,col=&quot;cadetblue4&quot;,type=&quot;o&quot;,lwd=1,lty=3)
-axis(4, ylim=varrange,col=&quot;darkblue&quot;,las=1)
-mtext(expression(paste(&quot;Variance (%)&quot;)),side=4,line=2.2, adj = 0.5  )
-abline(h=0, col=&quot;darkviolet&quot;,lty=3)
+ <span style="color:#75715e">#plot the AC curve: This curve is added only for internal monitoring purpose. Shall not give this to the other stakeholders.</span>
+<span style="color:#a6e22e">par</span>(new<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+<span style="color:#a6e22e">plot</span>(data<span style="color:#f92672">$</span>AC[1<span style="color:#f92672">:</span>ticktime],pch<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,axes<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>,ylim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,trucy),ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>, xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">violetred3&#34;</span>,type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">o&#34;</span>,lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,lty<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+<span style="color:#75715e">#axis(4, ylim=varrange,col=&#34;darkblue&#34;,las=1)</span>
+<span style="color:#75715e">#mtext(expression(paste(&#34;Variance (%)&#34;)),side=4,line=2.2, adj = 0.5  )</span>
+<span style="color:#75715e">#abline(h=0, col=&#34;darkviolet&#34;,lty=3)</span>
 
- #plot the AC curve: This curve is added only for internal monitoring purpose. Shall not give this to the other stakeholders.
-par(new=TRUE)
-plot(data$AC[1:ticktime],pch=2,axes=FALSE,ylim=c(0,trucy),ylab=&quot;&quot;, xlab=&quot;&quot;,col=&quot;violetred3&quot;,type=&quot;o&quot;,lwd=1,lty=1)
-#axis(4, ylim=varrange,col=&quot;darkblue&quot;,las=1)
-#mtext(expression(paste(&quot;Variance (%)&quot;)),side=4,line=2.2, adj = 0.5  )
-#abline(h=0, col=&quot;darkviolet&quot;,lty=3)
+<span style="color:#75715e">#adding Planned Value, Earned Value, and Variance</span>
+<span style="color:#75715e">#adding legend</span>
+<span style="color:#a6e22e">legend</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">topleft&#34;</span>, <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">PV&#34;</span>,<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">EV&#34;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">VAR&#34;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">AC&#34;</span>), text.col
+<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">red&#34;</span>, border <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">white&#34;</span>,box.lwd <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">aliceblue&#34;</span>,lwd <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,pch<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">18</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>),lty <span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">1</span>),  col<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">blue&#34;</span>,<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">red&#34;</span>,<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">cadetblue4&#34;</span>,<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">violetred3&#34;</span>),inset <span style="color:#f92672">=</span> <span style="color:#ae81ff">.05</span>,cex<span style="color:#f92672">=</span><span style="color:#ae81ff">0.8</span>)
 
-#adding Planned Value, Earned Value, and Variance
-#adding legend
-legend(&quot;topleft&quot;, c(&quot;PV&quot;,&quot;EV&quot;, &quot;VAR&quot;, &quot;AC&quot;), text.col
-=&quot;red&quot;, border = &quot;white&quot;,box.lwd = 1,bg=&quot;aliceblue&quot;,lwd = 1,pch=c(4,18,1,2),lty =c(1,2,3,1),  col=c(&quot;blue&quot;,&quot;red&quot;,&quot;cadetblue4&quot;,&quot;violetred3&quot;),inset = .05,cex=0.8)
-
-#save png file
-dev.copy(png,'evm.png',width = 800, height = 500)
-dev.off()
-#-----THE END------------
-</code></pre>
-
-<p><a href="http://namkyodai.github.io" rel="some text"><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/EVM/evm.png" alt="Foo" /></a></p>
+<span style="color:#75715e">#save png file</span>
+<span style="color:#a6e22e">dev.copy</span>(png,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">evm.png&#39;</span>,width <span style="color:#f92672">=</span> <span style="color:#ae81ff">800</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>)
+<span style="color:#a6e22e">dev.off</span>()
+<span style="color:#75715e">#-----THE END------------</span>
+</code></pre></div><p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/EVM/evm.png" alt="Foo"><!-- raw HTML omitted --></p>
 
     </div>
 
@@ -1040,7 +1029,7 @@ dev.off()
   
 
   <p class="powered-by">
-    &copy; 2019 Nam Le &middot; 
+    © 2019 Nam Le &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
