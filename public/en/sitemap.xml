@@ -4,7 +4,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+    <lastmod>2019-11-30T12:48:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -18,18 +18,8 @@
   </url>
   
   <url>
-    <loc>/tags/polynomial/</loc>
-    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/2019-10-25-ra-polynomial/</loc>
-    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
-    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+    <lastmod>2019-11-30T12:48:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -40,6 +30,21 @@
                 hreflang="en"
                 href="/post/"
                 />
+  </url>
+  
+  <url>
+    <loc>/post/ait-buivanthinh-themoment/</loc>
+    <lastmod>2019-11-30T12:48:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/polynomial/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-10-25-ra-polynomial/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
   </url>
   
   <url>
@@ -78,21 +83,6 @@
   </url>
   
   <url>
-    <loc>/categories/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/asset-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/asset-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -104,6 +94,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tags/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/asset-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/asset-management/"
                 />
   </url>
   
@@ -183,21 +188,6 @@
   </url>
   
   <url>
-    <loc>/tags/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/project-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/categories/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -209,6 +199,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/categories/project-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/project-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/project-management/"
                 />
   </url>
   

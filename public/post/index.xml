@@ -5,12 +5,62 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Fri, 25 Oct 2019 22:58:39 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Sat, 30 Nov 2019 12:48:33 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>The moment at the AIT</title>
+      <link>/post/ait-buivanthinh-themoment/</link>
+      <pubDate>Sat, 30 Nov 2019 12:48:33 +0800</pubDate>
+      <guid>/post/ait-buivanthinh-themoment/</guid>
+      <description>&lt;p&gt;This is a poem written by Bui Van Thinh, a senior guy in my class. During the period from 2002 to 2004, we were Master students at the Asian Institute of Technology (AIT) in BKK, Thailand. Many of us were poor in English but we were trying our best to learn the language from other international friends. The English of the peom contains some grammatical errors, however, the content and the meaning of the poem are more important, telling us a good memory of the past.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It’s the time to say goodbye to you&lt;br&gt;
+The moments at AIT, I will never forget&lt;br&gt;
+Our class is friendly with so many languages&lt;br&gt;
+We are all for knowledge achievement.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Professor Ogun. is so kind in the risk management&lt;br&gt;
+Explain the difficult meanings in legal concepts&lt;br&gt;
+The more reading what saying in the FIDIC&lt;br&gt;
+The less we believe in our English skills.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dr. Chotchai is a gentleman in Management field&lt;br&gt;
+Like a politician being teacher in the class&lt;br&gt;
+What he’s teaching on the construction project&lt;br&gt;
+Have led more students to project managers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dr. Hadi is the youngest of the three&lt;br&gt;
+Being both teacher and friend in the class&lt;br&gt;
+His simulation, 3D and 4D knowledges&lt;br&gt;
+Have attracted students as playing games.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;All the knowledge we have learned&lt;br&gt;
+Being so useful for our future works&lt;br&gt;
+Being a vehicle with strong driving force&lt;br&gt;
+Our future is therefore brightly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I express my thanks to the faculties&lt;br&gt;
+and to all school members and the staffs&lt;br&gt;
+My thanks are addressing to all the class&lt;br&gt;
+Never could I forget these moments.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;AIT, 26 March 2004, Bui Van Thinh&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Polynomial Regression – Volcano Eruption</title>
