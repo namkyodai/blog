@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Chuyên gia đánh giá rủi do, quản lý dự án xây dựng, quản lý các hệ thống kĩ thuật nhà máy và công trình
+role: Kĩ sư đánh giá rủi do, quản lý dự án xây dựng, quản lý các hệ thống kĩ thuật nhà máy và công trình
 
 # Organizations/Affiliations
 #organizations:
