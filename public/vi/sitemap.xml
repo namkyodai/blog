@@ -3,21 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/vi/</loc>
-    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/post/</loc>
     <lastmod>2019-11-30T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -40,6 +25,21 @@
   <url>
     <loc>/vi/post/cham-ngon-hay/</loc>
     <lastmod>2019-11-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/</loc>
+    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/"
+                />
   </url>
   
   <url>
@@ -738,21 +738,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/feasibility-study/</loc>
-    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/feasibility-study/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/feasibility-study/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -764,6 +749,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/feasibility-study/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/feasibility-study/</loc>
+    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/feasibility-study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/feasibility-study/"
                 />
   </url>
   
