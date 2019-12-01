@@ -5,28 +5,12 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Sat, 30 Nov 2019 20:16:35 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Fri, 25 Oct 2019 22:58:39 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
-    
-    <item>
-      <title>AIT</title>
-      <link>/tags/ait/</link>
-      <pubDate>Sat, 30 Nov 2019 20:16:35 +0800</pubDate>
-      <guid>/tags/ait/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MPE2</title>
-      <link>/tags/mpe2/</link>
-      <pubDate>Sat, 30 Nov 2019 20:16:35 +0800</pubDate>
-      <guid>/tags/mpe2/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Polynomial</title>

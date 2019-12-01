@@ -3,38 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tags/ait/</loc>
-    <lastmod>2019-11-30T22:58:39+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-    <lastmod>2019-11-30T22:58:39+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/"
-                />
-  </url>
-  
-  <url>
-    <loc>/authors/bui-van-thinh/</loc>
-    <lastmod>2019-11-30T22:58:39+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/mpe2/</loc>
-    <lastmod>2019-11-30T22:58:39+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/</loc>
-    <lastmod>2019-11-30T22:58:39+08:00</lastmod>
+    <lastmod>2019-11-30T12:48:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -49,7 +19,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-11-30T22:58:39+08:00</lastmod>
+    <lastmod>2019-11-30T12:48:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -60,26 +30,6 @@
                 hreflang="en"
                 href="/post/"
                 />
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-11-30T22:58:39+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>/post/2019-11-30-ait-buivanthinh-themoment/</loc>
-    <lastmod>2019-11-30T22:58:39+08:00</lastmod>
   </url>
   
   <url>
@@ -113,23 +63,23 @@
   </url>
   
   <url>
-    <loc>/post/2019-10-24-ra-price-2nd-toyota/</loc>
-    <lastmod>2019-10-24T23:30:45+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/asset-management/"
+                href="/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/asset-management/"
+                href="/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>/post/2019-10-24-ra-price-2nd-toyota/</loc>
+    <lastmod>2019-10-24T23:30:45+08:00</lastmod>
   </url>
   
   <url>
@@ -144,6 +94,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tags/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/asset-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/asset-management/"
                 />
   </url>
   
@@ -374,6 +339,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/publication_types/2/"
+                />
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/"
                 />
   </url>
   
