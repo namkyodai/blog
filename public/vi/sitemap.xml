@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/vi/post/an-nam-lich-su-dien-nom/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/vi/post/</loc>
-    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,18 +23,23 @@
   </url>
   
   <url>
-    <loc>/vi/tags/cham-ngon/</loc>
-    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
+    <loc>/vi/tags/cam-duoi-18-tuoi/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vi/post/cham-ngon-hay/</loc>
-    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
+    <loc>/vi/tags/han-lam/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/maytinh-kinhtehoc-kyoto/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/vi/</loc>
-    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -44,7 +54,7 @@
   
   <url>
     <loc>/vi/tags/</loc>
-    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,6 +65,21 @@
                 hreflang="vi"
                 href="/vi/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/tho/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/cham-ngon/</loc>
+    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/cham-ngon-hay/</loc>
+    <lastmod>2019-11-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
