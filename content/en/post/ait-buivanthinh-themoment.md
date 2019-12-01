@@ -27,6 +27,9 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+<a href="http://namkyodai.github.io" rel="some text">![Foo](https://www.marj3.com/wp-content/uploads/2018/04/WEB_AIT_Website-800x266.jpg)</a>
+
 This is a poem written by Bui Van Thinh, a senior guy in my class. During the period from 2002 to 2004, we were Master students at the Asian Institute of Technology (AIT) in BKK, Thailand. Many of us were poor in English but we were trying our best to learn the language from other international friends. The English of the peom contains some grammatical errors, however, the content and the meaning of the poem are more important, telling us a good memory of the past.
 
 
