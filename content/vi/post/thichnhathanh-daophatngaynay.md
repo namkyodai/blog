@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-![](/img/daophatngaynay.jpg)
+![](/img/thichnhathanh/daophatngaynay.jpg)
 # Vị trí đạo phật trong văn hóa
 Tôi xin nhắc lại rằng đạo Phật là tất cả mọi hình thức sinh hoạt nào có thể làm sống được nguyên lý Phật học. Nhắc lại như vậy để chúng ta cùng thấy rằng cần phải có một nhận thức phóng khoáng và cởi mở, không nô lệ hình thức, danh từ, thành kiến. Hãy gọi đạo Phật là tất cả mọi hình thức sinh hoạt nào nhằm đến mục đích ly khổ đắc lạc, chuyển mê khải ngộ, đoạn hoặc chứng chân (rời khổ đạt vui, chuyển sai lầm thành giác ngộ, phá mê loạn để tìm gặp chân lý).
 

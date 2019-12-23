@@ -27,7 +27,7 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-![](/img/cham-ngon-hay.jpg)
+![](/img/thichnhathanh/cham-ngon-hay.jpg)
 
 # Bí quyết thành công của những người thành đạt
 

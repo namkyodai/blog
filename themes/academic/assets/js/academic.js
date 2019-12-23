@@ -607,6 +607,8 @@
 
   });
 
+
+
   // Normalize Bootstrap carousel slide heights.
   $(window).on('load resize orientationchange', normalizeCarouselSlideHeights);
 

@@ -27,7 +27,7 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-![](/img/hanhphuccamtay.jpg)
+![](/img/thichnhathanh/hanhphuccamtay.jpg)
 
 
 # Chánh Niệm

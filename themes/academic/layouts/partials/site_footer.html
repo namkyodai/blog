@@ -11,6 +11,8 @@
   </p>
   {{ end }}
 
+
+
   <p class="powered-by">
     {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} &middot; {{ end }}
 
@@ -28,4 +30,7 @@
     </span>
     {{ end }}
   </p>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.0/jquery.fancybox.min.js"></script>
+
 </footer>
