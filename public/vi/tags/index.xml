@@ -5,12 +5,28 @@
     <link>/vi/tags/</link>
       <atom:link href="/vi/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Mon, 23 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/vi/tags/</link>
     </image>
+    
+    <item>
+      <title>Phật Giáo</title>
+      <link>/vi/tags/phat-giao/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/phat-giao/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thích Nhất Hạnh</title>
+      <link>/vi/tags/thich-nhat-hanh/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/thich-nhat-hanh/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>cấm dưới 18 tuổi</title>
@@ -41,22 +57,6 @@
       <link>/vi/tags/cham-ngon/</link>
       <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/vi/tags/cham-ngon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phật Giáo</title>
-      <link>/vi/tags/phat-giao/</link>
-      <pubDate>Tue, 05 Nov 2019 20:16:35 +0800</pubDate>
-      <guid>/vi/tags/phat-giao/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Thích Nhất Hạnh</title>
-      <link>/vi/tags/thich-nhat-hanh/</link>
-      <pubDate>Tue, 05 Nov 2019 20:16:35 +0800</pubDate>
-      <guid>/vi/tags/thich-nhat-hanh/</guid>
       <description></description>
     </item>
     
@@ -257,6 +257,22 @@
       <link>/vi/tags/poisson-process/</link>
       <pubDate>Fri, 19 Sep 2014 13:20:32 +0800</pubDate>
       <guid>/vi/tags/poisson-process/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anh Em</title>
+      <link>/vi/tags/anh-em/</link>
+      <pubDate>Wed, 22 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/anh-em/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zurich</title>
+      <link>/vi/tags/zurich/</link>
+      <pubDate>Wed, 22 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/vi/tags/zurich/</guid>
       <description></description>
     </item>
     

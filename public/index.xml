@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Nam&#39;s blog</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Sat, 30 Nov 2019 12:48:33 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 30 Nov 2019 12:48:33 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Nam&#39;s blog</title>
@@ -2495,6 +2495,7 @@ ww&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;w&lt;span style=&#34;c
 &lt;li&gt;&lt;a href=&#34;https://www.r-graph-gallery.com/&#34;&gt;R Graph Gallery&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://bookdown.org/home/archive/&#34;&gt;Bookdown&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://dplyr.tidyverse.org/&#34;&gt;A Grammar of Data Munipulation (dplyr)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://plot.ly/r/&#34;&gt;Plotly R Open Source Graphing Library&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

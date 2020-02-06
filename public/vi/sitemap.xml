@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/vi/post/an-nam-lich-su-dien-nom/</loc>
+    <loc>/vi/authors/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/authors/"
+                />
   </url>
   
   <url>
@@ -23,21 +33,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/cam-duoi-18-tuoi/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/vi/tags/han-lam/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/vi/post/maytinh-kinhtehoc-kyoto/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/vi/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -50,6 +45,11 @@
                 hreflang="vi"
                 href="/vi/"
                 />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/phat-giao/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -68,6 +68,41 @@
   </url>
   
   <url>
+    <loc>/vi/tags/thich-nhat-hanh/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/authors/thich-nhat-hanh/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/tuong-lai-van-hoa-vn-thichnhathanh/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/an-nam-lich-su-dien-nom/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/cam-duoi-18-tuoi/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/han-lam/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/maytinh-kinhtehoc-kyoto/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/vi/tags/tho/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
@@ -83,16 +118,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/phat-giao/</loc>
-    <lastmod>2019-11-05T22:58:39+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/vi/tags/thich-nhat-hanh/</loc>
-    <lastmod>2019-11-05T22:58:39+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/vi/post/thichnhathanh-daophatngaynay/</loc>
     <lastmod>2019-11-05T22:58:39+08:00</lastmod>
   </url>
@@ -100,21 +125,6 @@
   <url>
     <loc>/vi/post/thichnhathanh-hanhphuccamtay/</loc>
     <lastmod>2019-10-25T22:58:39+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/vi/categories/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/asset-management/"
-                />
   </url>
   
   <url>
@@ -129,6 +139,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/asset-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/asset-management/"
                 />
   </url>
   
@@ -279,21 +304,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/publication_types/2/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/authors/</loc>
-    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/authors/"
                 />
   </url>
   
@@ -928,6 +938,21 @@
   </url>
   
   <url>
+    <loc>/vi/tags/anh-em/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/tu-zurich/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/zurich/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/vi/publication/lethanh2013a/</loc>
     <lastmod>2013-01-22T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -1178,6 +1203,20 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/authors/admin/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/library/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/library/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/library/"
                 />
   </url>
   

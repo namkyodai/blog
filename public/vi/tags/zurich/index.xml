@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zurich | Nam&#39;s blog</title>
+    <link>/vi/tags/zurich/</link>
+      <atom:link href="/vi/tags/zurich/index.xml" rel="self" type="application/rss+xml" />
+    <description>Zurich</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Wed, 22 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Zurich</title>
+      <link>/vi/tags/zurich/</link>
+    </image>
+    
+    <item>
+      <title>Phở Tú</title>
+      <link>/vi/post/tu-zurich/</link>
+      <pubDate>Wed, 22 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/vi/post/tu-zurich/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/img/friends/20140122_193203.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/friends/20140122_193613.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

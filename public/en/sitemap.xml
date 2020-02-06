@@ -1236,6 +1236,16 @@
   
   <url>
     <loc>/library/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/library/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/library/"
+                />
   </url>
   
   <url>

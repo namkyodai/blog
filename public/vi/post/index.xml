@@ -5,12 +5,27 @@
     <link>/vi/post/</link>
       <atom:link href="/vi/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Bài đăng</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2019 Nam Le</copyright><lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Mon, 23 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Bài đăng</title>
       <link>/vi/post/</link>
     </image>
+    
+    <item>
+      <title>Tương lai thiền học Việt Nam</title>
+      <link>/vi/post/tuong-lai-van-hoa-vn-thichnhathanh/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/vi/post/tuong-lai-van-hoa-vn-thichnhathanh/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/img/thichnhathanh/tuonglaithienhocvn.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;hy-gi-ng-tn-ti&#34;&gt;Hãy gọi đúng tên tôi&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Đừng bảo ngày mai tôi đã ra đi⁠⁠&lt;br&gt;
+Bởi vì chính hôm nay tôi vẫn còn đang tới&lt;br&gt;
+Hãy ngắm tôi thoát hình trong từng phút từng giây\&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>An Nam Lịch Sử Diễn Nôm</title>
@@ -262,7 +277,7 @@ Cuộc đời cách mạng thật sang thật giàu…&lt;/p&gt;
       <link>/vi/post/cham-ngon-hay/</link>
       <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/vi/post/cham-ngon-hay/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/img/cham-ngon-hay.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/img/thichnhathanh/cham-ngon-hay.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;b-quyt-thnh-cng-ca-nhng-ngi-thnh-t&#34;&gt;Bí quyết thành công của những người thành đạt&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Tôi sống giống như một cây lúa, càng nặng hạt càng trĩu bông; chỉ có lúa lép mới cứ ngẩng cao đầu mà thôi.&lt;/p&gt;
@@ -461,7 +476,7 @@ Lãnh đạo = Chiến lược + Đội ngũ&lt;br&gt;
       <link>/vi/post/thichnhathanh-daophatngaynay/</link>
       <pubDate>Tue, 05 Nov 2019 20:16:35 +0800</pubDate>
       <guid>/vi/post/thichnhathanh-daophatngaynay/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/img/daophatngaynay.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/img/thichnhathanh/daophatngaynay.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;v-tr-o-pht-trong-vn-ha&#34;&gt;Vị trí đạo phật trong văn hóa&lt;/h1&gt;
 &lt;p&gt;Tôi xin nhắc lại rằng đạo Phật là tất cả mọi hình thức sinh hoạt nào có thể làm sống được nguyên lý Phật học. Nhắc lại như vậy để chúng ta cùng thấy rằng cần phải có một nhận thức phóng khoáng và cởi mở, không nô lệ hình thức, danh từ, thành kiến. Hãy gọi đạo Phật là tất cả mọi hình thức sinh hoạt nào nhằm đến mục đích ly khổ đắc lạc, chuyển mê khải ngộ, đoạn hoặc chứng chân (rời khổ đạt vui, chuyển sai lầm thành giác ngộ, phá mê loạn để tìm gặp chân lý).&lt;/p&gt;
 &lt;h1 id=&#34;c-pht-v-con-ngi&#34;&gt;Đức Phật và con người&lt;/h1&gt;
@@ -494,7 +509,7 @@ Lãnh đạo = Chiến lược + Đội ngũ&lt;br&gt;
       <link>/vi/post/thichnhathanh-hanhphuccamtay/</link>
       <pubDate>Fri, 25 Oct 2019 22:58:39 +0800</pubDate>
       <guid>/vi/post/thichnhathanh-hanhphuccamtay/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/img/hanhphuccamtay.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/img/thichnhathanh/hanhphuccamtay.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;chnh-nim&#34;&gt;Chánh Niệm&lt;/h1&gt;
 &lt;h2 id=&#34;nhng-mu-nhim-ca-s-sng&#34;&gt;Những màu nhiệm của sự sống&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -530,6 +545,16 @@ Lãnh đạo = Chiến lược + Đội ngũ&lt;br&gt;
 &lt;p&gt;Câu chuyện này cũng là câu chuyên của ta. Ta đang cưỡi ngựa mà không biết ta đi đâu, và không dừng lại được. Con ngựa là tập khí của ta đang lôi kéo ta đi, còn ta thì yếu thế, bất lực. Ta luôn chạy, và chạy đã trở thành tập khí của ta. Lúc nào ta cũng đấu tranh kể cả trong khi ngủ. Ta đấu tranh với chính mình và rồi đấu tranh với người khác.&lt;/p&gt;
 &lt;p&gt;Ta phải học nghệ thuật dừng lại. Dừng lại những suy nghĩ, dừng lại những tập khí, dừng lại những thất niệm và dừng lại những cảm xúc mạnh đang thống trị ta.&lt;/p&gt;
 &lt;h1 id=&#34;bng-ti-tr-thnh-nh-sng&#34;&gt;Bóng tối trở thành ánh sáng&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Phở Tú</title>
+      <link>/vi/post/tu-zurich/</link>
+      <pubDate>Wed, 22 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/vi/post/tu-zurich/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/img/friends/20140122_193203.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/friends/20140122_193613.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
