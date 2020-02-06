@@ -43,3 +43,5 @@ slides: ""
 - [Bookdown](https://bookdown.org/home/archive/)
 - [A Grammar of Data Munipulation (dplyr)](https://dplyr.tidyverse.org/)
 - [Plotly R Open Source Graphing Library](https://plot.ly/r/)
+- [The R Graph Gallery](https://www.r-graph-gallery.com)
+- [rpivotTable](https://cran.r-project.org/web/packages/rpivotTable/vignettes/rpivotTableIntroduction.html)
