@@ -1227,6 +1227,11 @@
   </url>
   
   <url>
+    <loc>/post/tdd/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/apps/</loc>
   </url>
   
