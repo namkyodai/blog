@@ -19,8 +19,14 @@
       {{ else if .Summary }}
       {{ .Summary | plainify | emojify }}
       {{ end }}
+
+
+
     </div>
   </div>
+
+
+
   {{ end }}
 
   {{ partial "pagination" . }}
