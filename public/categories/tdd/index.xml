@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TDD | Nam&#39;s blog</title>
+    <link>/categories/tdd/</link>
+      <atom:link href="/categories/tdd/index.xml" rel="self" type="application/rss+xml" />
+    <description>TDD</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Fri, 07 Feb 2020 11:08:22 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>TDD</title>
+      <link>/categories/tdd/</link>
+    </image>
+    
+    <item>
+      <title>TDD and EDD for Hanjin Shipyard - Subic Bay</title>
+      <link>/project/2020-hanjinshipyard/</link>
+      <pubDate>Fri, 07 Feb 2020 11:08:22 +0800</pubDate>
+      <guid>/project/2020-hanjinshipyard/</guid>
+      <description>&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: A Global Capital Investment Firm (confidential)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt;: TDD and EDD for Hanjin Shipyard - Subic Bay&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: TDD, EDD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;objectives&#34;&gt;Objectives&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 1&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual Inspection of facilities of the Shipyard;&lt;/li&gt;
+&lt;li&gt;Review historical records on corrective and interventive Intervention;&lt;/li&gt;
+&lt;li&gt;Risk ranking for facilities;&lt;/li&gt;
+&lt;li&gt;Estimation of high level CAPEX based on risk scores and areas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Phase 2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Assessment and evaluation of condition and performance of assets&lt;/li&gt;
+&lt;li&gt;Create layout drawings of ultilities for tenant&#39;s seperation purposes. This will be used as inputs for layers to draft contracts with prospective tenants&lt;/li&gt;
+&lt;li&gt;Cost study for 50 years for all facilities and ultilities&lt;/li&gt;
+&lt;li&gt;Create a master schedule for intervention works for the next 2 years&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nam led the team and trained the team to use LaTEX system to compile all reports&lt;/li&gt;
+&lt;li&gt;Nam developed an automation estimation approach for cost study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Back to &lt;a href=&#34;/project&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TDD for 30 Story Tower in BGC</title>
+      <link>/project/2020-30storybgc/</link>
+      <pubDate>Thu, 30 Jan 2020 11:08:22 +0800</pubDate>
+      <guid>/project/2020-30storybgc/</guid>
+      <description>&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: Hankyu Construction Management Inc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt;: TDD for 30 Story Tower in BGC&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: TDD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;objectives&#34;&gt;Objectives&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Assessment and evaluation of condition and performance of building&#39;s assets and systems&lt;/li&gt;
+&lt;li&gt;Cost study for 20 years for all facilities and ultilities&lt;/li&gt;
+&lt;li&gt;Create a master schedule for intervention works for the next 20 years&lt;/li&gt;
+&lt;li&gt;Risk assessment (e.g. typhoon, earthquake, flooding, volcanic ashfall)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nam led the team and trained the team to use LaTEX system to compile all reports&lt;/li&gt;
+&lt;li&gt;Nam developed an automation estimation approach for cost study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Back to &lt;a href=&#34;/project&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

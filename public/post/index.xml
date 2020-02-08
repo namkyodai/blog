@@ -42,7 +42,7 @@
 &lt;li&gt;TDD and asset management study for a 30 storey building in Bonifacio Global City (BGC) (a Japanese railway firm)&lt;/li&gt;
 &lt;li&gt;TDD and asset management for estate water facilities for Manila Water&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Exammple in below link is a fictive one with values being generated randomely for demonstration purpose. However, the structure of data is of standard one for automation of TDD process.&lt;/p&gt;
+&lt;p&gt;Exammple in below link is a fictive one with values being generated randomly for demonstration purpose. The structure of data is of standard one for automation of TDD process.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;/cases/tdd.html&#34;&gt;Link to full article on example and R code for a Technical Due Diligence Study&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/techs/tdd.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Kindly leave your comments in this page after reading the article.  Thanks!&lt;/p&gt;

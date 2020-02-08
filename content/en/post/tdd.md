@@ -58,7 +58,7 @@ Three major projects I worked for these two Clients involves
 -  TDD and asset management study for a 30 storey building in Bonifacio Global City (BGC) (a Japanese railway firm)
 -  TDD and asset management for estate water facilities for Manila Water
 
-Exammple in below link is a fictive one with values being generated randomely for demonstration purpose. However, the structure of data is of standard one for automation of TDD process.
+Exammple in below link is a fictive one with values being generated randomly for demonstration purpose. The structure of data is of standard one for automation of TDD process.
 
 [Link to full article on example and R code for a Technical Due Diligence Study](/cases/tdd.html)
 

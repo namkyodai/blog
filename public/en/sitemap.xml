@@ -93,6 +93,71 @@
   </url>
   
   <url>
+    <loc>/categories/asset-management/</loc>
+    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/edd/</loc>
+    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/tdd/</loc>
+    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/2020-hanjinshipyard/</loc>
+    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/2020-30storybgc/</loc>
+    <lastmod>2020-01-30T11:08:22+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/ait-buivanthinh-themoment/</loc>
     <lastmod>2019-11-30T12:48:33+08:00</lastmod>
   </url>
@@ -128,36 +193,6 @@
   </url>
   
   <url>
-    <loc>/categories/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/asset-management/"
-                />
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/"
-                />
-  </url>
-  
-  <url>
     <loc>/project/2016-lamesa2/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -173,21 +208,6 @@
   </url>
   
   <url>
-    <loc>/categories/plant-audit/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/plant-audit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/plant-audit/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/plant-audit/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -199,6 +219,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tags/plant-audit/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/plant-audit/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/plant-audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/plant-audit/"
                 />
   </url>
   
@@ -244,21 +279,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tags/project-management/"
-                />
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/project/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/project/"
                 />
   </url>
   
