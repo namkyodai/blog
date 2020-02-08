@@ -5,12 +5,20 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Wed, 18 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 08 Feb 2020 08:57:31 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
       <link>/authors/</link>
     </image>
+    
+    <item>
+      <title>Nam Le</title>
+      <link>/authors/nam-le/</link>
+      <pubDate>Sat, 08 Feb 2020 08:57:31 +0800</pubDate>
+      <guid>/authors/nam-le/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Juergen Hackl and Bryan T Adey and **Nam Lethanh**</title>
@@ -116,14 +124,6 @@
       <description>&lt;p&gt;A marathon runner, diver, and part-time programmer, now lives and works in Manila, used to live in BKK, Kyoto, Osaka, Zurich, Geneva, and Hanoi.&lt;/p&gt;
 &lt;p&gt;Places like home: &lt;a href=&#34;http://ecopark.com.vn/en/&#34;&gt;Ecopark&lt;/a&gt; (VN), &lt;a href=&#34;https://en.wikipedia.org/wiki/Katsura,_Kyoto&#34;&gt;Katsura&lt;/a&gt; (JP), &lt;a href=&#34;https://en.wikipedia.org/wiki/Geneva&#34;&gt;Geneva&lt;/a&gt; (CH), and &lt;a href=&#34;https://en.wikipedia.org/wiki/Z%C3%BCrich&#34;&gt;Zurich&lt;/a&gt; (CH)&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Nam Le</title>
-      <link>/authors/nam-le/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/nam-le/</guid>
-      <description></description>
     </item>
     
   </channel>

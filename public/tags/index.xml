@@ -5,12 +5,28 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Fri, 25 Oct 2019 22:58:39 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 08 Feb 2020 08:57:31 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
+    
+    <item>
+      <title>Asset Management</title>
+      <link>/tags/asset-management/</link>
+      <pubDate>Sat, 08 Feb 2020 08:57:31 +0800</pubDate>
+      <guid>/tags/asset-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TDD</title>
+      <link>/tags/tdd/</link>
+      <pubDate>Sat, 08 Feb 2020 08:57:31 +0800</pubDate>
+      <guid>/tags/tdd/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Polynomial</title>
@@ -25,14 +41,6 @@
       <link>/tags/regression-analysis/</link>
       <pubDate>Fri, 25 Oct 2019 22:58:39 +0800</pubDate>
       <guid>/tags/regression-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Asset Management</title>
-      <link>/tags/asset-management/</link>
-      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
-      <guid>/tags/asset-management/</guid>
       <description></description>
     </item>
     

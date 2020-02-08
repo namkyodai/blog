@@ -3,8 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/asset-management/</loc>
+    <lastmod>2020-02-08T08:57:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-02-08T08:57:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>/authors/nam-le/</loc>
+    <lastmod>2020-02-08T08:57:31+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2019-11-30T12:48:33+08:00</lastmod>
+    <lastmod>2020-02-08T08:57:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -19,7 +54,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-11-30T12:48:33+08:00</lastmod>
+    <lastmod>2020-02-08T08:57:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -30,6 +65,31 @@
                 hreflang="en"
                 href="/post/"
                 />
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-02-08T08:57:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/tdd/</loc>
+    <lastmod>2020-02-08T08:57:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/tdd/</loc>
+    <lastmod>2020-02-08T08:57:31+08:00</lastmod>
   </url>
   
   <url>
@@ -63,38 +123,8 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-10-25T22:58:39+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>/post/2019-10-24-ra-price-2nd-toyota/</loc>
     <lastmod>2019-10-24T23:30:45+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/asset-management/"
-                />
   </url>
   
   <url>
@@ -339,21 +369,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="/publication_types/2/"
-                />
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/"
                 />
   </url>
   
@@ -1227,11 +1242,6 @@
   </url>
   
   <url>
-    <loc>/post/tdd/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/apps/</loc>
   </url>
   
@@ -1251,10 +1261,6 @@
                 hreflang="en"
                 href="/library/"
                 />
-  </url>
-  
-  <url>
-    <loc>/authors/nam-le/</loc>
   </url>
   
   <url>
