@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-
+—
+title: hello html
+date: ‘2018-11-22’
+categories:
+- Example
+tags:
+- Markdown
+—
 <html>
 
 <head>
@@ -533,7 +540,7 @@ summary {
 <h3>The data</h3>
 <p>Now time to generate random data for fun. It is easier to use excel worksheet to generate random data than using R. Another reason to use excel in this case is that it is most convenient for members of a team to share using Cloud services such as SharePoint or Dropbox. They can basically work simultanenously on one file. Another benefits of using excel file for recording this type of data is to present to Clients and get them agree and appreciate your work. Moreover, it is also easy to plug the excel file to any Business Analytics software such as Power BI and Tableau.</p>
 <pre class="r"><code># this is the code saved in tdd.R file
-library(readxl) 
+library(readxl)
 library(dplyr)
 library(DT)
 library(ggplot2)
@@ -554,7 +561,7 @@ epsilon=1000
 #--------------------------------------------------------
 
 cs1 = aggregate(list(CS = Capex$States), list(Disciplines = factor(Capex$Disciplines)), mean,na.rm = TRUE) %&gt;%
- drop_na(CS) 
+ drop_na(CS)
 
 plotcs1=ggplot(cs1, aes(x=reorder(Disciplines,-CS),y = CS)) +
   ylim(0, 5.2)+
@@ -592,7 +599,7 @@ plot01 &lt;- ggplot(Capex)+
   geom_bar(aes(x = InterYear, y = NPVCapex/epsilon,fill=Disciplines),
            stat='identity')+
   labs(title = &quot;&quot;, x = &quot;Year&quot;,y = &quot;USD (1000)&quot;)+
-  theme(axis.text.x=element_text(angle=45, hjust=1))+ 
+  theme(axis.text.x=element_text(angle=45, hjust=1))+
   geom_text(aes(InterYear, total+3, label = round(total,2), fill = NULL), data = x01,cex=3,angle=90)
 # plot01
 #ggsave(&quot;picture/plot01.png&quot;,width = 10, height = 6)

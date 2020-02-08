@@ -2479,7 +2479,14 @@ ww&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;w&lt;span style=&#34;c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/post/tdd/</guid>
       <description>&lt;!DOCTYPE html&gt;
-
+—
+title: hello html
+date: ‘2018-11-22’
+categories:
+- Example
+tags:
+- Markdown
+—
 &lt;html&gt;
 
 &lt;head&gt;
@@ -3013,7 +3020,7 @@ summary {
 &lt;h3&gt;The data&lt;/h3&gt;
 &lt;p&gt;Now time to generate random data for fun. It is easier to use excel worksheet to generate random data than using R. Another reason to use excel in this case is that it is most convenient for members of a team to share using Cloud services such as SharePoint or Dropbox. They can basically work simultanenously on one file. Another benefits of using excel file for recording this type of data is to present to Clients and get them agree and appreciate your work. Moreover, it is also easy to plug the excel file to any Business Analytics software such as Power BI and Tableau.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# this is the code saved in tdd.R file
-library(readxl) 
+library(readxl)
 library(dplyr)
 library(DT)
 library(ggplot2)
@@ -3034,7 +3041,7 @@ epsilon=1000
 #--------------------------------------------------------
 
 cs1 = aggregate(list(CS = Capex$States), list(Disciplines = factor(Capex$Disciplines)), mean,na.rm = TRUE) %&amp;gt;%
- drop_na(CS) 
+ drop_na(CS)
 
 plotcs1=ggplot(cs1, aes(x=reorder(Disciplines,-CS),y = CS)) +
   ylim(0, 5.2)+
@@ -3072,7 +3079,7 @@ plot01 &amp;lt;- ggplot(Capex)+
   geom_bar(aes(x = InterYear, y = NPVCapex/epsilon,fill=Disciplines),
            stat=&#39;identity&#39;)+
   labs(title = &amp;quot;&amp;quot;, x = &amp;quot;Year&amp;quot;,y = &amp;quot;USD (1000)&amp;quot;)+
-  theme(axis.text.x=element_text(angle=45, hjust=1))+ 
+  theme(axis.text.x=element_text(angle=45, hjust=1))+
   geom_text(aes(InterYear, total+3, label = round(total,2), fill = NULL), data = x01,cex=3,angle=90)
 # plot01
 #ggsave(&amp;quot;picture/plot01.png&amp;quot;,width = 10, height = 6)
