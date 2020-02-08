@@ -45,3 +45,5 @@ slides: ""
 - [Plotly R Open Source Graphing Library](https://plot.ly/r/)
 - [The R Graph Gallery](https://www.r-graph-gallery.com)
 - [rpivotTable](https://cran.r-project.org/web/packages/rpivotTable/vignettes/rpivotTableIntroduction.html)
+- [TidyVerse](https://www.tidyverse.org/)
+- [Transpose Table](https://www.r-statistics.com/tag/transpose/)
