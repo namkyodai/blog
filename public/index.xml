@@ -5,12 +5,22 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Nam&#39;s blog</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 08 Feb 2020 08:57:31 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Tue, 11 Feb 2020 23:23:26 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Nam&#39;s blog</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>The Carbon Footprint of the Food Supply Chain</title>
+      <link>/post/carbonfootprint/</link>
+      <pubDate>Tue, 11 Feb 2020 23:23:26 +0800</pubDate>
+      <guid>/post/carbonfootprint/</guid>
+      <description>&lt;p&gt;I found this article with nice infographic from &lt;a href=&#34;https://www.visualcapitalist.com/visualising-the-greenhouse-gas-impact-of-each-food/&#34;&gt;VisualCapital&lt;/a&gt; and wanna repost in my blog, just to remind me of the negative sense impression of meat based eaters.
+&lt;img src=&#34;/img/news/carbon-footprint-food-supply-chain-1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Technical Due Diligence (TDD)</title>
