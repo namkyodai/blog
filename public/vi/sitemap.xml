@@ -4,7 +4,7 @@
   
   <url>
     <loc>/vi/authors/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>/vi/post/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -33,8 +33,33 @@
   </url>
   
   <url>
+    <loc>/vi/authors/cam-van/</loc>
+    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/authors/dieu-phap-am/</loc>
+    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/khoai-tay/</loc>
+    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/monchay-khoaitayxaonam/</loc>
+    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/mon-chay/</loc>
+    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/vi/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -48,13 +73,13 @@
   </url>
   
   <url>
-    <loc>/vi/tags/phat-giao/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+    <loc>/vi/tags/nam-bao-ngu/</loc>
+    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/vi/tags/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -68,12 +93,17 @@
   </url>
   
   <url>
-    <loc>/vi/tags/thich-nhat-hanh/</loc>
+    <loc>/vi/tags/phat-giao/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/vi/authors/thich-nhat-hanh/</loc>
+    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/thich-nhat-hanh/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -128,21 +158,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/asset-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/asset-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -154,6 +169,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/asset-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/asset-management/"
                 />
   </url>
   
@@ -188,21 +218,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/plant-audit/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/plant-audit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/plant-audit/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/plant-audit/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -214,6 +229,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/plant-audit/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/plant-audit/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/plant-audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/plant-audit/"
                 />
   </url>
   
@@ -233,21 +263,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/project-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -259,6 +274,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/project-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/project-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/project-management/"
                 />
   </url>
   
@@ -773,21 +803,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/feasibility-study/</loc>
-    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/feasibility-study/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/feasibility-study/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -799,6 +814,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/feasibility-study/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/feasibility-study/</loc>
+    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/feasibility-study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/feasibility-study/"
                 />
   </url>
   

@@ -74,6 +74,6 @@ user_groups:
 - Visitors
 ---
 
-Đam mê chạy bộ, lặn biển, và lập trình web và xác xuất thống kê. Hiện tại sống tại Manila, Philippines và đã từng sống tại Băng Cốc, Kyoto, Osaka, Zurich, Geneva, and Hà nội.
+Đam mê chạy bộ, lặn biển, Kendo, và lập trình web và xác xuất thống kê. Hiện tại sống tại Manila, Philippines và đã từng sống tại Băng Cốc, Kyoto, Osaka, Zurich, Geneva, and Hà nội.
 
-Nơi coi là nhà: [Ecopark](http://ecopark.com.vn/en/) (VN), [Katsura](https://en.wikipedia.org/wiki/Katsura,_Kyoto) (JP), [Geneva](https://en.wikipedia.org/wiki/Geneva) (CH), and [Zurich](https://en.wikipedia.org/wiki/Z%C3%BCrich) (CH)
+Nơi coi là quê: [Ecopark](http://ecopark.com.vn/en/) (VN), [Katsura](https://en.wikipedia.org/wiki/Katsura,_Kyoto) (JP), [Geneva](https://en.wikipedia.org/wiki/Geneva) (CH), and [Zurich](https://en.wikipedia.org/wiki/Z%C3%BCrich) (CH)

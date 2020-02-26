@@ -5,12 +5,28 @@
     <link>/vi/authors/</link>
       <atom:link href="/vi/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Mon, 23 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Wed, 26 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
       <link>/vi/authors/</link>
     </image>
+    
+    <item>
+      <title>Cẩm Vân</title>
+      <link>/vi/authors/cam-van/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/vi/authors/cam-van/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diệu Pháp Âm</title>
+      <link>/vi/authors/dieu-phap-am/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/vi/authors/dieu-phap-am/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Thích Nhất Hạnh</title>
@@ -121,8 +137,8 @@
       <link>/vi/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/vi/authors/admin/</guid>
-      <description>&lt;p&gt;Đam mê chạy bộ, lặn biển, và lập trình web và xác xuất thống kê. Hiện tại sống tại Manila, Philippines và đã từng sống tại Băng Cốc, Kyoto, Osaka, Zurich, Geneva, and Hà nội.&lt;/p&gt;
-&lt;p&gt;Nơi coi là nhà: &lt;a href=&#34;http://ecopark.com.vn/en/&#34;&gt;Ecopark&lt;/a&gt; (VN), &lt;a href=&#34;https://en.wikipedia.org/wiki/Katsura,_Kyoto&#34;&gt;Katsura&lt;/a&gt; (JP), &lt;a href=&#34;https://en.wikipedia.org/wiki/Geneva&#34;&gt;Geneva&lt;/a&gt; (CH), and &lt;a href=&#34;https://en.wikipedia.org/wiki/Z%C3%BCrich&#34;&gt;Zurich&lt;/a&gt; (CH)&lt;/p&gt;
+      <description>&lt;p&gt;Đam mê chạy bộ, lặn biển, Kendo, và lập trình web và xác xuất thống kê. Hiện tại sống tại Manila, Philippines và đã từng sống tại Băng Cốc, Kyoto, Osaka, Zurich, Geneva, and Hà nội.&lt;/p&gt;
+&lt;p&gt;Nơi coi là quê: &lt;a href=&#34;http://ecopark.com.vn/en/&#34;&gt;Ecopark&lt;/a&gt; (VN), &lt;a href=&#34;https://en.wikipedia.org/wiki/Katsura,_Kyoto&#34;&gt;Katsura&lt;/a&gt; (JP), &lt;a href=&#34;https://en.wikipedia.org/wiki/Geneva&#34;&gt;Geneva&lt;/a&gt; (CH), and &lt;a href=&#34;https://en.wikipedia.org/wiki/Z%C3%BCrich&#34;&gt;Zurich&lt;/a&gt; (CH)&lt;/p&gt;
 </description>
     </item>
     
