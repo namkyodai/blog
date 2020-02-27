@@ -54,9 +54,3 @@ image:
 ## Các cách nấu tương tự
 
 https://cookpad.com/vn/cong-thuc/8708514-khoai-tay-xao-n%E1%BA%A5m-chay
-
-
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://player.vimeo.com/video/146022717" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
- </div>

@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Nam Le">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="new header new 2nd header new level asfsfdsfsdf
+sdfsfsfsadflsjf
+Let start with time series data that is saved in hundreds of excel worksheets, examples are
+ Production and consumption data of a single day. Within a day, volumes of production and consumption (e.g. water and energy of a water treatment plant or pump station, number of X and Y produced within a single hours); Hydrology data such as rainfall and runoff and other associated parameters etc  Ideally, those data should be recorded using relational database structured system such as MySQL or PostgreSQL.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/2020-08-01-test/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.835c68f7e85d32ac31f92a2fea04dfb9.css">
+
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/2020-08-01-test/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Nam&#39;s blog">
+  <meta property="og:url" content="/post/2020-08-01-test/">
+  <meta property="og:title" content="Hello World | Nam&#39;s blog">
+  <meta property="og:description" content="new header new 2nd header new level asfsfdsfsdf
+sdfsfsfsadflsjf
+Let start with time series data that is saved in hundreds of excel worksheets, examples are
+ Production and consumption data of a single day. Within a day, volumes of production and consumption (e.g. water and energy of a water treatment plant or pump station, number of X and Y produced within a single hours); Hydrology data such as rainfall and runoff and other associated parameters etc  Ideally, those data should be recorded using relational database structured system such as MySQL or PostgreSQL."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-01-15T23:30:45&#43;08:00">
+    
+    <meta property="article:modified_time" content="2020-01-15T23:30:45&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2020-08-01-test/"
+  },
+  "headline": "Hello World",
+  
+  "datePublished": "2020-01-15T23:30:45+08:00",
+  "dateModified": "2020-01-15T23:30:45+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Nam Le"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nam's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/img/icon-512.png"
+    }
+  },
+  "description": "new header new 2nd header new level asfsfdsfsdf\nsdfsfsfsadflsjf\nLet start with time series data that is saved in hundreds of excel worksheets, examples are\n Production and consumption data of a single day. Within a day, volumes of production and consumption (e.g. water and energy of a water treatment plant or pump station, number of X and Y produced within a single hours); Hydrology data such as rainfall and runoff and other associated parameters etc  Ideally, those data should be recorded using relational database structured system such as MySQL or PostgreSQL."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Hello World | Nam&#39;s blog</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Nam&#39;s blog</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Bio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/business/"><span>Business</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication/"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/library/"><span>Library</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/apps/"><span>Apps</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Hello World</h1>
+
+  
+  <p class="page-subtitle">dsfsdfsafdflj lj asfdlj ?</p>
+  
+
+  
+    
+
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 15, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    16 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2020-08-01-test/#disqus_thread"></a>
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/2020-08-01-test/&amp;text=Hello%20World" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/2020-08-01-test/&amp;t=Hello%20World" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Hello%20World&amp;body=/post/2020-08-01-test/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2020-08-01-test/&amp;title=Hello%20World" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Hello%20World%20/post/2020-08-01-test/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h1 id="new-header">new header</h1>
+<h2 id="new-2nd-header">new 2nd header</h2>
+<h3 id="new-level">new level</h3>
+<p>asfsfdsfsdf</p>
+<p>sdfsfsfsadflsjf</p>
+<p>Let start with time series data that is saved in hundreds of excel worksheets, examples are</p>
+<ul>
+<li>Production and consumption data of a single day. Within a day, volumes of production and consumption (e.g. water and energy of a water treatment plant or pump station, number of X and Y produced within a single hours);</li>
+<li>Hydrology data such as rainfall and runoff and other associated parameters
+etc</li>
+</ul>
+<p>Ideally, those data should be recorded using relational database structured system such as MySQL or PostgreSQL. However, by default in many organizations, data is recorded in excel file. Everyday, owner of the file just multiply/copy the same worksheet of previous day and repeat the same work. This is OK for him/her but definitely not OK for us, the analyst :).</p>
+<p>This post describes a step by step instruction on how to deal with this issue.</p>
+<h1 id="examples">Examples</h1>
+<h2 id="data">Data</h2>
+<p>Example data is with two excel files name data1 and data2. These two files have their structure identical as shown in the followings</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">data1
+worksheet1
+date    from    to  total_pro_hour  total_power_hour    ratio
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">12</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM1<span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM        <span style="color:#ae81ff">0.7700000</span>    <span style="color:#ae81ff">95</span>   <span style="color:#ae81ff">123.38</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM        <span style="color:#ae81ff">0.7400000</span>    <span style="color:#ae81ff">86</span>   <span style="color:#ae81ff">116.22</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM        <span style="color:#ae81ff">0.6200000</span>    <span style="color:#ae81ff">73</span>   <span style="color:#ae81ff">117.74</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM        <span style="color:#ae81ff">0.6100000</span>    <span style="color:#ae81ff">70</span>   <span style="color:#ae81ff">114.75</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM        <span style="color:#ae81ff">0.5700000</span>    <span style="color:#ae81ff">62</span>   <span style="color:#ae81ff">108.77</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM        <span style="color:#ae81ff">0.7300000</span>    <span style="color:#ae81ff">86</span>   <span style="color:#ae81ff">117.81</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM        <span style="color:#ae81ff">0.6900000</span>    <span style="color:#ae81ff">70</span>   <span style="color:#ae81ff">101.45</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM        <span style="color:#ae81ff">1.0100000</span>    <span style="color:#ae81ff">93</span>   <span style="color:#ae81ff">92.08</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">9</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM        <span style="color:#ae81ff">0.9100000</span>    <span style="color:#ae81ff">116</span>  <span style="color:#ae81ff">127.47</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">9</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span>AM        <span style="color:#ae81ff">1.0800000</span>    <span style="color:#ae81ff">120</span>  <span style="color:#ae81ff">111.11</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">11</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span>AM       <span style="color:#ae81ff">1.0900000</span>    <span style="color:#ae81ff">122</span>  <span style="color:#ae81ff">111.93</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">11</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">12</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span>PM       <span style="color:#ae81ff">1.0800000</span>    <span style="color:#ae81ff">119</span>  <span style="color:#ae81ff">110.19</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">12</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span>PM        <span style="color:#ae81ff">1.1000000</span>    <span style="color:#ae81ff">117</span>  <span style="color:#ae81ff">106.36</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM        <span style="color:#ae81ff">1.5420000</span>    <span style="color:#ae81ff">145</span>  <span style="color:#ae81ff">94.03</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM        <span style="color:#ae81ff">0.9330000</span>    <span style="color:#ae81ff">136</span>  <span style="color:#ae81ff">145.77</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM        <span style="color:#ae81ff">1.0520000</span>    <span style="color:#ae81ff">137</span>  <span style="color:#ae81ff">130.23</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM        <span style="color:#ae81ff">0.9600000</span>    <span style="color:#ae81ff">153</span>  <span style="color:#ae81ff">159.38</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM        <span style="color:#ae81ff">0.9910000</span>    <span style="color:#ae81ff">135</span>  <span style="color:#ae81ff">136.23</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM        <span style="color:#ae81ff">1.0110000</span>    <span style="color:#ae81ff">146</span>  <span style="color:#ae81ff">144.41</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM        <span style="color:#ae81ff">0.9320000</span>    <span style="color:#ae81ff">134</span>  <span style="color:#ae81ff">143.78</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">9</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM        <span style="color:#ae81ff">0.9680000</span>    <span style="color:#ae81ff">133</span>  <span style="color:#ae81ff">137.40</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">9</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM       <span style="color:#ae81ff">0.7110000</span>    <span style="color:#ae81ff">124</span>  <span style="color:#ae81ff">174.40</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">11</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM   <span style="color:#ae81ff">0.7800000</span>   <span style="color:#ae81ff">72</span>   <span style="color:#ae81ff">92.31</span>
+<span style="color:#ae81ff">01</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">11</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">12</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM   <span style="color:#ae81ff">0.6100000</span>   <span style="color:#ae81ff">75</span>   <span style="color:#ae81ff">122.95</span>
+
+worksheet <span style="color:#ae81ff">2</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">12</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM    <span style="color:#ae81ff">0.5600000</span>   <span style="color:#ae81ff">48</span>   <span style="color:#ae81ff">85.71</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM  <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM    <span style="color:#ae81ff">0.4420000</span>   <span style="color:#ae81ff">42</span>   <span style="color:#ae81ff">95.02</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM  <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM    <span style="color:#ae81ff">0.4700000</span>   <span style="color:#ae81ff">40</span>   <span style="color:#ae81ff">85.11</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM  <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM    <span style="color:#ae81ff">0.6980000</span>   <span style="color:#ae81ff">59</span>   <span style="color:#ae81ff">84.53</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM  <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM    <span style="color:#ae81ff">0.8200000</span>   <span style="color:#ae81ff">86</span>   <span style="color:#ae81ff">104.88</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM  <span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM    <span style="color:#ae81ff">0.4700000</span>   <span style="color:#ae81ff">48</span>   <span style="color:#ae81ff">102.13</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM  <span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM    <span style="color:#ae81ff">1.0400000</span>   <span style="color:#ae81ff">121</span>  <span style="color:#ae81ff">116.35</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM  <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM    <span style="color:#ae81ff">1.0800000</span>   <span style="color:#ae81ff">146</span>  <span style="color:#ae81ff">135.19</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM  <span style="color:#ae81ff">9</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM    <span style="color:#ae81ff">1.0800000</span>   <span style="color:#ae81ff">122</span>  <span style="color:#ae81ff">112.96</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">9</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM  <span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM   <span style="color:#ae81ff">0.9600000</span>   <span style="color:#ae81ff">82</span>   <span style="color:#ae81ff">85.42</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">11</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM   <span style="color:#ae81ff">0.9100000</span>   <span style="color:#ae81ff">73</span>   <span style="color:#ae81ff">80.22</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">11</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM <span style="color:#ae81ff">12</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM   <span style="color:#ae81ff">0.8500000</span>   <span style="color:#ae81ff">65</span>   <span style="color:#ae81ff">76.47</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">12</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM    <span style="color:#ae81ff">0.7100000</span>   <span style="color:#ae81ff">57</span>   <span style="color:#ae81ff">80.28</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM  <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM    <span style="color:#ae81ff">0.9690000</span>   <span style="color:#ae81ff">48</span>   <span style="color:#ae81ff">49.54</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM  <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM    <span style="color:#ae81ff">0.8310000</span>   <span style="color:#ae81ff">65</span>   <span style="color:#ae81ff">78.22</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM  <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM    <span style="color:#ae81ff">1.1290000</span>   <span style="color:#ae81ff">96</span>   <span style="color:#ae81ff">85.03</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM  <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM    <span style="color:#ae81ff">1.2300000</span>   <span style="color:#ae81ff">109</span>  <span style="color:#ae81ff">88.62</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM  <span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM    <span style="color:#ae81ff">1.1210000</span>   <span style="color:#ae81ff">114</span>  <span style="color:#ae81ff">101.69</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">6</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM  <span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM    <span style="color:#ae81ff">0.9440000</span>   <span style="color:#ae81ff">110</span>  <span style="color:#ae81ff">116.53</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">7</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM  <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM    <span style="color:#ae81ff">0.9790000</span>   <span style="color:#ae81ff">112</span>  <span style="color:#ae81ff">114.40</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM  <span style="color:#ae81ff">9</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM    <span style="color:#ae81ff">1.0260000</span>   <span style="color:#ae81ff">108</span>  <span style="color:#ae81ff">105.26</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">9</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM    <span style="color:#ae81ff">0.8710000</span>   <span style="color:#ae81ff">118</span>  <span style="color:#ae81ff">135.48</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">10</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">11</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM   <span style="color:#ae81ff">0.8100000</span>   <span style="color:#ae81ff">99</span>   <span style="color:#ae81ff">122.22</span>
+<span style="color:#ae81ff">02</span><span style="color:#f92672">-</span>Jan<span style="color:#ae81ff">-17</span>   <span style="color:#ae81ff">11</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> PM <span style="color:#ae81ff">12</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00</span> AM   <span style="color:#ae81ff">0.6800000</span>   <span style="color:#ae81ff">79</span>   <span style="color:#ae81ff">116.18</span>
+</code></pre></div><p>This excel file contains 2 worksheet “1” and “2” that record hourly production (ML) and energy consumption (KW) of a water pump station.</p>
+<ul>
+<li>column is the date;</li>
+<li>column 2 and 3 are hours;</li>
+<li>column 4 is production data in million liter (ML);</li>
+<li>column 5 is energy consumption data in KW</li>
+<li>column 6 is ratio between energy consumption and production, basically it is the division of column 5 and 4.</li>
+</ul>
+<p>This kind of data is recorded hourly and there will be about 30 worksheets for one month. Let say you have 5 or 10 years production data saving in excel files like this and you need to combine all of them into a single frame for Business Analysis purpose. It will be a nightmare if you just copy and paste 🙂 terrible excel.</p>
+<h2 id="assumptions">Assumptions</h2>
+<p>It is assumed that all worksheets in all excel files are identical in their structure. This is not a realistic assumption as excel users cannot be consistent with their data. Data in their excel files are</p>
+<p>Mixed up with numeric and text even for the same attributes;
+Merging cells, adding new rows and columns that make them homogeneous.
+Solving such problem is not the objective of this post, but it is worth to mention that before we get a good set of data, we probably need to do some Coding in Visual Basic to standardize the excel worksheets, or we need to do a certain level of manual data compiling before we can run the code in R.</p>
+<p>Will cover how to standardize using the same sets of data in other post.</p>
+<h2 id="combining-worksheets-using-navicat-and-mysql">Combining worksheets using Navicat and MySQL</h2>
+<p>Why <a href="https://www.navicat.com/en/">NAVICAT</a>?</p>
+<p>–&gt; Navicat offers a handy way to import data from excel files. It can import multiple worksheets in one single click into respective tables of MySQL. I find this feature superior than other open source SQL Client such PhPmyAdmin, Dbeaver, etc.</p>
+<p>Herein, I demonstrate some steps to import the example data files.</p>
+<p>a. Create table</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">create</span>
+<span style="color:#66d9ef">table</span>
+<span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span> (
+date varchar(<span style="color:#ae81ff">255</span>),
+<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> varchar(<span style="color:#ae81ff">255</span>),
+<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> varchar(<span style="color:#ae81ff">255</span>),
+total_pro_hour varchar(<span style="color:#ae81ff">255</span>),
+total_power_hour varchar(<span style="color:#ae81ff">255</span>),
+ratio varchar(<span style="color:#ae81ff">255</span>)
+);
+
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">2</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">3</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">4</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">5</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">6</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">7</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">8</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">9</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">10</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">11</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">12</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">13</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">14</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">15</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">16</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">17</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">18</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">19</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">20</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">21</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">22</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">23</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">24</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">25</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">26</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">27</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">28</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">29</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">30</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> <span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span>;
+</code></pre></div><p>This SQL creates 30 tables name from 1 to 30 that correspond to each day in a month. Note that for February, there are 28 days but dont worry, we still use 30 or 31 worksheets as additional worksheets will be blank anyway and make no harm to the operation.</p>
+<p>b. Manual importing worksheets from the excel file to MySQL table using NaviCAT</p>
+<ul>
+<li>Select table 1 in MySQL database</li>
+<li>Right Click –&gt; Import Wizard</li>
+<li>Select Excel file and Click Next</li>
+<li>Import the excel file</li>
+</ul>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/navicat_importexcel.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/navicat_importtablemapping.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/navicat_importattributemapping.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/navicat_importappending.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/navicat_importstart.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/navicat_tableraw.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p>Now you have all tables you need in MySQL. However, Values of time shown in FROM and TO column have change from AM, PM to something else. For example 1900-01-02 should be 24. To solve this issue, we will use the following SQL syntax</p>
+<p>c. Rename tables</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">RENAME</span> <span style="color:#66d9ef">TABLE</span>
+<span style="color:#f92672">`</span><span style="color:#ae81ff">1</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_1,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">2</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_2,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">3</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_3,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">4</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_4,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">5</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_5,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">6</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_6,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">7</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_7,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">8</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_8,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">9</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_9,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">10</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_10,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">11</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_11,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">12</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_12,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">13</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_13,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">14</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_14,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">15</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_15,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">16</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_16,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">17</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_17,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">18</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_18,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">19</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_19,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">20</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_20,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">21</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_21,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">22</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_22,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">23</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_23,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">24</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_24,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">25</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_25,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">26</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_26,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">27</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_27,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">28</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_28,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">29</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_29,
+<span style="color:#f92672">`</span><span style="color:#ae81ff">30</span><span style="color:#f92672">`</span> <span style="color:#66d9ef">TO</span> pat_2018_10_30
+;
+</code></pre></div><p>Here we rename the table to whatever we need. By doing so, we can resue the Create Query to perform the same procedure for importing new table.</p>
+<p>d. Create Production table</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">create</span>
+<span style="color:#66d9ef">table</span>
+production (
+date varchar(<span style="color:#ae81ff">255</span>),
+<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> varchar(<span style="color:#ae81ff">255</span>),
+<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> varchar(<span style="color:#ae81ff">255</span>),
+total_pro_hour varchar(<span style="color:#ae81ff">255</span>),
+total_power_hour varchar(<span style="color:#ae81ff">255</span>),
+ratio varchar(<span style="color:#ae81ff">255</span>)
+);
+</code></pre></div><p>This code creates a production table.</p>
+<p>e. Import/Append all raw tables into one table – Production</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_1;
+
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_2;
+
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_3;
+
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_4;
+
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_5;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_6;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_7;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_8;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_9;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_10;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_11;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_12;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_13;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_14;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_15;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_16;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_17;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_18;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_19;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_20;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_21;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_22;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_23;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_24;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_25;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_26;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_27;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_28;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_29;
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> production
+<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> pat_2017_1_30;
+</code></pre></div><p>This code imports all data from raw table into production table.</p>
+<p>f. Correct data, particularly with date and time</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">EXISTS</span> productioncorrected;
+
+<span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> productioncorrected <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> production;
+
+
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">1900-01-01</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">24:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">1900-01-02 </span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">1900-01-02</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">00:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+
+<span style="color:#f92672">#</span><span style="color:#f92672">#</span><span style="color:#f92672">#</span><span style="color:#f92672">#</span><span style="color:#f92672">#</span>
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">1:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">01:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">2:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">02:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">3:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">03:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">4:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">04:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">5:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">05:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">6:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">06:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">7:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">07:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">8:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">08:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">9:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">09:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">10:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">10:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">11:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">11:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">12:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">12:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">01:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">13:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">02:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">14:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">03:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">15:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">04:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">16:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">05:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">17:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">06:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">18:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">07:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">19:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">08:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">20:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">09:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">21:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">10:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">22:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">11:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">23:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">12:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">00:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+
+
+<span style="color:#f92672">#</span><span style="color:#f92672">#</span><span style="color:#f92672">#</span><span style="color:#f92672">#</span><span style="color:#f92672">#</span>
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">1:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">01:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">2:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">02:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">3:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">03:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">4:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">04:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">5:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">05:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">6:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">06:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">7:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">07:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">8:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">08:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">9:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">09:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">10:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">10:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">11:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">11:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">12:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">12:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">01:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">13:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">02:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">14:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">03:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">15:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">04:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">16:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">05:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">17:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">06:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">18:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">07:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">19:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">08:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">20:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">09:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">21:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">10:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">22:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">11:00PM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">23:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">12:00AM</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">24:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">    101:00:00.000</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">11:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">    102:00:00.000</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">24:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">    101:00:00.000</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">11:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">replace</span>(productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">    102:00:00.000</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">24:00:00.000</span><span style="color:#e6db74">&#39;</span>);
+
+
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">24:00:00.000</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">WHERE</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">23:00:00.000</span><span style="color:#e6db74">&#34;</span>;
+
+
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">11:00:00.000</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">WHERE</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">10:00:00.000</span><span style="color:#e6db74">&#34;</span>;
+
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">11:00:00.000</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">WHERE</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">12:00:00.000</span><span style="color:#e6db74">&#34;</span>;
+
+<span style="color:#66d9ef">UPDATE</span> productioncorrected <span style="color:#66d9ef">SET</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">from</span><span style="color:#f92672">`</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">24:00:00.000</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">WHERE</span> productioncorrected.<span style="color:#f92672">`</span><span style="color:#66d9ef">to</span><span style="color:#f92672">`</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">01:00:00.000</span><span style="color:#e6db74">&#34;</span>;
+</code></pre></div><p>This code is used to correct</p>
+<ul>
+<li>time data</li>
+<li>missing data</li>
+<li>outliner</li>
+</ul>
+<p>g. Create analysis table</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">EXISTS</span> analysis;
+
+<span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> analysis
+<span style="color:#66d9ef">Select</span> <span style="color:#f92672">*</span>
+
+<span style="color:#66d9ef">from</span>
+productioncorrected
+<span style="color:#66d9ef">where</span> productioncorrected.total_pro_hour <span style="color:#f92672">&gt;</span><span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">and</span>
+productioncorrected.total_power_hour<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">and</span>
+productioncorrected.total_power_hour <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">-</span><span style="color:#e6db74">&#34;</span>
+;
+
+<span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> analysis <span style="color:#66d9ef">MODIFY</span> <span style="color:#66d9ef">COLUMN</span> total_power_hour DOUBLE;
+
+<span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> analysis <span style="color:#66d9ef">MODIFY</span> <span style="color:#66d9ef">COLUMN</span> total_pro_hour DOUBLE;
+
+<span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> analysis <span style="color:#66d9ef">MODIFY</span> <span style="color:#66d9ef">COLUMN</span> ratio DOUBLE;
+</code></pre></div><p>Analysis table is basically the same with production but with some correction</p>
+<p>h. Create Analysis Date table</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">EXISTS</span> analysisdate;
+
+<span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> analysisdate
+<span style="color:#66d9ef">Select</span>
+<span style="color:#f92672">*</span>
+<span style="color:#66d9ef">from</span>
+analysis
+<span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> analysis.date;
+
+<span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> analysisdate
+<span style="color:#66d9ef">ADD</span> id int <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> AUTO_INCREMENT <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>;
+</code></pre></div><p>This SQL code will create Analysis Date table that basically summary hourly data into daily data.</p>
+<blockquote>
+<p>WHAO, after going through each of the above Query, my figures are tired already. You can further enhance SQL code to make the entire process faster, but still it is much slower than using below R code.</p>
+</blockquote>
+<h1 id="combining-worksheets-using-r">Combining worksheets using R</h1>
+<p>Below R codes are extracted from <a href="https://github.com/namkyodai/BusinessAnalytics/tree/master/ExcelSheetCombine">Github source</a></p>
+<p>This code is used to combine multiple excel worksheets into one dataframe. Particularly useful when combining multiple worksheets of production data with each worksheet is a date of a month, and in each worksheet, data is saved in hourly basis.</p>
+<p>the first method, using XlConnect.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># this method has a limitation that XlConnect doesnt work well with excel files with dynamic links. When importing into R, it gives NA values.</span>
+<span style="color:#75715e"># to make sure that importing is perfect. It is advisable to disable all dynamic links in excel file by going to Data</span>
+<span style="color:#a6e22e">library</span>(XLConnect)
+<span style="color:#75715e"># load data file (excel files ended with cls, xlsc, or xlsm)</span>
+datafile <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">loadWorkbook</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">data1.xlsx&#34;</span>) <span style="color:#75715e"># This is a static worksheet, without any dynamic links</span>
+<span style="color:#75715e"># obtain sheet names</span>
+worksheets <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">getSheets</span>(datafile)
+<span style="color:#a6e22e">names</span>(worksheets) <span style="color:#f92672">&lt;-</span> worksheets
+<span style="color:#75715e"># dataframe</span>
+worksheets_list <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lapply</span>(worksheets, <span style="color:#a6e22e">function</span>(.sheet){<span style="color:#a6e22e">readWorksheet</span>(object<span style="color:#f92672">=</span>datafile, .sheet)})
+<span style="color:#75715e"># limit worksheet_list to sheets with at least 1 dimension</span>
+worksheets_list2 <span style="color:#f92672">&lt;-</span> worksheets_list<span style="color:#a6e22e">[sapply</span>(worksheets_list, <span style="color:#a6e22e">function</span>(x) <span style="color:#a6e22e">dim</span>(x)[1]) <span style="color:#f92672">&amp;</span>gt; <span style="color:#ae81ff">0</span>]
+
+<span style="color:#75715e"># code to read in each excel worksheet as individual dataframes</span>
+ <span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#a6e22e">length</span>(worksheets_list2)){<span style="color:#a6e22e">assign</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">df&#34;</span>, i), <span style="color:#a6e22e">as.data.frame</span>(worksheets_list2[i]))}
+
+<span style="color:#75715e"># define function to clean data in each data frame (updated based on your data). You must define here carefully otherwise it will not work well with some certain type of data. The fastest way is only drop out missing values. Other value can be dealed with using query in MySQL</span>
+cleaner <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(df){
+  <span style="color:#75715e"># drop rows with missing values</span>
+  df <span style="color:#f92672">&lt;-</span> df<span style="color:#a6e22e">[rowSums</span>(<span style="color:#a6e22e">is.na</span>(df)) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>,]
+  <span style="color:#75715e"># remove serial comma from all variables</span>
+ <span style="color:#75715e"># df[,-1] &lt;- as.numeric(gsub(&#34;,&#34;, &#34;&#34;, as.matrix(df[,-1])))</span>
+  <span style="color:#75715e"># create numeric version of year variable for graphing</span>
+ <span style="color:#75715e"># df$Year &lt;- as.numeric(substr(df$year, 1, 4))</span>
+<span style="color:#75715e"># return cleaned df</span>
+  <span style="color:#a6e22e">return</span>(df)
+}
+
+<span style="color:#75715e"># clean sheets and create one data frame</span>
+data1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">do.call</span>(rbind,<span style="color:#a6e22e">lapply</span>(<span style="color:#a6e22e">names</span>(worksheets_list2), <span style="color:#a6e22e">function</span>(x) <span style="color:#a6e22e">cleaner</span>(worksheets_list2[[x]])))
+
+<span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Print out the data 1 frame \n&#34;</span>)
+<span style="color:#a6e22e">print</span>(data1)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Method is with readxl package. This is superior than the former one as readxl can handle excel files with dynamic links. This means it will retain values and ignore the links.</span>
+<span style="color:#75715e"># ----------------</span>
+<span style="color:#a6e22e">library</span>(readxl)
+read_excel_allsheets <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(filename, tibble <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) {
+  <span style="color:#75715e"># I prefer straight data.frames</span>
+  <span style="color:#75715e"># but if you like tidyverse tibbles (the default with read_excel)</span>
+  <span style="color:#75715e"># then just pass tibble = TRUE</span>
+  sheets <span style="color:#f92672">&lt;-</span> readxl<span style="color:#f92672">::</span><span style="color:#a6e22e">excel_sheets</span>(filename)
+  x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lapply</span>(sheets, <span style="color:#a6e22e">function</span>(X) readxl<span style="color:#f92672">::</span><span style="color:#a6e22e">read_excel</span>(filename, sheet <span style="color:#f92672">=</span> X))
+  <span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span>tibble) x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lapply</span>(x, as.data.frame)
+  <span style="color:#a6e22e">names</span>(x) <span style="color:#f92672">&lt;-</span> sheets
+  x
+}
+
+<span style="color:#75715e">#start to read and write data into csv file</span>
+worksheets <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_excel_allsheets</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">data1.xlsx&#34;</span>)
+<span style="color:#a6e22e">source</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">cleaning.R&#34;</span>)
+filedata <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">do.call</span>(rbind,<span style="color:#a6e22e">lapply</span>(<span style="color:#a6e22e">names</span>(worksheets), <span style="color:#a6e22e">function</span>(x) <span style="color:#a6e22e">cleaner</span>(worksheets[[x]])))
+<span style="color:#a6e22e">write.table</span>(filedata, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">myDF.csv&#34;</span>, sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">,&#34;</span>, col.names <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">file.exists</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">myDF.csv&#34;</span>), row.names<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>, append <span style="color:#f92672">=</span> T)
+
+worksheets <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_excel_allsheets</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">data2.xlsm&#34;</span>)
+<span style="color:#a6e22e">source</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">cleaning.R&#34;</span>)
+filedata <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">do.call</span>(rbind,<span style="color:#a6e22e">lapply</span>(<span style="color:#a6e22e">names</span>(worksheets), <span style="color:#a6e22e">function</span>(x) <span style="color:#a6e22e">cleaner</span>(worksheets[[x]])))
+<span style="color:#a6e22e">write.table</span>(filedata, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">myDF.csv&#34;</span>, sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">,&#34;</span>, col.names <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">file.exists</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">myDF.csv&#34;</span>), row.names<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>, append <span style="color:#f92672">=</span> T)
+<span style="color:#75715e">#end</span>
+<span style="color:#75715e">#https://medium.com/@niharika.goel/merge-multiple-csv-excel-files-in-a-folder-using-r-e385d962a90a</span>
+</code></pre></div><h1 id="combining-multiple-excel-files-using-r">Combining multiple excel files using R</h1>
+<p>I found the code from Niharika suits the purpose of this exercise. Kindly refer to her github site for original code.</p>
+<p><a href="https://github.com/NiharikaGoel12/R-Playground">https://github.com/NiharikaGoel12/R-Playground</a></p>
+<blockquote>
+<p>Her readme file states
+This repository contains basic codes for R, which might be useful in day to day work, especially doing data analysis on large datasets in Excel or CSV.</p>
+<p>#Merge multiple Excel/CSV files in a folder</p>
+<p>Consider a case when you have multiple xlsx/csv files in a folder &amp; you to merge them into one single file. Here, I have used lapply() which returns a list of the same length as i. And grepl() will check exact match between merge_file_name &amp; existing file ‘i’. In this case, if the two files are same, we will ignore already created “merge file”.</p>
+<p>rbind() will combine data frame by rows and merge all the files.</p>
+</blockquote>
+<p>a. Combining CSV files</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">path <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">sample-data/merge-files/csv&#34;</span>
+merge_file_name <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">sample-data/merge-files/merged_file.csv&#34;</span>
+
+filenames <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">list.files</span>(path<span style="color:#f92672">=</span> path, full.names<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+
+All <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lapply</span>(filenames,<span style="color:#a6e22e">function</span>(filename){
+    <span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Merging&#34;</span>,filename,sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74"> &#34;</span>))
+    <span style="color:#a6e22e">read.csv</span>(filename)
+})
+df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">do.call</span>(rbind.data.frame, All)
+<span style="color:#a6e22e">write.csv</span>(df,merge_file_name)
+</code></pre></div><p>b. Combining excel files</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(openxlsx)
+
+path <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">sample-data/merge-files/xlsx&#34;</span>
+merge_file_name <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">sample-data/merge-files/merged_file.xlsx&#34;</span>
+
+filenames_list <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">list.files</span>(path<span style="color:#f92672">=</span> path, full.names<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+
+All <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lapply</span>(filenames_list,<span style="color:#a6e22e">function</span>(filename){
+    <span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Merging&#34;</span>,filename,sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74"> &#34;</span>))
+    <span style="color:#a6e22e">read.xlsx</span>(filename)
+})
+
+df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">do.call</span>(rbind.data.frame, All)
+<span style="color:#a6e22e">write.xlsx</span>(df,merge_file_name)
+</code></pre></div><p>c. Combining the example data</p>
+<p>We can use the code in step a and b of this section. However, there is one draw back that we need to save our data first into csv or excel file. This is also a bit of time consuming. To avoid this, we can just simply write directly data into csv file as presented in the last part of section 4.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># ----------------</span>
+<span style="color:#a6e22e">library</span>(readxl)
+read_excel_allsheets <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(filename, tibble <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) {
+  <span style="color:#75715e"># I prefer straight data.frames</span>
+  <span style="color:#75715e"># but if you like tidyverse tibbles (the default with read_excel)</span>
+  <span style="color:#75715e"># then just pass tibble = TRUE</span>
+  sheets <span style="color:#f92672">&lt;-</span> readxl<span style="color:#f92672">::</span><span style="color:#a6e22e">excel_sheets</span>(filename)
+  x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lapply</span>(sheets, <span style="color:#a6e22e">function</span>(X) readxl<span style="color:#f92672">::</span><span style="color:#a6e22e">read_excel</span>(filename, sheet <span style="color:#f92672">=</span> X))
+  <span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span>tibble) x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lapply</span>(x, as.data.frame)
+  <span style="color:#a6e22e">names</span>(x) <span style="color:#f92672">&lt;-</span> sheets
+  x
+}
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">#start to read and write data into csv file</span>
+worksheets <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_excel_allsheets</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">data1.xlsx&#34;</span>)
+<span style="color:#a6e22e">source</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">cleaning.R&#34;</span>)
+filedata <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">do.call</span>(rbind,<span style="color:#a6e22e">lapply</span>(<span style="color:#a6e22e">names</span>(worksheets), <span style="color:#a6e22e">function</span>(x) <span style="color:#a6e22e">cleaner</span>(worksheets[[x]])))
+<span style="color:#a6e22e">write.table</span>(filedata, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">myDF.csv&#34;</span>, sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">,&#34;</span>, col.names <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">file.exists</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">myDF.csv&#34;</span>), row.names<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>, append <span style="color:#f92672">=</span> T)
+
+
+worksheets <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_excel_allsheets</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">data2.xlsm&#34;</span>)
+<span style="color:#a6e22e">source</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">cleaning.R&#34;</span>)
+filedata <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">do.call</span>(rbind,<span style="color:#a6e22e">lapply</span>(<span style="color:#a6e22e">names</span>(worksheets), <span style="color:#a6e22e">function</span>(x) <span style="color:#a6e22e">cleaner</span>(worksheets[[x]])))
+<span style="color:#a6e22e">write.table</span>(filedata, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">myDF.csv&#34;</span>, sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">,&#34;</span>, col.names <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">file.exists</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">myDF.csv&#34;</span>), row.names<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>, append <span style="color:#f92672">=</span> T)
+
+<span style="color:#75715e">#end</span>
+
+</code></pre></div><p>The above code read 2 data files data1.xlsx and data2.xlsm, combining all worksheets of these two files and then write the data frame to a CSV file named myDF.csv. If we have more than 2 files to read and combine, we can just copy the code and paste it under and remember to change the source data file. We can also automate this process by making a loop, which will be presented in other post.</p>
+<p>Once we have the combined CSV file, we can use NaviCAT to import this file to MySQL for further enhancement as presented in section 3. In the end, we can summary the production and energy consumption data in day or week that will be useful for visualization, correlation, and regression analysis.</p>
+<h1 id="visualization">Visualization</h1>
+<h2 id="tableu">Tableu</h2>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/fig_energy_3monthbarchart.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/fig_energy_3monthtrend.png" alt="Foo"><!-- raw HTML omitted --></p>
+<h2 id="r">R</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(DBI)
+<span style="color:#a6e22e">library</span>(RODBC)
+<span style="color:#a6e22e">library</span>(RMySQL)
+<span style="color:#a6e22e">library</span>(xts)
+<span style="color:#a6e22e">library</span>(ggplot2)
+<span style="color:#a6e22e">library</span>(hydroTSM) <span style="color:#75715e">#call the hydrology package for time series analysis</span>
+<span style="color:#75715e">#this code is used for energy audit of the plant based on production and power consumption</span>
+dataproduction <span style="color:#f92672">=</span> <span style="color:#a6e22e">dbConnect</span>(<span style="color:#a6e22e">MySQL</span>(), user<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">root&#39;</span>, password<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">&#39;</span>, dbname<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">exampledata&#39;</span>, host<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">localhost&#39;</span>)
+<span style="color:#75715e">#exampledata is the database stored in your MySQL server</span>
+<span style="color:#a6e22e">dbListTables</span>(dataproduction)
+<span style="color:#a6e22e">dbListFields</span>(dataproduction, <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">analysisdate&#39;</span>)
+rs <span style="color:#f92672">=</span> <span style="color:#a6e22e">dbSendQuery</span>(dataproduction, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">select * from analysisdate&#34;</span>)
+rs<span style="color:#f92672">=</span><span style="color:#a6e22e">dbFetch</span>(rs, n <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>)
+
+data<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(rs[1],rs[4],rs[5],rs[6])
+a<span style="color:#f92672">=</span><span style="color:#a6e22e">as.Date</span>(data<span style="color:#f92672">$</span>date,<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%Y-%m-%d&#34;</span>)
+production<span style="color:#f92672">=</span>data<span style="color:#f92672">$</span>total_pro_hour
+power<span style="color:#f92672">=</span>data<span style="color:#f92672">$</span>total_power_hour
+ratio<span style="color:#f92672">=</span>data<span style="color:#f92672">$</span>ratio
+data<span style="color:#f92672">=</span><span style="color:#a6e22e">data.frame</span>(a,production,power,ratio)
+<span style="color:#75715e">#Correlation analysis</span>
+<span style="color:#a6e22e">hydropairs</span>(data[,<span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>])
+<span style="color:#75715e">#Plot production data</span>
+<span style="color:#a6e22e">plot.new</span>()
+p<span style="color:#f92672">=</span><span style="color:#a6e22e">ggplot</span>(data<span style="color:#f92672">=</span>data,<span style="color:#a6e22e">aes</span>(a, production))<span style="color:#f92672">+</span> <span style="color:#a6e22e">geom_line</span>(color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#00AFBB&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">theme</span>(axis.text.x <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span>,hjust<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>))<span style="color:#f92672">+</span><span style="color:#a6e22e">theme_gray</span>(base_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">14</span>)<span style="color:#f92672">+</span> <span style="color:#a6e22e">theme</span>(plot.title <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>))
+p
+min <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.Date</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">2017-01-01&#34;</span>)
+max <span style="color:#f92672">&lt;-</span>  <span style="color:#a6e22e">as.Date</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">2018-10-30&#34;</span>)
+<span style="color:#75715e">#p + scale_x_date(limits = c(min, max))</span>
+pp<span style="color:#f92672">=</span>p<span style="color:#f92672">+</span><span style="color:#a6e22e">scale_x_date</span>(date_labels <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%Y&#34;</span>,date_breaks<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">year&#34;</span>,limits <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(min, max))<span style="color:#f92672">+</span><span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Production hourly&#34;</span>,x<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Years&#34;</span>,y<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">ML&#34;</span>)<span style="color:#f92672">+</span><span style="color:#a6e22e">scale_y_continuous</span>(limits<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">2</span>))<span style="color:#75715e">#+ stat_smooth(method=&#34;lm&#34;)</span>
+<span style="color:#a6e22e">ggsave</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">ch05_fig_energy_production.png&#34;</span>, plot <span style="color:#f92672">=</span> pp)
+
+<span style="color:#a6e22e">print</span>(pp)
+<span style="color:#75715e">#Plot power consumption data</span>
+<span style="color:#a6e22e">plot.new</span>()
+q<span style="color:#f92672">=</span><span style="color:#a6e22e">ggplot</span>(data<span style="color:#f92672">=</span>data,<span style="color:#a6e22e">aes</span>(a, power))<span style="color:#f92672">+</span> <span style="color:#a6e22e">geom_line</span>(color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#00AFBB&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">theme</span>(axis.text.x <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span>,hjust<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>))<span style="color:#f92672">+</span><span style="color:#a6e22e">theme_gray</span>(base_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">14</span>)<span style="color:#f92672">+</span> <span style="color:#a6e22e">theme</span>(plot.title <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>))
+<span style="color:#75715e">#q</span>
+min <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.Date</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">2017-01-01&#34;</span>)
+max <span style="color:#f92672">&lt;-</span>  <span style="color:#a6e22e">as.Date</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">2018-10-30&#34;</span>)
+<span style="color:#75715e">#p + scale_x_date(limits = c(min, max))</span>
+qq<span style="color:#f92672">=</span>q<span style="color:#f92672">+</span><span style="color:#a6e22e">scale_x_date</span>(date_labels <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%Y&#34;</span>,date_breaks<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">year&#34;</span>,limits <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(min, max))<span style="color:#f92672">+</span><span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Power hourly&#34;</span>,x<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Years&#34;</span>,y<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">KW&#34;</span>)<span style="color:#f92672">+</span><span style="color:#a6e22e">scale_y_continuous</span>(limits<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">250</span>))<span style="color:#75715e">#+ stat_smooth(method=&#34;lm&#34;)</span>
+<span style="color:#a6e22e">ggsave</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">ch05_fig_energy_power.png&#34;</span>, plot <span style="color:#f92672">=</span> qq)
+<span style="color:#a6e22e">print</span>(qq)
+<span style="color:#75715e">#plot ratio</span>
+<span style="color:#a6e22e">plot.new</span>()
+w<span style="color:#f92672">=</span><span style="color:#a6e22e">ggplot</span>(data<span style="color:#f92672">=</span>data,<span style="color:#a6e22e">aes</span>(a, ratio))<span style="color:#f92672">+</span> <span style="color:#a6e22e">geom_line</span>(color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#00AFBB&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">theme</span>(axis.text.x <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span>,hjust<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>))<span style="color:#f92672">+</span><span style="color:#a6e22e">theme_gray</span>(base_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">14</span>)<span style="color:#f92672">+</span> <span style="color:#a6e22e">theme</span>(plot.title <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>))
+<span style="color:#75715e">#w</span>
+min <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.Date</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">2017-01-01&#34;</span>)
+max <span style="color:#f92672">&lt;-</span>  <span style="color:#a6e22e">as.Date</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">2018-10-30&#34;</span>)
+<span style="color:#75715e">#p + scale_x_date(limits = c(min, max))</span>
+ww<span style="color:#f92672">=</span>w<span style="color:#f92672">+</span><span style="color:#a6e22e">scale_x_date</span>(date_labels <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%Y&#34;</span>,date_breaks<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">year&#34;</span>,limits <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(min, max))<span style="color:#f92672">+</span><span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Ratio&#34;</span>,x<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Years&#34;</span>,y<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>)<span style="color:#f92672">+</span><span style="color:#a6e22e">scale_y_continuous</span>(limits<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">250</span>))<span style="color:#75715e">#+ stat_smooth(method=&#34;lm&#34;)</span>
+<span style="color:#a6e22e">ggsave</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">ch05_fig_energy_ratio.png&#34;</span>, plot <span style="color:#f92672">=</span> ww)
+<span style="color:#a6e22e">print</span>(ww)
+<span style="color:#a6e22e">dbDisconnect</span>(dataproduction)
+</code></pre></div><p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/ch05_fig_energy_correlation.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/ch05_fig_energy_power.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/ch05_fig_energy_production.png" alt="Foo"><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><img src="https://raw.githubusercontent.com/namkyodai/BusinessAnalytics/master/ExcelSheetCombine/ch05_fig_energy_ratio.png" alt="Foo"><!-- raw HTML omitted --></p>
+
+    </div>
+
+    
+
+
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/excel/">excel</a>
+  
+  <a class="badge badge-light" href="/tags/mutiple-worksheet/">mutiple worksheet</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu7966823d6053eab1cc9400bf396c5251_310458_250x250_fill_lanczos_center_2.png" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Nam Le</a></h5>
+      <h6 class="card-subtitle">Risk and Asset Management Specialist for Buildings and Engineering Systems</h6>
+      <p class="card-text">My research interests include Operation Research and Applied Statistics for Asset Management of Buildings and Engineering Systems.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=yAnTwPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/namkyodai" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/post/2019-09-15-excel-combine/">Excel worksheets combination</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+    <div class="article-widget">
+      
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/post/tdd/" rel="next">Technical Due Diligence (TDD)</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/post/ait-buivanthinh-themoment/" rel="prev">The moment at the AIT</a>
+  </div>
+  
+</div>
+
+    </div>
+    
+
+    
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "namkyodainetlify" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+
+
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://namkyodainetlify.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+
+
+
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+
+
+  <p class="powered-by">
+    © 2020 Nam Le &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.0/jquery.fancybox.min.js"></script>
+
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

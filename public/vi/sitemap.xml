@@ -35,11 +35,31 @@
   <url>
     <loc>/vi/authors/cam-van/</loc>
     <lastmod>2020-02-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/cam-van/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/authors/cam-van/"
+                />
   </url>
   
   <url>
     <loc>/vi/authors/dieu-phap-am/</loc>
     <lastmod>2020-02-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/dieu-phap-am/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/authors/dieu-phap-am/"
+                />
   </url>
   
   <url>
@@ -50,6 +70,16 @@
   <url>
     <loc>/vi/post/monchay-khoaitayxaonam/</loc>
     <lastmod>2020-02-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/monchay-khoaitayxaonam/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/post/monchay-khoaitayxaonam/"
+                />
   </url>
   
   <url>
@@ -98,12 +128,12 @@
   </url>
   
   <url>
-    <loc>/vi/authors/thich-nhat-hanh/</loc>
+    <loc>/vi/tags/thich-nhat-hanh/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vi/tags/thich-nhat-hanh/</loc>
+    <loc>/vi/authors/thich-nhat-hanh/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -158,21 +188,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/asset-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/asset-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -184,6 +199,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/asset-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/asset-management/"
                 />
   </url>
   
@@ -263,21 +293,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/project-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -289,6 +304,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/project-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/project-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/project-management/"
                 />
   </url>
   
