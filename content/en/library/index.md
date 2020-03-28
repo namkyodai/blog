@@ -47,3 +47,5 @@ slides: ""
 - [rpivotTable](https://cran.r-project.org/web/packages/rpivotTable/vignettes/rpivotTableIntroduction.html)
 - [TidyVerse](https://www.tidyverse.org/)
 - [Transpose Table](https://www.r-statistics.com/tag/transpose/)
+- [R for Data Science](https://r4ds.had.co.nz/index.html)
+- [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
