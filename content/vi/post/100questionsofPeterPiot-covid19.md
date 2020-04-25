@@ -97,112 +97,116 @@ SARSCoV2 là virus còn Covid-19 là loại bệnh do virus đó gây ra.
 
 10. Có bao nhiêu loại virus tồn tại, và bao nhiêu trong số đó là có hại đối với con người?
 
-Trong khoảng hàng triệu loại virus, chỉ có vài trăm là có hại cho con người. Các loài/chủng virus mới luôn xuất hiện. Hầu hết trong số đò là không có haij.
+Trong khoảng hàng triệu loại virus, chỉ có vài trăm là có hại cho con người. Các loài/chủng virus mới luôn xuất hiện. Hầu hết trong số đò là không có hại.
 
 
-11. TEDMED: On average, how many particles of the virus does it take to infect you?
+11. Trên phương diện thống kê thì cần bao nhiêu phần tử virus để cho thể lây nhiễm cho người?
 
-We really don’t know yet for SARS-CoV2.  It usually takes very little.
+Thật sự là chúng ta vẫn chưa biết chính xác về điều này với virus SARS-CoV2. Nhưng có thể nói là chỉ cần một lượng rất nhỏ.
 
-12. TEDMED: What does it look like?
+12. Phần tử virus này trong như thế nào?
 
-SARS-CoV2  looks like a tiny strand of spaghetti, wound up in a ball and packed inside a shell made of protein. The shell has spikes that stick out and make it look like the corona from the sun. This family of viruses all have a similar appearance; they all look like a corona.
+SARS-CoV2 trông như một sợ mỳ spaghetti rất nhỏ, được cuộn tròn giống như một quả bóng và được bao bọc bởi một lớp vỏ protein. Lớp vở này có các gai hướng ra ngoài trông giống như vòng tán từ mặt trời. Chủng virus này có một đặc điểm chung như vậy, nên chúng giống như một vòng tán (corona)
 
-13. TEDMED: How many different coronaviruses affect humans?
+13. Có bao nhiều loài Corona có hại cho con người?
 
-There are 7 coronaviruses that have human- to-human transmission. 4 generate a mild cold. But 3 of them can be deadly, including the viruses that cause SARS and MERS, and now the new coronavirus, SARS-CoV2.
+Chúng ta đã biết có 7 loại virus Corona có thể truyền nhiễm từ người sang người. 4 loại trong số này gây ra chiệu chứng cảm nhẹ, nhưng có 3 loại thì rất nguy hiểm, bao gồm loại virus corona gây ra dịch bệnh SARS và MERS, và bây giờ là loại corona mới SARS-CoV2.
 
-14. TEDMED: Why is it called the “novel” coronavirus?
+14. Tại sao lại gọi là virus corona mới?
 
-Novel just means it is new to humans, meaning that this specific virus is one that we’ve never seen before. Our immune system has been evolving for 2 million years. But since our bodies have never seen this virus before,  there has been no opportunity for humans to develop immunity. That lack of immunity, combined with the virus’s ability to spread easily and its relative lethality, is why the  arrival of SARS-CoV2 is so disturbing.
+Từ mới (Novel) có nghĩa là chúng mới với loài người, chúng ta chưa biết gì về nó trước đó. Hệ miễn dịch của chúng ta đã tiến hòa trong khoảng 2 triệu năm, nhưng khi cơ thể chúng ta chưa bao giờ nhiễm loại viris này trước đó, thì có ít cơ hội ngay lập tức để cơ thể người tự phát triển được hệ miễn dịch chống chọi với nó. Sự thiếu vắng khả năng miễn dịch cùng với khả năng lây nhiễm nhanh dễ gây tổn thương của virus này, là lý do tại sao virus SARS-CoV2 gây ra sự bất ổn.
 
-15. TEDMED: How often does a novel virus emerge that we need to care about?
 
-It’s rare… but it happens. Examples include the viruses that cause diseases such as HIV, SARS, MERS and a few others. It will happen again. The emergence of a novel virus is a very big problem … if it can easily spread among people and if it is harmful.
+15. Sự xuất hiện của một loài virus mới có thường xuyên không?
 
-16. TEDMED: How easily does the new virus spread?
+Khá hiếm...nhưng vẫn xảy ra. Một số ví dụ bao gồm các virus gây ra các loại bệnh như HIV, SARS, MERS và một vài bệnh khác. Virus mới sẽ tiếp tục xuất hiện, và sẽ trở thành một vấn đề lớn với chúng ta ... nếu virus có khả năng lây nhiễm dễ dàng và nguy hiểm.
 
-SARS-CoV2 spreads fairly easily from person  to person, through coughs and touch. It is a “respiratory transmitted” virus.  
 
-17. TEDMED: Is there any other way that the virus spreads?
+16. Sự lây lan của virus dễ dàng như thế nào?
 
-Recent reports indicate that it may also spread via fecal and urine contamination, but that requires confirmation.
+SARS-CoV2 lây lan rất nhanh từ người sang người từ các dịch gây ra bởi ho và chạm vào các bề mặt có dịch virus. Virus này là loại virus gây ra lây nhiễm qua hệ hô hấp.
 
-18. TEDMED: How is this new virus different from the earlier known coronaviruses that spread SARS or MERS?
 
-SARS-CoV2 is different in 4 critical ways:
+17. Virus này còn có thể lây lan qua con đường khác không?
 
-First, many infected people have no symptoms for days, so they can unknowingly infect others, and we don’t know who to isolate. This is very worrisome because SARS-CoV2 is highly infectious.
+Một nghiên cứu gần đây chỉ ra rằng nó có thể lây nhiễm qua đường tiêu hóa (phân và nước tiểu nhiễm virus), nhưng thật sự là chưa có số liệu để khẳng định điều này.
 
-Second, 80% of the time, COVID-19 is a mild disease that feels like a minor cold or cough,  so we don’t isolate ourselves, and infect others.
+18. Sự khác nhau giữa virus này và virus corona gây ra bệnh SARS và MERS?
 
-Third, the symptoms are easily confused with the flu, so many people think they have the  flu and don’t consider other possibilities.
+Có 4 khác biệt cơ bản là:
 
-Fourth, and perhaps most importantly, the virus is very easy to spread from human to human because in the early stages it is concentrated in the upper throat. The throat  is full of viral particles so when we cough  or sneeze, billions of these particles can be expelled and transmitted to another person.  
+- Thứ nhất, Có rất nhiều người nhiễm virus nhưng không có triệu chứng nhiễm bệnh, chính vì thế những người này có thể gây ra lây nhiễm cho người khác một cách không chủ đích, và chúng ta cũng không biết ai bị nhiễm để mà cách ly nếu không đưa đi xét nghiệm. Điều này thật sự là gây ra bất ổn lớn vì loại virus này có khả năng lây nhiễm rất cao.
+- Thứ 2, Thống kê chỉ ra rằng 80% số người nhiễm virus chỉ có triệu chứng nhẹ như cảm lạnh hay ho nhẹ, do đó những người nhiễm không nghĩ cách ly là cần thiết và vì thế lây nhiễm cho người khác.
+- Thứ 3, Các triệu chứng gây ra khiến chúng là dễ làm tưởng đó chỉ là các triệu chứng của bệnh cúm mùa, do đó nhiều người chủ quan và không nghĩ đến các nguyên nhân khác.
+- Thứ 4, và có lẽ là quan trọng nhất đó là, loại virus này rất dễ lây lan từ người sang người bởi vì trong giai đoạn đầu virus này tập trung số đông ở phần trên cổ họng chúng ta và khi chúng ta ho hay hắt xì thì có hàng tỉ phần tử virus sẽ ra ngoài thông qua các bọt nước li ti, người khác hít vào và bị nhiễm.
 
-19. TEDMED: I thought the virus leads to pneumonia? How is the throat involved?
+19. Loại virus này có gây ra viêm phổi không? và còn cổ họng thì sẽ ra sao?
 
-The disease often starts in the throat (which  is why tests often take a swab from the throat) and then as it progresses it moves down to the lungs and becomes a lower respiratory infection.
+Loại bệnh này thường bắt đầu ở cổ họng (chính vì chúng ta lấy mẫu phẩm để làm thí nghiệm từ cổ họng) và sau đó bệnh tiến triển xuống phía dưới họng, tấn công đến phổi và trở thành loại bệnh lây nhiễm qua đường hô hấp phía dưới.
 
-20. TEDMED: I hear the word “asymptomatic” used a lot. What does it mean?
+20. Chúng ta nghe đài bào nói nhiều đến từ "không triệu chứng" rất nhiều, nó chính xác là gì?
 
-It simply means having no symptoms.
+Đơn giản nó có nghĩa là người bị nhiễm virus không có biểu bệnh lý ngay cả khi đã bị nhiễm.
 
-21. TEDMED: Are you saying that someone can be infected with the new virus and never show symptoms at all?
+21. Ý ông muốn nói đến là có nhiều người nhiễm virus và không bao giờ có biểu hiện bệnh lý?
 
-Unfortunately, yes. Many infected people do not show any symptoms for the first few days and then a mild cough or low fever shows up. This is the opposite of SARS, where you had clear symptoms for a few days but were only contagious when sick.  
+Thật không may là đúng như vậy. Có rất nhiều người bị nhiễm không có biểu hiện bệnh lý trong vài ngày đâu và sau đó chỉ có ho hay sốt nhẹ. Triệu chứng này trái ngược với bệnh SARS, loại bệnh có triệu chứng bệnh lý rất rõ ràng trong những ngày đầu và chỉ gây lây nhiễm khi bệnh nhân ốm thực sự.
 
-22. TEDMED: If you have no symptoms, can you still infect other people?
+22. Nếu người bị nhiễm không có triệu chứng bệnh lý, họ có khả năng lây nhiễm chứ?
 
-Unfortunately, yes. And that makes it much more difficult to slow the spread.
+Điều không may là đúng như vậy, và điều đó gây khó khăn rất lớn để chúng ta làm chậm hay ngăn chặn sự lây lan của virus.
 
-23. TEDMED: How likely is it that scientists will develop a vaccine to prevent people from getting infected?
+23. Thế còn công việc điều chế vacines để phòng bệnh có tiến triển thuận lợi không?
 
-It is reasonably likely, but there are no guarantees that we will even have a vaccine. Failure is possible. For example, we’ve been searching for an HIV vaccine for 35 years and we still don’t have one. I’m optimistic that we will develop  a     vaccine for SARS-CoV2, but we will have to extensively test it for efficacy and safety –  which takes a lot of people and time.
+Khả năng cao là thuận lợi, nhưng không có đảm bảo là chúng ta sẽ có vaccine. Thất bại trong điều chế có thể xảy ra. Đơn cử là việc điều chế vaccine cho bệnh HIV, đã hơn 35 năm trôi qua, chúng ta vẫn chưa có vaccine. Tôi khá lạc quan về việc điều chế vaccine cho SARS-CoV2, nhưng chúng ta sẽ cần phải làm kiểm định lâm sàng để đảm bảo tính hiệu quả và an toàn, điều này sẽ rất tốn công sức và cả thời gian nữa.
 
-24. TEDMED: Assuming that a vaccine for coronavirus is possible and further assuming that it will be discovered fairly quickly, how long before we have a vaccine that we can start to inject into millions of people?
 
-We will have vaccine “candidates” in a month  or two. But because of the need for extensive testing to prove it protects and is safe, it will be at least a year before we have a vaccine we can inject into people that is approved by a major regulatory agency. In fact, 18 to 24 months is more likely by the time we scale it up to millions of doses, and that is optimistic.
+24. Giả định rằng chúng ta sẽ thuận lợi trong việc điều chế vacinne cho virus này và vacinne sẽ được công bố sớm, vậy mất khoảng bao lâu để chúng ta có thể bắt đầu tiêm trên diện rộng cho hàng triệu người?
 
-25. TEDMED: Why will it take so long to develop a vaccine if this is an emergency?
+Chúng ta sẽ có các loại vacinne tiềm năng trong vòng một hai tháng, nhưng những vacinne đó cần phải được thử nghiệm lầm sàng để đảm bảo tính an toàn và độ tin cây cho nhiều nhóm người trước khi triển khai tiêm chủng trên diện rộng, giai đoạn này có ít nhất mất cỡ 1 năm. Như vậy, khách quan mà nói thì khoảng từ 18 đến 24 tháng là có thể triển khai.
 
-It’s not necessarily vaccine discovery that takes so long, but vaccine testing. Once a “candidate” vaccine exists in the lab, a series of clinical trials are needed, first on animals and then on successively larger groups of people.
+25. Tại sao lại mất quá nhiều thời gian vậy, đặc biệt là trong tình trạng khẩn cấp như hiện nay?
 
-26. TEDMED: Have we made progress already?
+Thật ra, không phải là việc điều chế vacinne mất nhiều thời gian, mà là việc thử nghiệm lâm sàng. Khi một loại vaccine khả thi được bào chế, thì có hàng loạt thử nghiệm sẽ được tiến hành, trước hết là trên động vật sau đó mới đến người.
 
-The good news is that only weeks after the discovery and isolation of SARS-CoV2, which occurred in early January of 2020, vaccine development started immediately. Funding has been allocated by many governments and many companies and scientists around the world are working on it with great urgency.
+26. Chúng ta đang thự hiện đến đâu trong việc bào chế vacinne cho SARS-Covd2?
 
-27. TEDMED: Are scientists in these countries cooperating, or are they competing with each other?
+Tin tốt lành là chỉ sau vài tuần sau khi phát hiện ra virus này vào đầu tháng 1 năm 2020, việc bào chế vaccine đã được tiến hành ngay lập tức. Rất nhiều nỗ lực của các nhà nghiên cứu từ các tổ chức quốc tế và từng quốc gia đã tập trung vào công việc này.
 
-A bit of both, and that is not a bad thing. But international cooperation has generally been good. That’s encouraging.
+27. Các nhà khoa học họ có cộng tác với nhau trong việc bào chế này không, hay là họ cạnh tranh với nhau?
 
-28. TEDMED: Can’t we develop a vaccine faster?
+Họ vừa cộng tác lại vừa cạnh tranh và điều đó không phải là điều không tốt. Có một thực tế là sự hợp tác quốc tế đã luôn là điều tốt và điều đó là đáng kích lệ.
 
-Unfortunately, there are no shortcuts. The human body’s immune system is complex and unpredictable. Viral mutations may occur. Children are different from adults. Women may respond differently than men. We need to be sure that any vaccine is 100% safe for everyone who gets it. To accomplish that, we need to test drugs and vaccines at various doses on a wide range of healthy human volunteers under carefully measured conditions.
+28. Chúng ta có thể phát triển vắc xin nhanh hơn không?
 
-29. TEDMED: How deadly is the new virus?
+Không may là không có con đường tắt. Hệ miễn dịch của chúng ta là rất phức tạp và khó tiên lượng. Sự biến đổi của virus có thể xẩy ra. Trẻ em thì khác với người lớn. Phụ nữ có thể có phản ứng khác với nam giới. Chúng ta cần phải đảm bảo rằng bất cứ loại vắc xin nào cũng phải an toàn 100% cho tất cả mọi người. Để làm được việc này, chúng ta cần tiến hành thử nghiệm thuốc và vắc xin ở rất nhiều lượng khách nhau trên một phổ rộng về độ tuổi và giới tính của các tình nguyện viên trong những điều kiện được đo lường cẩn thận.
 
-Most scientists believe that it kills 1% to 2% of all the people who become infected. The WHO currently reports a higher figure of more than 3%, but that estimate is likely to come down as they figure out how to count many unreported or mild cases. Mortality is clearly higher in older people and those with underlying conditions.
+29. Sự nguy hiểm của chủng virus mới này ở mức độ nào?
 
-30. TEDMED: Is the average death rate the figure to focus on?
+Các nhà khoa học tin rằng tỉ lệ tử vong là từ 1% đến 2%. Tổ chức Y Tế Thế Giới (WHO) gần đây công bố tỉ lệ tử vong cao hơn 3%, nhưng các con số ước đoán này khả năng sẽ thấp hơn khi chúng ta có thống kê rõ ràng hơn, đặc biệt là với những trường hợp không được báo cáo do bị nhiễm không có triệu chứng hay chỉ ốm và cúm nhẹ sau đó tự khỏi. Có một điều chắc chắn rằng, tỉ lệ tử vong là khá cao ở nhóm đối tượng già và những người có bệnh nền, đặc biệt với phổi.
 
-Not really. You can drown in an “average” of  3 inches of water. A better way to understand the risks are recognizing that it can be deadly for certain groups of people and much less so for other groups – with a wide range of outcomes.
+30. Có phải tỉ lệ chết trung bình là con số ta cần quan tâm không?
 
-31. TEDMED: So what are the numbers and checkpoints to focus on?
+Không hẳn thế, bạn có thể bị bị ngập khi mực nước trung bình là 3 inches (khoảng 10cm). Một cách tốt hơn để hiểu sự rủi do là việc nhận biết rằng nó có thể là nguy hiểm đối với từng đối tượng bị nhiễm với biểu hiện khác nhau.
 
-80% of the time it’s a mild disease, but in 20% of cases it becomes more severe, with the worst cases reporting high fever or shortness of breath. As a result some people require hospitalization, and some will need intensive care to survive through a few critical days when their lungs  are extensively infected.
+31. Vậy, đâu là các con số cụ thể để chúng ta cần chú ý tới?
 
-32. TEDMED: Which groups of people are most at danger here?
+Như đã nói trước, 80% số người nhiễm sẽ chỉ có biểu hiện nhẹ, nhưng 20% số người nhiễm có triệu chứng nặng như số cao hoặc khó thở. Tùy vào triệu chứng biểu hiện mà có người phải nhập viện và cần có sự hỗ trợ y tế đặc biệt khi phổi của họ bị nhiễm nặng và không có khả năng làm việc bình thường nữa.
 
-First of all, older people like me: I'm 71. The older you are, the higher your risk. Also at greater risk are people with underlying diseases such as diabetes, chronic obstructive lung disease and pulmonary disease or cardiovascular disease or immune deficiencies.  
+32. Nhóm người nào sẽ chịu rủi do tử vong cao?
+
+Đầu tiên là nhóm người cao tuổi, như tôi đây nè đã 71 rồi, tuổi càng cao thì tỉ lệ tử vong gây ra bởi loại virus này càng lớn. Nhóm người có tiền sử
+
+
+First of all, older people like me: I'm 71. The older you are, the higher your risk. Also at greater risk are people with underlying diseases such as diabetes, chronic obstructive lung disease and pulmonary disease or cardiovascular disease or immune deficiencies.
 
 33. TEDMED: How much danger do these  high-risk groups face?
 
-Their mortality rate can be as high as 10% or even 15%. And, your risk increases when you have more health conditions. The scientific data about all of this is regularly updated on the web.  
+Their mortality rate can be as high as 10% or even 15%. And, your risk increases when you have more health conditions. The scientific data about all of this is regularly updated on the web.
 
 34. TEDMED: So your risk increases significantly if you have other conditions, such as diabetes. Why?
 
-Because your immune system reacts poorly to any infectious virus, but particularly to this one.  
+Because your immune system reacts poorly to any infectious virus, but particularly to this one.
 
 35. TEDMED: It seems that generally speaking, children and young people are only mildly affected, if at all. Is that true?
 
@@ -210,7 +214,7 @@ This is what it looks like, but as for so many other issues on COVID-19, this re
 
 36. TEDMED: If true, why would SARS-CoV2 affect older people much more, but not younger people and children?
 
-We actually don’t know. It’s going to be a while before we figure it out.  
+We actually don’t know. It’s going to be a while before we figure it out.
 
 37. TEDMED: Anything else unusual?
 
@@ -302,7 +306,7 @@ Washing hands frequently, not touching your face, coughing and sneezing in your 
 
 59. TEDMED: What does “mitigation” mean?  I hear scientists using that word a lot.
 
-Mitigation means slowing the spread of the virus, and attempting to limit its effects on public health services, public life and the economy. Until there’s a vaccine, what we can do is slow it down. That is really important.  
+Mitigation means slowing the spread of the virus, and attempting to limit its effects on public health services, public life and the economy. Until there’s a vaccine, what we can do is slow it down. That is really important.
 
 60. TEDMED: What other ways can we slow down the spread of the virus?
 
@@ -406,7 +410,7 @@ This question is extremely important for the vaccine development, because vaccin
 
 85. TEDMED: Is the new virus seasonal, like  the flu?
 
-We haven’t gone long enough to see if there is  a seasonal mutation to SARS-CoV2, or how the trillions of new virus particles change as they pass through millions of people.  
+We haven’t gone long enough to see if there is  a seasonal mutation to SARS-CoV2, or how the trillions of new virus particles change as they pass through millions of people.
 
 86. TEDMED: So this virus can mutate by itself into new forms with new symptoms?
 
@@ -430,7 +434,7 @@ SARS-CoV2 is just as contagious as the 1918 influenza pandemic and appears to be
 
 91. TEDMED: Is there any chance that this is one giant false alarm and that we’re going  to look back this summer and say “wow,  we all panicked over nothing!”?
 
-No. COVID-19 is already in well over 100 countries and it’s highly contagious. Virtually every day there are more and more cases, in more countries. This is not a drill. It is the real thing.  
+No. COVID-19 is already in well over 100 countries and it’s highly contagious. Virtually every day there are more and more cases, in more countries. This is not a drill. It is the real thing.
 
 92. TEDMED: It’s hard to believe that suddenly a truly new virus that mankind has never seen can infect millions of people. When is the last time that happened?
 
@@ -446,7 +450,7 @@ In general, I'm definitely an optimist but at the same time, there is a lot to b
 
 95. TEDMED: You also said there is a lot to be concerned about. What are your biggest worries for the new virus?
 
-Poorly managed, the spread of coronavirus  can quickly overload any country’s healthcare system and block people who really need all kinds of medical access. Another worry is that overreaction and fear can cripple a country’s economy, which causes another kind of suffering. So, this is a very tough trade-off.  
+Poorly managed, the spread of coronavirus  can quickly overload any country’s healthcare system and block people who really need all kinds of medical access. Another worry is that overreaction and fear can cripple a country’s economy, which causes another kind of suffering. So, this is a very tough trade-off.
 
 96. TEDMED: And, what should we be psychologically prepared for?
 
@@ -458,11 +462,11 @@ We should be psychologically prepared to hear about lots of “new” cases bein
 
 2. In addition to the public health community worldwide, including the World Health Organization, Government leaders at the highest levels are focusing on the threat.
 
-3. We isolated the virus in days and sequenced it quickly. 4. I am confident we will soon have a treatment. 5. We are hopefully going to have a vaccine. 6. This is truly the age of modern communication. That can help us, as long as  we debunk fake and dangerous news.  
+3. We isolated the virus in days and sequenced it quickly. 4. I am confident we will soon have a treatment. 5. We are hopefully going to have a vaccine. 6. This is truly the age of modern communication. That can help us, as long as  we debunk fake and dangerous news.
 
 98. TEDMED: How ready is the U.S. for this?
 
-The U.S. has had ample time for a head start to prepare for this pandemic, and so have other high-income countries. We all benefitted from China’s unprecedented mass quarantines that slowed down the spread. The U.S. will handle the serious cases correctly from the start by being more prepared.  
+The U.S. has had ample time for a head start to prepare for this pandemic, and so have other high-income countries. We all benefitted from China’s unprecedented mass quarantines that slowed down the spread. The U.S. will handle the serious cases correctly from the start by being more prepared.
 
 99. TEDMED: Who are you most worried about?
 
