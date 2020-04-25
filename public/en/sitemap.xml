@@ -228,21 +228,6 @@
   </url>
   
   <url>
-    <loc>/tags/excel/</loc>
-    <lastmod>2020-01-15T23:30:45+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/2020-08-01-test/</loc>
-    <lastmod>2020-01-15T23:30:45+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/mutiple-worksheet/</loc>
-    <lastmod>2020-01-15T23:30:45+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/ait-buivanthinh-themoment/</loc>
     <lastmod>2019-11-30T12:48:33+08:00</lastmod>
   </url>
@@ -293,21 +278,6 @@
   </url>
   
   <url>
-    <loc>/categories/plant-audit/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/plant-audit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/plant-audit/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/plant-audit/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -319,6 +289,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tags/plant-audit/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/plant-audit/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/plant-audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/plant-audit/"
                 />
   </url>
   
@@ -448,7 +433,17 @@
   </url>
   
   <url>
+    <loc>/tags/excel/</loc>
+    <lastmod>2019-09-15T23:30:45+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/2019-09-15-excel-combine/</loc>
+    <lastmod>2019-09-15T23:30:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mutiple-worksheet/</loc>
     <lastmod>2019-09-15T23:30:45+08:00</lastmod>
   </url>
   
