@@ -4,7 +4,7 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -14,6 +14,71 @@
                 rel="alternate"
                 hreflang="en"
                 href="/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>/authors/nam-le/</loc>
+    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/sbr/</loc>
+    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/sbrstp/</loc>
+    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/stp/</loc>
+    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
                 />
   </url>
   
@@ -63,58 +128,13 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/pearl-oyster-mushroom/</loc>
     <lastmod>2020-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/potato/</loc>
     <lastmod>2020-02-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
   </url>
   
   <url>
@@ -145,11 +165,6 @@
                 hreflang="en"
                 href="/tags/asset-management/"
                 />
-  </url>
-  
-  <url>
-    <loc>/authors/nam-le/</loc>
-    <lastmod>2020-02-08T08:57:31+08:00</lastmod>
   </url>
   
   <url>

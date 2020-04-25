@@ -5,12 +5,28 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Wed, 26 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 25 Apr 2020 08:57:31 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
+    
+    <item>
+      <title>SBR</title>
+      <link>/tags/sbr/</link>
+      <pubDate>Sat, 25 Apr 2020 08:57:31 +0800</pubDate>
+      <guid>/tags/sbr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>STP</title>
+      <link>/tags/stp/</link>
+      <pubDate>Sat, 25 Apr 2020 08:57:31 +0800</pubDate>
+      <guid>/tags/stp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Pearl Oyster mushroom</title>

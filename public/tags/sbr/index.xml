@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SBR | Nam&#39;s blog</title>
+    <link>/tags/sbr/</link>
+      <atom:link href="/tags/sbr/index.xml" rel="self" type="application/rss+xml" />
+    <description>SBR</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 25 Apr 2020 08:57:31 +0800</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>SBR</title>
+      <link>/tags/sbr/</link>
+    </image>
+    
+    <item>
+      <title>Sequencing Batch Reactor Design and Operational Considerations</title>
+      <link>/post/sbrstp/</link>
+      <pubDate>Sat, 25 Apr 2020 08:57:31 +0800</pubDate>
+      <guid>/post/sbrstp/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/book/sbrSTP/visuals/sbr.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is a copy of the &lt;a href=&#34;https://www.neiwpcc.org/neiwpcc_docs/sbr_manual.pdf&#34;&gt;book&lt;/a&gt; published by NEWIPCC. Copyright shall always be of the original authors.&lt;/p&gt;
+&lt;p&gt;I copied this in Markdown format for personal reference purpose when working with DAO2016 Compliance Assessment Projects funded by Manila Water for more than 20 Wastewater Treatment Plants (STP). Most of the STPs are SBR plants contructed many years ago and are likely not providing adequate level of service regarding the nutrient extraction capacity to satisfy the regulatory&#39;s standards.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/book/sbrSTP/index.html&#34;&gt;Link to the book&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

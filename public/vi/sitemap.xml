@@ -143,12 +143,12 @@
   </url>
   
   <url>
-    <loc>/vi/tags/thich-nhat-hanh/</loc>
+    <loc>/vi/authors/thich-nhat-hanh/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vi/authors/thich-nhat-hanh/</loc>
+    <loc>/vi/tags/thich-nhat-hanh/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -848,21 +848,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/feasibility-study/</loc>
-    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/feasibility-study/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/feasibility-study/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -874,6 +859,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/feasibility-study/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/feasibility-study/</loc>
+    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/feasibility-study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/feasibility-study/"
                 />
   </url>
   
