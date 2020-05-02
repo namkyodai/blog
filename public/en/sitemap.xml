@@ -928,21 +928,6 @@
   </url>
   
   <url>
-    <loc>/tags/feasibility-study/</loc>
-    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/feasibility-study/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/feasibility-study/"
-                />
-  </url>
-  
-  <url>
     <loc>/categories/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -954,6 +939,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/categories/feasibility-study/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/feasibility-study/</loc>
+    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/feasibility-study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/feasibility-study/"
                 />
   </url>
   
