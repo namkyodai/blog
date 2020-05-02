@@ -208,21 +208,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/asset-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/asset-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -234,6 +219,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/asset-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/asset-management/"
                 />
   </url>
   
@@ -853,21 +853,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/feasibility-study/</loc>
-    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/feasibility-study/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/feasibility-study/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -879,6 +864,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/feasibility-study/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/feasibility-study/</loc>
+    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/feasibility-study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/feasibility-study/"
                 />
   </url>
   
