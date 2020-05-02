@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Đạo Phật Trong Ba lô"
+title: "Đức Phật Trong Ba lô"
 subtitle: ""
 summary: "Daisaku Ikeda được coi là giáo chủ của một giáo phái thiên về Phật Giáo ở Nhật. Có rất nhiều người Nhật coi ông như là một người chuyên truyền bá những tư tưởng không chính thống, đi sai với Phật Giáo nguyên thủy. Nhưng cuốn sách Đức Phật trong Ba lô của ông có thể nói là khá dễ đọc và mang nhiều ý nghĩa tốt đẹp của Phật Giáo nguyên thủy."
 author: "[Daisaku Ikeda](https://en.wikipedia.org/wiki/Daisaku_Ikeda)"
@@ -28,9 +28,9 @@ image:
 projects: []
 ---
 
-# [Đọc sách tại đây](/book/daophattrongbalo/index.html)
+# [Đọc sách tại đây](/book/ducphattrongbalo/index.html)
 
-![](/book/daophattrongbalo/visuals/cover.jpg)
+![](/book/ducphattrongbalo/visuals/cover.jpg)
 
 # Cảm nghĩ
 Daisaku Ikeda được coi là giáo chủ của một giáo phái thiên về Phật Giáo ở Nhật. Có rất nhiều người Nhật coi ông như là một người chuyên truyền bá những tư tưởng không chính thống, đi sai với Phật Giáo nguyên thủy. Nhưng cuốn sách Đức Phật trong Ba lô của ông có thể nói là khá dễ đọc và mang nhiều ý nghĩa tốt đẹp của Phật Giáo nguyên thủy.
