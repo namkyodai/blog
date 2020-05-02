@@ -49,4 +49,4 @@ Và cuối cùng, đừng tin tưởng ở những lực lượng siêu nhiên. 
 
 
 
-# [Đọc sách tại đây](/book/daophatquanhanthucmoi/index.html)
+# [Đọc sách tại đây](/book/daophatquanhanthucmoi/_book/index.html)
