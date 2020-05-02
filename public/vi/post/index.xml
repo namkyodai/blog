@@ -5,12 +5,24 @@
     <link>/vi/post/</link>
       <atom:link href="/vi/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Bài đăng</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Fri, 01 May 2020 20:16:35 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 02 May 2020 20:16:35 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Bài đăng</title>
       <link>/vi/post/</link>
     </image>
+    
+    <item>
+      <title>Đạo Phật Trong Ba lô</title>
+      <link>/vi/post/daisakuikeda-daophattrongbalo/</link>
+      <pubDate>Sat, 02 May 2020 20:16:35 +0800</pubDate>
+      <guid>/vi/post/daisakuikeda-daophattrongbalo/</guid>
+      <description>&lt;h1 id=&#34;c-sch-ti-ybookdaophattrongbaloindexhtml&#34;&gt;&lt;a href=&#34;/book/daophattrongbalo/index.html&#34;&gt;Đọc sách tại đây&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;/book/daophattrongbalo/cover.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;cm-ngh&#34;&gt;Cảm nghĩ&lt;/h1&gt;
+&lt;p&gt;Daisaku Ikeda được coi là giáo chủ của một giáo phái thiên về Phật Giáo ở Nhật. Có rất nhiều người Nhật coi ông như là một người chuyên truyền bá những tư tưởng không chính thống, đi sai với Phật Giáo nguyên thủy. Nhưng cuốn sách Đức Phật trong Ba lô của ông có thể nói là khá dễ đọc và mang nhiều ý nghĩa tốt đẹp của Phật Giáo nguyên thủy.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Đạo Phật Qua Nhận Thức Mới</title>
