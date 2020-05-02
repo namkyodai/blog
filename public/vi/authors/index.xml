@@ -5,12 +5,20 @@
     <link>/vi/authors/</link>
       <atom:link href="/vi/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Wed, 26 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Fri, 01 May 2020 20:16:35 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
       <link>/vi/authors/</link>
     </image>
+    
+    <item>
+      <title>Thích Nhất Hạnh</title>
+      <link>/vi/authors/thich-nhat-hanh/</link>
+      <pubDate>Fri, 01 May 2020 20:16:35 +0800</pubDate>
+      <guid>/vi/authors/thich-nhat-hanh/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Cẩm Vân</title>
@@ -25,14 +33,6 @@
       <link>/vi/authors/dieu-phap-am/</link>
       <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
       <guid>/vi/authors/dieu-phap-am/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Thích Nhất Hạnh</title>
-      <link>/vi/authors/thich-nhat-hanh/</link>
-      <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/vi/authors/thich-nhat-hanh/</guid>
       <description></description>
     </item>
     

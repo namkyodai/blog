@@ -5,12 +5,28 @@
     <link>/vi/tags/</link>
       <atom:link href="/vi/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Wed, 01 Apr 2020 01:58:39 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Fri, 01 May 2020 20:16:35 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/vi/tags/</link>
     </image>
+    
+    <item>
+      <title>Phật Giáo</title>
+      <link>/vi/tags/phat-giao/</link>
+      <pubDate>Fri, 01 May 2020 20:16:35 +0800</pubDate>
+      <guid>/vi/tags/phat-giao/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thích Nhất Hạnh</title>
+      <link>/vi/tags/thich-nhat-hanh/</link>
+      <pubDate>Fri, 01 May 2020 20:16:35 +0800</pubDate>
+      <guid>/vi/tags/thich-nhat-hanh/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Covid-19</title>
@@ -49,22 +65,6 @@
       <link>/vi/tags/nam-bao-ngu/</link>
       <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
       <guid>/vi/tags/nam-bao-ngu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phật Giáo</title>
-      <link>/vi/tags/phat-giao/</link>
-      <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/vi/tags/phat-giao/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Thích Nhất Hạnh</title>
-      <link>/vi/tags/thich-nhat-hanh/</link>
-      <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/vi/tags/thich-nhat-hanh/</guid>
       <description></description>
     </item>
     

@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/vi/post/100questionsofpeterpiot-covid19/</loc>
-    <lastmod>2020-04-01T01:58:39+08:00</lastmod>
+    <loc>/vi/authors/</loc>
+    <lastmod>2020-05-01T20:16:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/authors/"
+                />
   </url>
   
   <url>
     <loc>/vi/post/</loc>
-    <lastmod>2020-04-01T01:58:39+08:00</lastmod>
+    <lastmod>2020-05-01T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -23,13 +33,8 @@
   </url>
   
   <url>
-    <loc>/vi/tags/covid-19/</loc>
-    <lastmod>2020-04-01T01:58:39+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/vi/</loc>
-    <lastmod>2020-04-01T01:58:39+08:00</lastmod>
+    <lastmod>2020-05-01T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,8 +48,13 @@
   </url>
   
   <url>
+    <loc>/vi/tags/phat-giao/</loc>
+    <lastmod>2020-05-01T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/vi/tags/</loc>
-    <lastmod>2020-04-01T01:58:39+08:00</lastmod>
+    <lastmod>2020-05-01T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -58,23 +68,33 @@
   </url>
   
   <url>
-    <loc>/vi/tags/wuhan-virus/</loc>
+    <loc>/vi/authors/thich-nhat-hanh/</loc>
+    <lastmod>2020-05-01T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/thich-nhat-hanh/</loc>
+    <lastmod>2020-05-01T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/thichnhathanh-daophatquanhanthucmoi/</loc>
+    <lastmod>2020-05-01T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/100questionsofpeterpiot-covid19/</loc>
     <lastmod>2020-04-01T01:58:39+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/vi/authors/</loc>
-    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/authors/"
-                />
+    <loc>/vi/tags/covid-19/</loc>
+    <lastmod>2020-04-01T01:58:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/wuhan-virus/</loc>
+    <lastmod>2020-04-01T01:58:39+08:00</lastmod>
   </url>
   
   <url>
@@ -138,21 +158,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/phat-giao/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/vi/authors/thich-nhat-hanh/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/vi/tags/thich-nhat-hanh/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/vi/post/tuong-lai-van-hoa-vn-thichnhathanh/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
@@ -203,21 +208,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/asset-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/asset-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -229,6 +219,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/asset-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/asset-management/"
                 />
   </url>
   
@@ -308,21 +313,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/project-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -334,6 +324,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/project-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/project-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/project-management/"
                 />
   </url>
   
@@ -848,21 +853,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/feasibility-study/</loc>
-    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/feasibility-study/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/feasibility-study/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -874,6 +864,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/feasibility-study/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/feasibility-study/</loc>
+    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/feasibility-study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/feasibility-study/"
                 />
   </url>
   
@@ -1279,6 +1284,16 @@
                 hreflang="vi"
                 href="/vi/authors/admin/"
                 />
+  </url>
+  
+  <url>
+    <loc>/vi/post/daophatquanhanthucmoi/_book/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/vi/post/daophatquanhanthucmoi/readme/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
