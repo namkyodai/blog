@@ -4,7 +4,7 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+    <lastmod>2020-06-05T08:57:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -19,12 +19,12 @@
   
   <url>
     <loc>/authors/nam-le/</loc>
-    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+    <lastmod>2020-06-05T08:57:31+08:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+    <lastmod>2020-06-05T08:57:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -39,7 +39,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+    <lastmod>2020-06-05T08:57:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -53,23 +53,23 @@
   </url>
   
   <url>
-    <loc>/tags/sbr/</loc>
-    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+    <loc>/post/2020-06-05-booxnote2/</loc>
+    <lastmod>2020-06-05T08:57:31+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/sbrstp/</loc>
-    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+    <loc>/tags/sbr/</loc>
+    <lastmod>2020-06-05T08:57:31+08:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/stp/</loc>
-    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+    <lastmod>2020-06-05T08:57:31+08:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
+    <lastmod>2020-06-05T08:57:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -80,6 +80,11 @@
                 hreflang="en"
                 href="/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>/post/sbrstp/</loc>
+    <lastmod>2020-04-25T08:57:31+08:00</lastmod>
   </url>
   
   <url>
@@ -338,21 +343,6 @@
   </url>
   
   <url>
-    <loc>/categories/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/project-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -364,6 +354,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tags/project-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/project-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/project-management/"
                 />
   </url>
   
@@ -928,21 +933,6 @@
   </url>
   
   <url>
-    <loc>/categories/feasibility-study/</loc>
-    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/feasibility-study/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/feasibility-study/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -954,6 +944,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tags/feasibility-study/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/feasibility-study/</loc>
+    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/feasibility-study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/feasibility-study/"
                 />
   </url>
   
