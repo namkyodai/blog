@@ -13,9 +13,25 @@
     </image>
     
     <item>
+      <title>Note2</title>
+      <link>/tags/note2/</link>
+      <pubDate>Fri, 05 Jun 2020 08:57:31 +0800</pubDate>
+      <guid>/tags/note2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Onyx Book</title>
+      <link>/tags/onyx-book/</link>
+      <pubDate>Fri, 05 Jun 2020 08:57:31 +0800</pubDate>
+      <guid>/tags/onyx-book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SBR</title>
       <link>/tags/sbr/</link>
-      <pubDate>Fri, 05 Jun 2020 08:57:31 +0800</pubDate>
+      <pubDate>Sat, 25 Apr 2020 08:57:31 +0800</pubDate>
       <guid>/tags/sbr/</guid>
       <description></description>
     </item>
@@ -23,7 +39,7 @@
     <item>
       <title>STP</title>
       <link>/tags/stp/</link>
-      <pubDate>Fri, 05 Jun 2020 08:57:31 +0800</pubDate>
+      <pubDate>Sat, 25 Apr 2020 08:57:31 +0800</pubDate>
       <guid>/tags/stp/</guid>
       <description></description>
     </item>
