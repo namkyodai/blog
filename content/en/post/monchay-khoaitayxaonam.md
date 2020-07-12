@@ -3,7 +3,7 @@
 
 title: "Fried Potato with Mushroom"
 subtitle: ""
-summary: ""
+summary: "Vegan/Vegetarian dish made from Potato"
 authors: [Diệu Pháp Âm, Cẩm Vân]
 tags: [Vegetarian, Pearl Oyster mushroom, Potato]
 categories: []

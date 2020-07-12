@@ -3,7 +3,8 @@
 
 title: "The Carbon Footprint of the Food Supply Chain"
 subtitle: ""
-summary: ""
+summary: "I found this article with nice infographic from [VisualCapital](https://www.visualcapitalist.com/visualising-the-greenhouse-gas-impact-of-each-food/) and wanna repost in my blog, just to remind me of the negative sense impression of meat based eaters.
+![](/img/news/carbon-footprint-food-supply-chain-1.png)"
 authors: [Dorothy Neufeld]
 tags: []
 categories: []

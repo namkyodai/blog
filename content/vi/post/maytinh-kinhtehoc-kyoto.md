@@ -2,8 +2,8 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Máy tính, kinh tế học và Kyoto"
-subtitle: "Đầu tuần làm tý hàn nâm lấy phong độ. Huy bầu vừa đọc cái nầy, thấy hay hay."
-summary: ""
+subtitle: ""
+summary: "Đầu tuần làm tý hàn nâm lấy phong độ. Huy bầu vừa đọc cái nầy, thấy hay hay."
 authors: []
 tags: [Hàn Lâm]
 categories: []

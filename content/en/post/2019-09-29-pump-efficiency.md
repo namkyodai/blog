@@ -3,6 +3,7 @@ layout: post
 mathjax: true
 title: Return on Investment (ROI) for Intervention of Pumps under uncertainties
 #subtitle: Combining multiple excel worksheets and multiple csv/excel files in a dataframe?
+summary: "This post describes a generic approach on the computation of Net Present Value (NPV) and Life Cycle Cost estimation (LCC) for Preventive Intervention (PI) on pumps (e.g. centrifugal pumps) when decision makers are uncertain on, or do not have a rich set of data on failure of pump components."
 date: 2019-09-29T23:30:45+08:00
 tags: [Pump efficiency, Pump Replacement, Asset Management]
 ---

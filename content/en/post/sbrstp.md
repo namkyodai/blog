@@ -3,7 +3,8 @@
 
 title: "Sequencing Batch Reactor Design and Operational Considerations"
 subtitle: ""
-summary: "A useful guideline developed by NEWIWPCC for design and operation of SBR wastewater treatment plants"
+summary: "A useful guideline developed by NEWIWPCC for design and operation of SBR wastewater treatment plants
+![](/book/sbrSTP/visuals/sbr.png)"
 authors: [Nam Le]
 tags: [SBR, STP]
 categories: []

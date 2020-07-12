@@ -3,6 +3,7 @@ layout: post
 mathjax: true
 title: Price of 2nd hand Toyota cars - Regression Analysis
 subtitle: Data Mining and Business Analytics with R
+summary: "This example shows another very simple regression analysis using data of secondhand Toyota car prices. Code is copied from the book “Data Mining and Business Analytics with R” with minor modification on the graphs."
 date: 2019-10-24T23:30:45+08:00
 tags: [Regression Analysis]
 ---

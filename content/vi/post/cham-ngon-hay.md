@@ -2,8 +2,8 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Châm Ngôn Hay"
-subtitle: "Các câu châm ngôn chọn lọc, dễ nhớ và cần xem lại nhiều lần."
-summary: ""
+subtitle: ""
+summary: "Các câu châm ngôn chọn lọc, dễ nhớ và cần xem lại nhiều lần."
 authors: []
 tags: [Châm Ngôn]
 categories: []

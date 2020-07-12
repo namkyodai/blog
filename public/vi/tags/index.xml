@@ -5,12 +5,36 @@
     <link>/vi/tags/</link>
       <atom:link href="/vi/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sun, 17 May 2020 20:16:35 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 11 Jul 2020 20:16:35 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/vi/tags/</link>
     </image>
+    
+    <item>
+      <title>Carl Jung</title>
+      <link>/vi/tags/carl-jung/</link>
+      <pubDate>Sat, 11 Jul 2020 20:16:35 +0800</pubDate>
+      <guid>/vi/tags/carl-jung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tâm Lý</title>
+      <link>/vi/tags/tam-ly/</link>
+      <pubDate>Sat, 11 Jul 2020 20:16:35 +0800</pubDate>
+      <guid>/vi/tags/tam-ly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TDD</title>
+      <link>/vi/tags/tdd/</link>
+      <pubDate>Sat, 11 Jul 2020 11:08:22 +0800</pubDate>
+      <guid>/vi/tags/tdd/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Phật Giáo</title>
@@ -69,6 +93,22 @@
     </item>
     
     <item>
+      <title>Asset Management</title>
+      <link>/vi/tags/asset-management/</link>
+      <pubDate>Fri, 07 Feb 2020 11:08:22 +0800</pubDate>
+      <guid>/vi/tags/asset-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EDD</title>
+      <link>/vi/tags/edd/</link>
+      <pubDate>Fri, 07 Feb 2020 11:08:22 +0800</pubDate>
+      <guid>/vi/tags/edd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>cấm dưới 18 tuổi</title>
       <link>/vi/tags/cam-duoi-18-tuoi/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
@@ -97,14 +137,6 @@
       <link>/vi/tags/cham-ngon/</link>
       <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/vi/tags/cham-ngon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Asset Management</title>
-      <link>/vi/tags/asset-management/</link>
-      <pubDate>Sat, 19 Oct 2019 11:08:22 +0800</pubDate>
-      <guid>/vi/tags/asset-management/</guid>
       <description></description>
     </item>
     

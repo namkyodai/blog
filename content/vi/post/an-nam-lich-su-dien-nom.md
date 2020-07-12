@@ -2,8 +2,8 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "An Nam Lịch Sử Diễn Nôm"
-subtitle: "Cảnh bấu: Bài nầy có sử dụng một số tục ngữ. Quần chúng tin tin dưới 18 tuổi nhẽ nên đóng máy tính, lấy bài ra học hoặc đi nấu cơm. Riêng đối với các nhà văn hóa giả cầy, mời các vị cút khỏi blog, về nhà bú tí mẹ."
-summary: ""
+subtitle: ""
+summary: "Cảnh bấu: Bài nầy có sử dụng một số tục ngữ. Quần chúng tin tin dưới 18 tuổi nhẽ nên đóng máy tính, lấy bài ra học hoặc đi nấu cơm. Riêng đối với các nhà văn hóa giả cầy, mời các vị cút khỏi blog, về nhà bú tí mẹ."
 authors: []
 tags: [cấm dưới 18 tuổi, thơ]
 categories: []

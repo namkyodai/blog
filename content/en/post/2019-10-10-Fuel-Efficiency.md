@@ -3,6 +3,7 @@ layout: post
 mathjax: true
 title: Fuel Efficiency - Regression Analysis
 subtitle: Data Mining and Business Analytics with R
+summary: "This example shows a very simple regression analysis using fuel data of 38 cars. Code is copied from the book “Data Mining and Business Analytics with R” with minor modification on the graphs."
 date: 2019-10-10T23:30:45+08:00
 tags: [Regression Analysis]
 ---

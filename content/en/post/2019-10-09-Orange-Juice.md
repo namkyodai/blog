@@ -3,6 +3,7 @@ layout: post
 mathjax: true
 title: Orange Juice
 subtitle: Data Mining and Business Analytics with R
+summary: "This is an example presented in the book “Data Mining and Business Analytics with R”, with some useful basic graphs that can be reused for other sets of similar data. Code and Data are saved in [Github link](https://github.com/namkyodai/BusinessAnalytics/tree/master/orangejuice)"
 date: 2019-10-09T23:30:45+08:00
 tags: [R, Plot]
 ---

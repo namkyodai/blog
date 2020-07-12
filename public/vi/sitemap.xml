@@ -3,13 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/vi/post/thichnhathanh-daophatngaynay/</loc>
-    <lastmod>2020-05-17T20:16:35+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/vi/post/</loc>
-    <lastmod>2020-05-17T20:16:35+08:00</lastmod>
+    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -23,8 +18,13 @@
   </url>
   
   <url>
+    <loc>/vi/tags/carl-jung/</loc>
+    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/vi/</loc>
-    <lastmod>2020-05-17T20:16:35+08:00</lastmod>
+    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -38,13 +38,13 @@
   </url>
   
   <url>
-    <loc>/vi/tags/phat-giao/</loc>
-    <lastmod>2020-05-17T20:16:35+08:00</lastmod>
+    <loc>/vi/post/carljung-modernmaninsearhofasoult/</loc>
+    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
   </url>
   
   <url>
     <loc>/vi/tags/</loc>
-    <lastmod>2020-05-17T20:16:35+08:00</lastmod>
+    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,6 +55,111 @@
                 hreflang="vi"
                 href="/vi/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/tam-ly/</loc>
+    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/categories/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/project/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/tdd/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/tdd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/tdd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/tdd/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/tdd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/tdd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/project/2020-clark/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/2020-clark/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/2020-clark/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/project/2020-dao2016/</loc>
+    <lastmod>2020-06-01T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/2020-dao2016/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/2020-dao2016/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/post/thichnhathanh-ammayngu/</loc>
+    <lastmod>2020-05-17T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/phat-giao/</loc>
+    <lastmod>2020-05-17T20:16:35+08:00</lastmod>
   </url>
   
   <url>
@@ -168,6 +273,81 @@
   </url>
   
   <url>
+    <loc>/vi/tags/asset-management/</loc>
+    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/asset-management/</loc>
+    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/edd/</loc>
+    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/edd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/edd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/project/2020-hanjinshipyard/</loc>
+    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/2020-hanjinshipyard/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/2020-hanjinshipyard/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/project/2020-30storybgc/</loc>
+    <lastmod>2020-01-30T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/2020-30storybgc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/2020-30storybgc/"
+                />
+  </url>
+  
+  <url>
     <loc>/vi/post/tuong-lai-van-hoa-vn-thichnhathanh/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
@@ -208,58 +388,13 @@
   </url>
   
   <url>
-    <loc>/vi/post/thichnhathanh-ammayngu/</loc>
+    <loc>/vi/post/thichnhathanh-daophatngaynay/</loc>
     <lastmod>2019-11-05T22:58:39+08:00</lastmod>
   </url>
   
   <url>
     <loc>/vi/post/thichnhathanh-hanhphuccamtay/</loc>
     <lastmod>2019-10-25T22:58:39+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/vi/categories/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/asset-management/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/asset-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/asset-management/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/categories/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/"
-                />
   </url>
   
   <url>
@@ -274,21 +409,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/project/2016-lamesa2/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/categories/plant-audit/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/plant-audit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/plant-audit/"
                 />
   </url>
   
@@ -308,6 +428,21 @@
   </url>
   
   <url>
+    <loc>/vi/categories/plant-audit/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/plant-audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/plant-audit/"
+                />
+  </url>
+  
+  <url>
     <loc>/vi/project/2018-plantaudit/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -319,21 +454,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/project/2018-plantaudit/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/categories/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/project-management/"
                 />
   </url>
   
@@ -353,17 +473,17 @@
   </url>
   
   <url>
-    <loc>/vi/project/</loc>
+    <loc>/vi/categories/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/project/"
+                href="/categories/project-management/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/project/"
+                href="/vi/categories/project-management/"
                 />
   </url>
   

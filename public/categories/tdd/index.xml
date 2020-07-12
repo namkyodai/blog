@@ -5,12 +5,58 @@
     <link>/categories/tdd/</link>
       <atom:link href="/categories/tdd/index.xml" rel="self" type="application/rss+xml" />
     <description>TDD</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Fri, 07 Feb 2020 11:08:22 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 11 Jul 2020 11:08:22 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>TDD</title>
       <link>/categories/tdd/</link>
     </image>
+    
+    <item>
+      <title>TDD for project HOPE in Clark city</title>
+      <link>/project/2020-clark/</link>
+      <pubDate>Sat, 11 Jul 2020 11:08:22 +0800</pubDate>
+      <guid>/project/2020-clark/</guid>
+      <description>&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: A Global Capital Investment Firm (confidential)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt;: TDD for 5 buildings in Clark city (LEED certified)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: TDD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;objectives&#34;&gt;Objectives&lt;/h3&gt;
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+&lt;p&gt;Back to &lt;a href=&#34;/project&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assessment of Wastewater Assets</title>
+      <link>/project/2020-dao2016/</link>
+      <pubDate>Mon, 01 Jun 2020 11:08:22 +0800</pubDate>
+      <guid>/project/2020-dao2016/</guid>
+      <description>&lt;h2 id=&#34;the-client&#34;&gt;The Client&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Manila Technical Venture.&lt;/strong&gt;, an affiliate company of &lt;a href=&#34;https://www.manilawater.com/&#34;&gt;Manila Water Inc.&lt;/a&gt;
+&lt;img src=&#34;/img/client-logo/manilawater.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-projects&#34;&gt;The Projects&lt;/h2&gt;
+&lt;p&gt;Manila Water operates a significant numbers of wastewater treatment facilities in the region of Luzon, Visaya, Mindoro, and Mindanao. To date, there are 20 facilities which have been in operation for years. They might or might not operate at their designed specification due to various factors such as aging, lower efficiency, non-optimal operation scheme, etc.&lt;/p&gt;
+&lt;p&gt;On other hand, in 2016, the Department of Environment (DENR) issued a DENR Administrative Order (DAO-2016-08) on Water Quality Guidelines and General Effluent Standards that is basically a guideline on water classification of water bodies in the country and sets General Effluent Standards (GES), and designates the Water Quality Management Area (WQMA). The updated DAO includes the compliance of all wastewater facilities to include Biological Nutrient Removal (BNR).&lt;/p&gt;
+&lt;p&gt;The issuance of DAO-2016-08 infers that the wastewater facilities under consideration should be able to meet the requirements specified in the guideline. In order to satisfy and to be complied with DAO-2016&#39;s requirement, it is necessary to conduct an assessment study on the current operational and condition of the facilities.&lt;/p&gt;
+&lt;h2 id=&#34;the-objectives&#34;&gt;The Objectives&lt;/h2&gt;
+&lt;p&gt;The ultimate objective of this project is to come up with a feasible/doable plan to ensure that wastewater facilities operated and maintained by Estate Water are all complying to DAO-2016&#39;s requirements.&lt;/p&gt;
+&lt;p&gt;The team is to assess and inspect compliance to DAO 2016 requirement of wastewater facilities operated by Estate Water. If there are deficiencies and non-compliance, additional provisions and/or modifications to the facilities will be recommended.&lt;/p&gt;
+&lt;p&gt;Highlights of the Scopes are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Study on all possible technologies applicable to treat wastewater with nutrient removal and subject to approval of the Client. Proprietary technology may be included.&lt;/li&gt;
+&lt;li&gt;CAPEX and OPEX costs, with -15% to 30% level of estimates, for technologies which will be recommended.&lt;/li&gt;
+&lt;li&gt;As-found drawings (Dimensional and capacity)&lt;/li&gt;
+&lt;li&gt;Findings and assessment on DAO-2016 compliance of Estate Water facilities&lt;/li&gt;
+&lt;li&gt;Specific recommendations regarding each facility&#39;s requirements to comply with DAO-2016 recommendations&lt;/li&gt;
+&lt;li&gt;Provide calculations to determine required capacity and establish requirements to meet DAO-2016 standards.&lt;/li&gt;
+&lt;li&gt;GA drawings indicating required pump/blower capacity, pipe works, and size of tanks, if required.&lt;/li&gt;
+&lt;li&gt;List of technologies and providers which may be employed to rectify and/or upgrade the facilities.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>TDD and EDD for Hanjin Shipyard - Subic Bay</title>

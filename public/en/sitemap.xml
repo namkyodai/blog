@@ -3,6 +3,111 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/tdd/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/tdd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/tdd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/tdd/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/tdd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/tdd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/project/2020-clark/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/2020-clark/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/2020-clark/"
+                />
+  </url>
+  
+  <url>
     <loc>/authors/</loc>
     <lastmod>2020-06-05T08:57:31+08:00</lastmod>
     <xhtml:link
@@ -20,21 +125,6 @@
   <url>
     <loc>/authors/nam-le/</loc>
     <lastmod>2020-06-05T08:57:31+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-06-05T08:57:31+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
   </url>
   
   <url>
@@ -68,17 +158,17 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-06-05T08:57:31+08:00</lastmod>
+    <loc>/project/2020-dao2016/</loc>
+    <lastmod>2020-06-01T11:08:22+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="/vi/project/2020-dao2016/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="/project/2020-dao2016/"
                 />
   </url>
   
@@ -183,11 +273,6 @@
   </url>
   
   <url>
-    <loc>/tags/tdd/</loc>
-    <lastmod>2020-02-08T08:57:31+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/tdd/</loc>
     <lastmod>2020-02-08T08:57:31+08:00</lastmod>
   </url>
@@ -208,53 +293,48 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/edd/</loc>
     <lastmod>2020-02-07T11:08:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/project/"
+                href="/vi/tags/edd/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/project/"
+                href="/tags/edd/"
                 />
-  </url>
-  
-  <url>
-    <loc>/categories/tdd/</loc>
-    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
   </url>
   
   <url>
     <loc>/project/2020-hanjinshipyard/</loc>
     <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/2020-hanjinshipyard/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/2020-hanjinshipyard/"
+                />
   </url>
   
   <url>
     <loc>/project/2020-30storybgc/</loc>
     <lastmod>2020-01-30T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/2020-30storybgc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/2020-30storybgc/"
+                />
   </url>
   
   <url>
@@ -353,21 +433,6 @@
   </url>
   
   <url>
-    <loc>/categories/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/project-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -379,6 +444,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tags/project-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/project-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/project-management/"
                 />
   </url>
   
@@ -943,21 +1023,6 @@
   </url>
   
   <url>
-    <loc>/tags/feasibility-study/</loc>
-    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/feasibility-study/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/feasibility-study/"
-                />
-  </url>
-  
-  <url>
     <loc>/categories/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -969,6 +1034,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/categories/feasibility-study/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/feasibility-study/</loc>
+    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/feasibility-study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/feasibility-study/"
                 />
   </url>
   

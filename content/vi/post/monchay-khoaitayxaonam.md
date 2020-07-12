@@ -3,7 +3,7 @@
 
 title: "Khoai Tây Xào Nấm"
 subtitle: ""
-summary: ""
+summary: "Cách làm món khoai tây chiên chay"
 authors: [Diệu Pháp Âm, Cẩm Vân]
 tags: [Món Chay, Nấm Bào Ngư, Khoai Tây]
 categories: []

@@ -5,7 +5,7 @@
     <link>/categories/</link>
       <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Fri, 07 Feb 2020 11:08:22 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 11 Jul 2020 11:08:22 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Categories</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>Asset Management</title>
-      <link>/categories/asset-management/</link>
-      <pubDate>Fri, 07 Feb 2020 11:08:22 +0800</pubDate>
-      <guid>/categories/asset-management/</guid>
+      <title>TDD</title>
+      <link>/categories/tdd/</link>
+      <pubDate>Sat, 11 Jul 2020 11:08:22 +0800</pubDate>
+      <guid>/categories/tdd/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>TDD</title>
-      <link>/categories/tdd/</link>
+      <title>Asset Management</title>
+      <link>/categories/asset-management/</link>
       <pubDate>Fri, 07 Feb 2020 11:08:22 +0800</pubDate>
-      <guid>/categories/tdd/</guid>
+      <guid>/categories/asset-management/</guid>
       <description></description>
     </item>
     

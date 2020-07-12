@@ -3,6 +3,7 @@ layout: post
 mathjax: true
 title: Alumni Contributions
 subtitle: Data Mining and Business Analytics with R
+summary: "This is a summary of example 2 in Chapter 2 of the book “Data Mining and Business Analytics with R”. The post keeps the original code with some polishing syntax for better plotting, particularly using ggplot2 package and gridExtra."
 date: 2019-10-08T23:30:45+08:00
 tags: [R, Plot]
 ---

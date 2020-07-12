@@ -467,7 +467,6 @@
     <div class="article-style">
       
       In many cases, we need to remove space in the names of files saved inside a tree of folders/subfolders. We can use following CODE to do the job.
-:renameNoSpace [/R]@echo offsetlocal disableDelayedExpansionif /i &quot;%~1&quot;==&quot;/R&quot; (set &quot;forOption=%~1 %2&quot;set &quot;inPath=&quot;) else (set &quot;forOption=&quot;if &quot;%~1&quot; neq &quot;&quot; (set &quot;inPath=%~1\&quot;) else set &quot;inPath=&quot;)for %forOption% %%F in (&quot;%inPath%* *&quot;) do (if /i &quot;%~f0&quot; neq &quot;%%~fF&quot; (set &quot;folder=%%~dpF&quot;set &quot;file=%%~nxF&quot;setlocal enableDelayedExpansionecho ren &quot;!
       
 
 

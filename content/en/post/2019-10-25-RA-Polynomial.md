@@ -3,7 +3,7 @@
 
 title: "Polynomial Regression – Volcano Eruption"
 subtitle: "Data Mining and Business Analytics with R"
-summary: ""
+summary: "There is a good set of internet articles that well describe the Math behind the Polynomial regression. Some of good references can be with the following links"
 authors: []
 tags: [Regression Analysis, Polynomial]
 categories: []
