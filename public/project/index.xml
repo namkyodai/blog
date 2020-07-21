@@ -5,12 +5,29 @@
     <link>/project/</link>
       <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 11 Jul 2020 11:08:22 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Mon, 20 Jul 2020 11:08:22 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Projects</title>
       <link>/project/</link>
     </image>
+    
+    <item>
+      <title>TDD for ~60 warehouses in Vietnam</title>
+      <link>/project/2020-warehousevn/</link>
+      <pubDate>Mon, 20 Jul 2020 11:08:22 +0800</pubDate>
+      <guid>/project/2020-warehousevn/</guid>
+      <description>&lt;h2 id=&#34;the-project&#34;&gt;The Project&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: A Singaporean Capital Investment Firm (confidential)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt;: TDD for 5 industrial sites in Vietnam&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: TDD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;objectives&#34;&gt;Objectives&lt;/h3&gt;
+&lt;h2 id=&#34;authorship&#34;&gt;Authorship&lt;/h2&gt;
+&lt;p&gt;Back to &lt;a href=&#34;/project&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>TDD for project HOPE in Clark city</title>

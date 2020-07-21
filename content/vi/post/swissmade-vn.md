@@ -38,20 +38,7 @@ Thời tiết lúc đó khá u ám và lạnh. Thời điểm tháng 10 hàng n�
 
 Lúc đó gấu nhà mình đi công tác ở Châu Phi nên gửi chìa khóa cho một cô bạn làm ở Lãnh Sứ Quán Nhật ở Geneva. Mình sống trong căn hộ với một cô bạn tên Maki cho đến khi gấu về. Maki dẫn mình đi chơi thành phố, ngắm hồ Geneva trong những ngày đầu. Ấn tượng về thành phố với mình ban đầu là khá bình thường, vắng vẻ và lạnh lẽo. Ngay cả khi đi siêu thị Migros gần nhà cũng thấy lạnh lẽo và mọi thứ thì đắt đỏ vô cùng. Nói thật ra là quá đắt đỏ, gấp 3 gấp 4 lần ở bên Nhật cho những thực phẩm thiết yếu ăn uống hàng ngày. Mình cá rằng, bất cứ ai ở Nhật hay ở các nước tư bản khác xung quanh Thụy Sĩ đều bị sốc về điều này, huống chi mình lúc đó chỉ là sinh viên mới tốt nghiệp ra trường, không có việc làm, và lại đến từ Việt Nam.
 
-Trước kia khi mình 
-
-
-
-
-
-
-
-
-
-
-
-
-
+(Đang viết dở)
 
 
 

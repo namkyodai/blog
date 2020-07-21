@@ -5,7 +5,7 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 11 Jul 2020 11:08:22 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Mon, 20 Jul 2020 11:08:22 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
@@ -15,7 +15,7 @@
     <item>
       <title>TDD</title>
       <link>/tags/tdd/</link>
-      <pubDate>Sat, 11 Jul 2020 11:08:22 +0800</pubDate>
+      <pubDate>Mon, 20 Jul 2020 11:08:22 +0800</pubDate>
       <guid>/tags/tdd/</guid>
       <description></description>
     </item>
