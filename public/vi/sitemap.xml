@@ -4,7 +4,7 @@
   
   <url>
     <loc>/vi/post/</loc>
-    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
+    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,13 +18,8 @@
   </url>
   
   <url>
-    <loc>/vi/tags/carl-jung/</loc>
-    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/vi/</loc>
-    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
+    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -38,13 +33,18 @@
   </url>
   
   <url>
-    <loc>/vi/post/carljung-modernmaninsearhofasoult/</loc>
-    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
+    <loc>/vi/tags/swiss/</loc>
+    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/swissmade-vn/</loc>
+    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
   </url>
   
   <url>
     <loc>/vi/tags/</loc>
-    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
+    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,6 +55,16 @@
                 hreflang="vi"
                 href="/vi/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/carl-jung/</loc>
+    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/carljung-modernmaninsearhofasoult/</loc>
+    <lastmod>2020-07-11T20:16:35+08:00</lastmod>
   </url>
   
   <url>
@@ -93,21 +103,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/tdd/</loc>
-    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/tdd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/tdd/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/tdd/</loc>
     <lastmod>2020-07-11T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -119,6 +114,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/tdd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/tdd/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/tdd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/tdd/"
                 />
   </url>
   
@@ -273,21 +283,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/asset-management/</loc>
-    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/asset-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/asset-management/</loc>
     <lastmod>2020-02-07T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -299,6 +294,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/asset-management/</loc>
+    <lastmod>2020-02-07T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/asset-management/"
                 />
   </url>
   
@@ -458,21 +468,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/project-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -484,6 +479,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/project-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/project-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/project-management/"
                 />
   </url>
   
@@ -983,21 +993,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/feasibility-study/</loc>
-    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/feasibility-study/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/feasibility-study/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -1009,6 +1004,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/feasibility-study/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/feasibility-study/</loc>
+    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/feasibility-study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/feasibility-study/"
                 />
   </url>
   

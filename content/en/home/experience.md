@@ -18,7 +18,7 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Operation Director and Asset Management Specialist"
+  title = "Project Director and Asset Management Specialist"
   company = "Arcadis Philippines Inc."
   company_url = "www.arcadis.com"
   location = "Manila"
@@ -27,13 +27,12 @@ date_format = "Jan 2006"
   description = """
   Responsibilities include:
 
-  * Resource Planning
-  * Recruitment
+  * Sale & Marketing
+  * Recruitment and Operations Supports
   * Quality Control
-  * Operation Management
   * Data Analytics and Solutions
   * Proposal and Technical Report Automation
-  * Asset Management
+  * Due Diligence & Asset Management
   """
 
 [[experience]]

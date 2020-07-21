@@ -5,12 +5,20 @@
     <link>/vi/tags/</link>
       <atom:link href="/vi/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 11 Jul 2020 20:16:35 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Fri, 17 Jul 2020 20:16:35 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/vi/tags/</link>
     </image>
+    
+    <item>
+      <title>Swiss</title>
+      <link>/vi/tags/swiss/</link>
+      <pubDate>Fri, 17 Jul 2020 20:16:35 +0800</pubDate>
+      <guid>/vi/tags/swiss/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Carl Jung</title>
