@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/vi/authors/</loc>
+    <lastmod>2020-10-14T20:16:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/post/vjse2018/</loc>
+    <lastmod>2020-10-14T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/vi/post/</loc>
-    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
+    <lastmod>2020-10-14T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,8 +38,18 @@
   </url>
   
   <url>
+    <loc>/vi/tags/huy-bau/</loc>
+    <lastmod>2020-10-14T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/authors/huy-bau/</loc>
+    <lastmod>2020-10-14T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/vi/</loc>
-    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
+    <lastmod>2020-10-14T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -33,18 +63,8 @@
   </url>
   
   <url>
-    <loc>/vi/tags/swiss/</loc>
-    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/vi/post/swissmade-vn/</loc>
-    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/vi/tags/</loc>
-    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
+    <lastmod>2020-10-14T20:16:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,6 +75,21 @@
                 hreflang="vi"
                 href="/vi/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/tinh-ban/</loc>
+    <lastmod>2020-10-14T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/swiss/</loc>
+    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/post/swissmade-vn/</loc>
+    <lastmod>2020-07-17T20:16:35+08:00</lastmod>
   </url>
   
   <url>
@@ -103,21 +138,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/tdd/</loc>
-    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/tdd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/tdd/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/tdd/</loc>
     <lastmod>2020-07-11T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -129,6 +149,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/tdd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/tdd/</loc>
+    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/tdd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/tdd/"
                 />
   </url>
   
@@ -180,21 +215,6 @@
   <url>
     <loc>/vi/post/daisakuikeda-daophattrongbalo/</loc>
     <lastmod>2020-05-02T20:16:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/vi/authors/</loc>
-    <lastmod>2020-05-01T20:16:35+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/authors/"
-                />
   </url>
   
   <url>
@@ -423,21 +443,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/plant-audit/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/plant-audit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/plant-audit/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/plant-audit/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -449,6 +454,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/plant-audit/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/plant-audit/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/plant-audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/plant-audit/"
                 />
   </url>
   

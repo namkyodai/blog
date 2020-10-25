@@ -5,12 +5,20 @@
     <link>/vi/authors/</link>
       <atom:link href="/vi/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Fri, 01 May 2020 20:16:35 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Wed, 14 Oct 2020 20:16:35 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
       <link>/vi/authors/</link>
     </image>
+    
+    <item>
+      <title>Huy Bầu</title>
+      <link>/vi/authors/huy-bau/</link>
+      <pubDate>Wed, 14 Oct 2020 20:16:35 +0800</pubDate>
+      <guid>/vi/authors/huy-bau/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Thích Nhất Hạnh</title>
