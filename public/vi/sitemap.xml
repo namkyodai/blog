@@ -83,6 +83,81 @@
   </url>
   
   <url>
+    <loc>/vi/categories/</loc>
+    <lastmod>2020-07-20T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/project/</loc>
+    <lastmod>2020-07-20T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/tdd/</loc>
+    <lastmod>2020-07-20T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/tdd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/tdd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/tdd/</loc>
+    <lastmod>2020-07-20T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/tdd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/tdd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/project/2020-warehousevn/</loc>
+    <lastmod>2020-07-20T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/2020-warehousevn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/project/2020-warehousevn/"
+                />
+  </url>
+  
+  <url>
     <loc>/vi/tags/swiss/</loc>
     <lastmod>2020-07-17T20:16:35+08:00</lastmod>
   </url>
@@ -105,66 +180,6 @@
   <url>
     <loc>/vi/tags/tam-ly/</loc>
     <lastmod>2020-07-11T20:16:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/vi/categories/</loc>
-    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/project/</loc>
-    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/project/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/project/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/tags/tdd/</loc>
-    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/tdd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/tdd/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/categories/tdd/</loc>
-    <lastmod>2020-07-11T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/tdd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/tdd/"
-                />
   </url>
   
   <url>
@@ -443,21 +458,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/plant-audit/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/plant-audit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/plant-audit/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/plant-audit/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -469,6 +469,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/plant-audit/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/plant-audit/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/plant-audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/plant-audit/"
                 />
   </url>
   
@@ -488,21 +503,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/project-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -514,6 +514,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/project-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/project-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/project-management/"
                 />
   </url>
   

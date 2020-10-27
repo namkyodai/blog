@@ -5,7 +5,7 @@
     <link>/vi/categories/</link>
       <atom:link href="/vi/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Sat, 11 Jul 2020 11:08:22 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Mon, 20 Jul 2020 11:08:22 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Categories</title>
@@ -15,7 +15,7 @@
     <item>
       <title>TDD</title>
       <link>/vi/categories/tdd/</link>
-      <pubDate>Sat, 11 Jul 2020 11:08:22 +0800</pubDate>
+      <pubDate>Mon, 20 Jul 2020 11:08:22 +0800</pubDate>
       <guid>/vi/categories/tdd/</guid>
       <description></description>
     </item>
