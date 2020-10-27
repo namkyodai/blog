@@ -19,10 +19,10 @@
   weight = 15
 
 
-[[main]]
-  name = "Dịch vụ"
-  url = "business/"
-  weight = 20
+#[[main]]
+#  name = "Dịch vụ"
+#  url = "business/"
+#  weight = 20
 
 [[main]]
   name = "Xuất Bản"
@@ -34,10 +34,10 @@
   url = "library/"
   weight = 30
 
-[[main]]
-  name = "Apps"
-  url = "apps/"
-  weight = 40
+#[[main]]
+#  name = "Apps"
+#  url = "apps/"
+#  weight = 40
 
 [[main]]
   name = "Liên Hệ"

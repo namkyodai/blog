@@ -443,21 +443,6 @@
   </url>
   
   <url>
-    <loc>/vi/categories/plant-audit/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/plant-audit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/plant-audit/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/tags/plant-audit/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -469,6 +454,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/tags/plant-audit/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/categories/plant-audit/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/plant-audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/plant-audit/"
                 />
   </url>
   
@@ -488,21 +488,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/project-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -514,6 +499,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/project-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/project-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/project-management/"
                 />
   </url>
   
@@ -1013,21 +1013,6 @@
   </url>
   
   <url>
-    <loc>/vi/tags/feasibility-study/</loc>
-    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/feasibility-study/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/feasibility-study/"
-                />
-  </url>
-  
-  <url>
     <loc>/vi/categories/feasibility-study/</loc>
     <lastmod>2016-04-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -1039,6 +1024,21 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/categories/feasibility-study/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/feasibility-study/</loc>
+    <lastmod>2016-04-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/feasibility-study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/feasibility-study/"
                 />
   </url>
   

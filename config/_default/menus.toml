@@ -20,10 +20,10 @@
   weight = 15
 
 
-[[main]]
-  name = "Business"
-  url = "business/"
-  weight = 20
+#[[main]]
+#  name = "Business"
+#  url = "business/"
+#  weight = 20
 
 [[main]]
   name = "Publications"
@@ -35,10 +35,10 @@
   url = "library/"
   weight = 30
 
-[[main]]
-  name = "Apps"
-  url = "apps/"
-  weight = 40
+#[[main]]
+#  name = "Apps"
+#  url = "apps/"
+#  weight = 40
 
 
 [[main]]
