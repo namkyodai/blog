@@ -5,12 +5,26 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Nam Le</copyright><lastBuildDate>Fri, 05 Jun 2020 08:57:31 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Nam Le</copyright><lastBuildDate>Sun, 16 May 2021 08:57:31 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Chaning World Order - Ray Dalio</title>
+      <link>/post/2022-05-16-changing-world-order-ray-dalio/</link>
+      <pubDate>Sun, 16 May 2021 08:57:31 +0800</pubDate>
+      <guid>/post/2022-05-16-changing-world-order-ray-dalio/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;The Note2 is indeed a good e-ink device for A4 size PDF reading experience. If you are researchers and have dozens of PDF books, this is the device that will not disappoint you.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;/img/etc/booxnote2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;review-points&#34;&gt;Review Points&lt;/h2&gt;
+&lt;p&gt;I’ve come to believe that there are only a limited number of personality types going down a limited number of paths that lead them to encounter a limited number of situations to produce only a limited number of stories that repeat over time. The only things that change are the clothes the characters are wearing and the technologies they’re using.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Review on Onyx BooxNote 2</title>
