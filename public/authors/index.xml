@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Nam Le</copyright><lastBuildDate>Sun, 16 May 2021 08:57:31 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Nam Le</copyright><lastBuildDate>Wed, 08 Sep 2021 08:57:31 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
@@ -13,17 +13,9 @@
     </image>
     
     <item>
-      <title>Ray Dalio</title>
-      <link>/authors/ray-dalio/</link>
-      <pubDate>Sun, 16 May 2021 08:57:31 +0800</pubDate>
-      <guid>/authors/ray-dalio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Nam Le</title>
       <link>/authors/nam-le/</link>
-      <pubDate>Fri, 05 Jun 2020 08:57:31 +0800</pubDate>
+      <pubDate>Wed, 08 Sep 2021 08:57:31 +0800</pubDate>
       <guid>/authors/nam-le/</guid>
       <description></description>
     </item>
@@ -153,7 +145,7 @@
       <link>/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
-      <description>&lt;p&gt;A marathon runner, diver, kendōka , and part-time programmer, now lives and works in Manila, used to live in BKK, Kyoto, Osaka, Zurich, Geneva, and Hanoi.&lt;/p&gt;
+      <description>&lt;p&gt;A marathon runner, diver, and part-time programmer, now lives and works both in Manila and Saigon Vietnam, used to live in BKK, Kyoto, Osaka, Zurich, Geneva, and Hanoi.&lt;/p&gt;
 &lt;p&gt;Places like home: &lt;a href=&#34;http://ecopark.com.vn/en/&#34;&gt;Ecopark&lt;/a&gt; (VN), &lt;a href=&#34;https://en.wikipedia.org/wiki/Katsura,_Kyoto&#34;&gt;Katsura&lt;/a&gt; (JP), &lt;a href=&#34;https://en.wikipedia.org/wiki/Geneva&#34;&gt;Geneva&lt;/a&gt; (CH), and &lt;a href=&#34;https://en.wikipedia.org/wiki/Z%C3%BCrich&#34;&gt;Zurich&lt;/a&gt; (CH)&lt;/p&gt;
 </description>
     </item>

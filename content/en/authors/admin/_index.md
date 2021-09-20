@@ -74,6 +74,6 @@ user_groups:
 - Visitors
 ---
 
-A marathon runner, diver, kendōka , and part-time programmer, now lives and works in Manila, used to live in BKK, Kyoto, Osaka, Zurich, Geneva, and Hanoi.
+A marathon runner, diver, and part-time programmer, now lives and works both in Manila and Saigon Vietnam, used to live in BKK, Kyoto, Osaka, Zurich, Geneva, and Hanoi.
 
 Places like home: [Ecopark](http://ecopark.com.vn/en/) (VN), [Katsura](https://en.wikipedia.org/wiki/Katsura,_Kyoto) (JP), [Geneva](https://en.wikipedia.org/wiki/Geneva) (CH), and [Zurich](https://en.wikipedia.org/wiki/Z%C3%BCrich) (CH)
