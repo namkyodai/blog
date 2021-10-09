@@ -464,7 +464,7 @@ mape &lt;span style=&#34;color:#75715e&#34;&gt;# mean absolute percent error&lt
 &lt;h1 id=&#34;leaps-package-with-regsubsets-fuction&#34;&gt;Leaps package with regsubsets fuction.&lt;/h1&gt;
 &lt;p&gt;Regsubsets function allows to perform regression on subsets of data, particularly useful to compare across model’s predictors to understand the fit of the model.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.rdocumentation.org/packages/leaps/versions/2.1-1/topics/regsubsets&#34;&gt;https://www.rdocumentation.org/packages/leaps/versions/2.1-1/topics/regsubsets&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;crossvalidation&#34;&gt;Cross-Validation&lt;/h1&gt;
+&lt;h1 id=&#34;cross-validation&#34;&gt;Cross-Validation&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Cross-validation removes one case from the data set of n cases, fits the model to the reduced data set, and predicts the response of that one case that has been removed from the estimation. This is repeated for each of the n cases. The summary statistics of the n genuine out-of-sample prediction errors (mean error, root mean square error, mean absolute percent error) help us assess the out-of-sample prediction performance. Cross-validation is very informative as it evaluates the model on new data. We find that the model with all six regressors performs better. It leads to a mean absolute percent error of about 6.75% (as compared to 8.23% for the model with weight as the only regressor).&lt;/p&gt;
 &lt;/blockquote&gt;
