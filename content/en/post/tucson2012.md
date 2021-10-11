@@ -3,7 +3,7 @@
 
 title: "Hyundai Tucson 2012 Theta II Model Gas Auto- Leaving Sale"
 subtitle: ""
-summary: "Well maintained Tucson 2012 model with 84,506 km of mileage for leaving sale 350,000 Peso. ![](/img/selling/tucson/20210919_112231.jpg)"
+summary: "Well maintained Tucson 2012 model with 84,506 km of mileage for leaving sale 360,000 Peso. ![](/img/selling/tucson/20210919_112231.jpg)"
 authors: [Nam Le]
 tags: []
 categories: []
@@ -33,7 +33,7 @@ projects: []
 - Model: Tucson 2012 Theta II Gas Auto
 - Brand: Hyundai
 - Mileage: 84,506 km
-- Price: 420,000 Peso and negociable
+- Price: 360,000 Peso and negociable
 - Contact the owner: Nam (09270221899) namlt@protonmail.com
 - Address: Hildago Rockwell, Makati
 
