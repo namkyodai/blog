@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Nam Le</copyright><lastBuildDate>Wed, 08 Sep 2021 08:57:31 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Nam Le</copyright><lastBuildDate>Fri, 05 Jun 2020 08:57:31 +0800</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Nam Le</title>
       <link>/authors/nam-le/</link>
-      <pubDate>Wed, 08 Sep 2021 08:57:31 +0800</pubDate>
+      <pubDate>Fri, 05 Jun 2020 08:57:31 +0800</pubDate>
       <guid>/authors/nam-le/</guid>
       <description></description>
     </item>
