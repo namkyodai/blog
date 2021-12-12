@@ -39,13 +39,31 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
+
+Some of best books I have read and continue to read again. Many thanks for all authors who have contributed and published these books completely FREE.
+
+
+## R books
+- [R Cookbook, 2nd Edition](https://rc2e.com/) by James (JD) Long
+- [Data Analytics Coding Fundamentals (BIDA302)](https://bookdown.org/martin_monkman/DataAnalyticsCodingFundamentals/) written  by [Martin Monkman](https://martinmonkman.com/)
+- [Data Science with R: A Resource Compendium](https://bookdown.org/martin_monkman/DataScienceResources_book/) written by [Martin Monkman](https://martinmonkman.com/)
 - [R Graph Gallery](https://www.r-graph-gallery.com/)
-- [Bookdown](https://bookdown.org/home/archive/)
+- [Bookdown](https://bookdown.org/home/archive/) A collection of best R books for FREE
 - [A Grammar of Data Munipulation (dplyr)](https://dplyr.tidyverse.org/)
-- [Plotly R Open Source Graphing Library](https://plot.ly/r/)
-- [The R Graph Gallery](https://www.r-graph-gallery.com)
+- [Plotly R Open Source Graphing Library](https://plot.ly/r/) Interactive graphs with Plotly package
 - [rpivotTable](https://cran.r-project.org/web/packages/rpivotTable/vignettes/rpivotTableIntroduction.html)
 - [TidyVerse](https://www.tidyverse.org/)
 - [Transpose Table](https://www.r-statistics.com/tag/transpose/)
-- [R for Data Science](https://r4ds.had.co.nz/index.html)
+- [R for Data Science](https://r4ds.had.co.nz/index.html) One of the best book written by [Hadley Wickham](http://hadley.nz/) & [Garrett Grolemund](https://twitter.com/statgarrett)
 - [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
+
+## Python books
+
+## Spatial Analysis and GIS Books
+
+
+## Optimizations
+
+## Econometrics and Microeconomics
+- [The Econometric Analysis of Transition Data](https://www.cambridge.org/core/books/econometric-analysis-of-transition-data/2ADE3C9913AF61A0479B7BF3610DC4CB) by Tony Lancaster. This is one of the bible in the field of econometric.
+- [Intermediate Microeconomics: A Modern Approach](https://faculty.ksu.edu.sa/sites/default/files/microeco-_varian.pdf) [by Hal R. Varian](https://people.ischool.berkeley.edu/~hal/), a bible in Microeconomics
