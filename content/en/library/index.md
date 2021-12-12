@@ -40,10 +40,13 @@ url_video: ""
 slides: ""
 ---
 
-Some of best books I have read and continue to read again. Many thanks for all authors who have contributed and published these books completely FREE.
+Some of best books I am very much into and continue to read. Many thanks for all authors who have contributed and published these books, with some completely for FREE.
 
 
 ## R books
+
+I started to code in Fortran during my PhD from 2006 to 2009. In 2010, I started to learn R and at that time R was relatively still a new language to most of engineers. There was a few powerful packages at that time, especially on Bayesian Statistics, but they were not popular. Since then, there has been an evolution in the field of statistics and data sciences. Talented researchers and scientists have greatly contributed to develop R to become a de-factor language and program for statistical computing and analysis. There is no ground now for commercial software such as SPSS and STATA to stand.
+
 - [R Cookbook, 2nd Edition](https://rc2e.com/) by James (JD) Long
 - [Data Analytics Coding Fundamentals (BIDA302)](https://bookdown.org/martin_monkman/DataAnalyticsCodingFundamentals/) written  by [Martin Monkman](https://martinmonkman.com/)
 - [Data Science with R: A Resource Compendium](https://bookdown.org/martin_monkman/DataScienceResources_book/) written by [Martin Monkman](https://martinmonkman.com/)

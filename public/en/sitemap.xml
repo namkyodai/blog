@@ -63,21 +63,6 @@
   </url>
   
   <url>
-    <loc>/tags/tdd/</loc>
-    <lastmod>2020-07-20T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/tdd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/tdd/"
-                />
-  </url>
-  
-  <url>
     <loc>/categories/tdd/</loc>
     <lastmod>2020-07-20T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -89,6 +74,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/categories/tdd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/tdd/</loc>
+    <lastmod>2020-07-20T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/tdd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/tdd/"
                 />
   </url>
   
@@ -403,21 +403,6 @@
   </url>
   
   <url>
-    <loc>/categories/plant-audit/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/plant-audit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/plant-audit/"
-                />
-  </url>
-  
-  <url>
     <loc>/tags/plant-audit/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -429,6 +414,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tags/plant-audit/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/plant-audit/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/plant-audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/plant-audit/"
                 />
   </url>
   
@@ -448,21 +448,6 @@
   </url>
   
   <url>
-    <loc>/tags/project-management/</loc>
-    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/project-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/project-management/"
-                />
-  </url>
-  
-  <url>
     <loc>/categories/project-management/</loc>
     <lastmod>2019-10-19T11:08:22+08:00</lastmod>
     <xhtml:link
@@ -474,6 +459,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="/categories/project-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/project-management/</loc>
+    <lastmod>2019-10-19T11:08:22+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/project-management/"
                 />
   </url>
   
