@@ -77,3 +77,16 @@ user_groups:
 Đam mê chạy bộ, lặn biển, Kendo, và lập trình web và xác xuất thống kê. Hiện tại sống tại và làm việc tại 2 thành phố Manila và Sài Gòn, và đã từng sống tại Băng Cốc, Kyoto, Osaka, Zurich, Geneva, and Hà nội.
 
 Nơi coi là quê: [Ecopark](http://ecopark.com.vn/en/) (VN), [Katsura](https://en.wikipedia.org/wiki/Katsura,_Kyoto) (JP), [Geneva](https://en.wikipedia.org/wiki/Geneva) (CH), and [Zurich](https://en.wikipedia.org/wiki/Z%C3%BCrich) (CH)
+
+Hiện đang làm cho
+
+- [Arcadis](https://www.arcadis.com) (Văn phòng tại Manila, Philippines) - Giám Đốc Dự Án, Chuyên Gia Soạn Hợp Đồng và điều hành quá trình đấu thầu các dự án lớn
+  - Đánh giá kĩ thuật, thương mại, và môi trường cho các công trình cho mục đích mua bán và sát nhập của các tập đoàn và công ty đầu tư.
+  - Các dự án phát triển nhà máy nước cấp, nước thải, và hệ thống mạng lưới nước.
+  - Phân tích rủi do dự án (bao gồm cả việc phân tích rủi do do động đất dựa trên tiêu chuẩn FEMA và phương pháp Fragility Curve)
+  - Quản lý cơ sở hạ tầng và phân tích dữ liệu (ISO 55000(1), mô hình thống kê, phân tích độ tin cậy)
+- [Viện Đô Thị Thông Minh và Quản Lý (ISCM)](https://www.iscm.ueh.edu.vn), [Đại Học UEH](https://www.ueh.edu.vn), Việt Nam
+  - [Giảng viên, trưởng nhóm phân tích đô thị, rủi do và quản lý hạ tầng và các hệ thống kĩ thuật](https://www.iscm.ueh.edu.vn/members/dr-nam-le/)
+- [Công ty TNHH ASQ Vietnam](https://www.asq.vn).
+  - Thành lập viên và tư vấn kinh doanh
+- [EMAPTA](https://www.emapta.com) - tư vấn kĩ thuật, tuyển tài năng làm việc trực tiếp cho các công ty Châu Âu, Bắc Mỹ và Úc.
