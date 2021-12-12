@@ -77,3 +77,15 @@ user_groups:
 A marathon runner, diver, and part-time programmer, now lives and works both in Manila and Saigon Vietnam, used to live in BKK, Kyoto, Osaka, Zurich, Geneva, and Hanoi.
 
 Places like home: [Ecopark](http://ecopark.com.vn/en/) (VN), [Katsura](https://en.wikipedia.org/wiki/Katsura,_Kyoto) (JP), [Geneva](https://en.wikipedia.org/wiki/Geneva) (CH), and [Zurich](https://en.wikipedia.org/wiki/Z%C3%BCrich) (CH)
+
+Currently working for
+- [Arcadis](https://www.arcadis.com) (Duty station in Manila, Philippines) - Project Director and Procurement and Contract Specialist
+  - Technical, Environmental & Commercial Due Diligence projects for Acquisition and Merging business in Southeast Asian Region
+  - Water and Wastewater Treatment Plants and Distribution Networks.
+  - Project Risk Analysis (including seismic risk analysis for computing maximum credible lost using FEMA and fragility curve approach)
+  - Asset Management and Data Analytics (ISO 55000(1), statistical modelling, reliability analysis)
+- [Institute of Smart City and Management (ISCM)](https://www.iscm.ueh.edu.vn), [UEH University](https://www.ueh.edu.vn), Vietnam
+  - [Senior Lecturer, Chair of Urban Analytics, Risk, and Asset Management](https://www.iscm.ueh.edu.vn/members/dr-nam-le/)
+- [ASQ Vietnam Co. Ltd](https://www.asq.vn).
+  - Founder and Business Advisor
+- [EMAPTA](https://www.emapta.com) as Technical Consultant
