@@ -43,7 +43,7 @@ slides: ""
 Some of best books I am very much into and continue to read. Many thanks for all authors who have contributed and published these books, with some completely for FREE.
 
 
-## R books
+## Statistic and Data Analytics
 
 I started to code in Fortran during my PhD from 2006 to 2009. In 2010, I started to learn R and at that time R was relatively still a new language to most of engineers. There was a few powerful packages at that time, especially on Bayesian Statistics, but they were not popular. Since then, there has been an evolution in the field of statistics and data sciences. Talented researchers and scientists have greatly contributed to develop R to become a de-factor language and program for statistical computing and analysis. There is no ground now for commercial software such as SPSS and STATA to stand.
 
@@ -59,8 +59,8 @@ I started to code in Fortran during my PhD from 2006 to 2009. In 2010, I started
 - [Transpose Table](https://www.r-statistics.com/tag/transpose/)
 - [R for Data Science](https://r4ds.had.co.nz/index.html) One of the best book written by [Hadley Wickham](http://hadley.nz/) & [Garrett Grolemund](https://twitter.com/statgarrett)
 - [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
-
-## Python books
+- [https://mlhub.ai/](https://mlhub.ai/) For Machine Learning
+- [https://togaware.com/](https://togaware.com/)
 
 ## Spatial Analysis and GIS Books
 
